@@ -1,23 +1,31 @@
+/**
+ * @file scraper.js
+ * @description This script scrapes character data from the Overwatch Fandom wiki using Puppeteer.
+ * It extracts various details about the characters and saves the data into a JSON file.
+ */
+
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
 (async () => {
-    // Charger les noms des personnages depuis le fichier JSON
+    // Load hero names from the JSON file
     const heroNames = JSON.parse(fs.readFileSync('../datas/heroNames.json', 'utf8'));
 
-    // Initialiser un objet pour stocker toutes les données des personnages
+    // Initialize an object to store all character data
     const charactersDatas = {};
 
-    // Lancer le navigateur
+    // Launch the browser
     const browser = await puppeteer.launch();
 
     for (const heroName of heroNames) {
-        /* if (heroName != "Mercy") {
+        // Skip characters other than "Mercy"
+        /* if (heroName !== "Mercy") {
             continue;
         } */
-        
-        const formattedHeroName = heroName.replace(/\s+/g, '_'); // Remplacer les espaces par des underscores
+
+        // Format hero name by replacing spaces with underscores
+        const formattedHeroName = heroName.replace(/\s+/g, '_');
         const url = `https://overwatch.fandom.com/wiki/${formattedHeroName}`;
 
         const page = await browser.newPage();
@@ -25,16 +33,24 @@ const path = require('path');
             console.log(`Scraping data for: ${heroName}...`);
             await page.goto(url, { waitUntil: 'domcontentloaded' });
 
-            // Extraire les informations du personnage
+            // Extract character information
             const characterData = await page.evaluate(() => {
-                const rows = [...document.querySelectorAll('tbody tr')];  // Sélectionne tous les éléments <tr> dans <tbody>
+                const rows = [...document.querySelectorAll('tbody tr')];  // Select all <tr> elements in <tbody>
 
+                /**
+                 * Extracts information based on the label.
+                 * @param {string} label - The label to search for.
+                 * @returns {string|null} - The extracted information or null if not found.
+                 */
                 const getInfo = (label) => {
                     const row = rows.find(row => row.innerText.includes(label));
                     return row ? row.querySelector('td:last-child')?.textContent.trim() : null;
                 };
 
-                // Fonction pour extraire les capacités & armes
+                /**
+                 * Extracts weapon information.
+                 * @returns {Array|null} - An array of weapon objects or null if no weapons found.
+                 */
                 const getWeaponInfo = () => {
                     const weapons = [];
                     // Key mouse 1 is used to identify weapons, key mouse 2 is also used to identify alt fire (like Moira, Widowmaker, Soldier...)
@@ -65,9 +81,9 @@ const path = require('path');
                                 const isDuplicate = weapons.some(item => item.name === weaponName);
 
                                 if (!isDuplicate) {
-                                    weapons.push({ 
-                                        name: weaponName, 
-                                        description: weaponDescription, 
+                                    weapons.push({
+                                        name: weaponName,
+                                        description: weaponDescription,
                                         weaponType,
                                         stats
                                     });
@@ -77,7 +93,11 @@ const path = require('path');
                     });
                     return weapons.length > 0 ? weapons : null;
                 };
-                
+
+                /**
+                 * Extracts ability information.
+                 * @returns {Array|null} - An array of ability objects or null if no abilities found.
+                 */
                 const getAbilityInfo = () => {
                     const abilities = [];
                     document.querySelectorAll('span[title="Hotkey"]').forEach(span => {
@@ -85,10 +105,10 @@ const path = require('path');
                         if (abilityContainer) {
                             const abilityName = abilityContainer.querySelector('.abilityHeader')?.innerText.trim();
                             const abilityDescription = abilityContainer.querySelector('.summaryInfoAndImage i')?.innerText.trim();
-                            const hotkey = span.querySelector('.keybind')?.innerText.trim(); // Récupérer la touche
-                
+                            const hotkey = span.querySelector('.keybind')?.innerText.trim(); // Get the hotkey
+
                             if (abilityName && abilityDescription && hotkey) {
-                                // Vérifier si la capacité est déjà dans le tableau
+                                // Check if the ability is already in the array
                                 if (!abilities.some(item => item.name === abilityName)) {
                                     abilities.push({ name: abilityName, description: abilityDescription, hotkey });
                                 }
@@ -98,6 +118,7 @@ const path = require('path');
                     return abilities.length > 0 ? abilities : null;
                 };
 
+                // Return the extracted character data
                 return {
                     RealName: getInfo('Real Name') || null,
                     Birth: getInfo('Birth') || null,
@@ -116,7 +137,7 @@ const path = require('path');
                 };
             });
 
-            // Ajouter les données du personnage dans l'objet charactersDatas
+            // Add character data to the charactersDatas object
             charactersDatas[heroName] = characterData;
 
             console.log(`Data scraped for: ${heroName}`);
@@ -124,16 +145,16 @@ const path = require('path');
         } catch (error) {
             console.error(`Failed to scrape data for: ${heroName}`, error);
         } finally {
-            await page.close(); // Fermer la page après chaque personnage
+            await page.close(); // Close the page after each character
         }
     }
 
-    // Sauvegarder toutes les données dans un fichier JSON unique
+    // Save all character data to a single JSON file
     const savePath = path.join('datas', 'charactersDatas.json');
     fs.writeFileSync('../' + savePath, JSON.stringify(charactersDatas, null, 2));
 
     console.log('All characters data saved successfully!');
 
-    // Fermer le navigateur après avoir fini de scraper tous les personnages
+    // Close the browser after scraping all characters
     await browser.close();
 })();
