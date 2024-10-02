@@ -4,7 +4,7 @@ const path = require('path');
 
 (async () => {
     // Charger les noms des personnages depuis le fichier JSON
-    const heroNames = JSON.parse(fs.readFileSync('datas/heroNames.json', 'utf8'));
+    const heroNames = JSON.parse(fs.readFileSync('../datas/heroNames.json', 'utf8'));
 
     // Initialiser un objet pour stocker toutes les données des personnages
     const charactersDatas = {};
@@ -19,7 +19,7 @@ const path = require('path');
         const page = await browser.newPage();
         try {
             console.log(`Scraping data for: ${heroName}...`);
-            await page.goto(url, {waitUntil: 'domcontentloaded'});
+            await page.goto(url, { waitUntil: 'domcontentloaded' });
 
             // Extraire les informations du personnage
             const characterData = await page.evaluate(() => {
@@ -29,6 +29,46 @@ const path = require('path');
                     const row = rows.find(row => row.innerText.includes(label));
                     return row ? row.querySelector('td:last-child')?.textContent.trim() : null;
                 };
+
+                // Fonction pour extraire les capacités & armes
+                const getWeaponInfo = () => {
+                    const weapons = [];
+                    document.querySelectorAll('img[alt="Key mouse 1"]').forEach(img => {
+                        const weaponContainer = img.closest('.ability_box');
+                        if (weaponContainer) {
+                            const weaponName = weaponContainer.querySelector('.abilityHeader')?.innerText.trim();
+                            const weaponDescription = weaponContainer.querySelector('.summaryInfoAndImage i')?.innerText.trim();
+                            if (weaponName && weaponDescription) {
+                                // Vérifier si l'arme est déjà dans le tableau
+                                if (!weapons.some(item => item.name === weaponName)) {
+                                    weapons.push({ name: weaponName, description: weaponDescription });
+                                }
+                            }
+                        }
+                    });
+                    return weapons.length > 0 ? weapons : null;
+                };
+                
+                const getAbilityInfo = () => {
+                    const abilities = [];
+                    document.querySelectorAll('span[title="Hotkey"]').forEach(span => {
+                        const abilityContainer = span.closest('.ability_box');
+                        if (abilityContainer) {
+                            const abilityName = abilityContainer.querySelector('.abilityHeader')?.innerText.trim();
+                            const abilityDescription = abilityContainer.querySelector('.summaryInfoAndImage i')?.innerText.trim();
+                            const hotkey = span.querySelector('.keybind')?.innerText.trim(); // Récupérer la touche
+                
+                            if (abilityName && abilityDescription && hotkey) {
+                                // Vérifier si la capacité est déjà dans le tableau
+                                if (!abilities.some(item => item.name === abilityName)) {
+                                    abilities.push({ name: abilityName, description: abilityDescription, hotkey });
+                                }
+                            }
+                        }
+                    });
+                    return abilities.length > 0 ? abilities : null;
+                };
+                         
 
                 return {
                     RealName: getInfo('Real Name') || null,
@@ -42,7 +82,9 @@ const path = require('path');
                     Voice: getInfo('Voice') || null,
                     Role: getInfo('Role') || null,
                     Health: getInfo('Health') || null,
-                    Shields: getInfo('Shields') || null
+                    Shields: getInfo('Shields') || null,
+                    Weapons: getWeaponInfo() || null,
+                    Abilities: getAbilityInfo() || null
                 };
             });
 
@@ -60,7 +102,7 @@ const path = require('path');
 
     // Sauvegarder toutes les données dans un fichier JSON unique
     const savePath = path.join('datas', 'charactersDatas.json');
-    fs.writeFileSync(savePath, JSON.stringify(charactersDatas, null, 2));
+    fs.writeFileSync('../' + savePath, JSON.stringify(charactersDatas, null, 2));
 
     console.log('All characters data saved successfully!');
 
