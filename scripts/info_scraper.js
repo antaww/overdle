@@ -4,7 +4,7 @@ const path = require('path');
 
 (async () => {
     // Charger les noms des personnages depuis le fichier JSON
-    const heroNames = JSON.parse(fs.readFileSync('../datas/heroNames.json', 'utf8'));
+    const heroNames = JSON.parse(fs.readFileSync('datas/heroNames.json', 'utf8'));
 
     // Initialiser un objet pour stocker toutes les données des personnages
     const charactersDatas = {};
@@ -102,7 +102,7 @@ const path = require('path');
 
     // Sauvegarder toutes les données dans un fichier JSON unique
     const savePath = path.join('datas', 'charactersDatas.json');
-    fs.writeFileSync('../' + savePath, JSON.stringify(charactersDatas, null, 2));
+    fs.writeFileSync(savePath, JSON.stringify(charactersDatas, null, 2));
 
     console.log('All characters data saved successfully!');
 
