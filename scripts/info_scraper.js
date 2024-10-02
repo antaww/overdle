@@ -4,7 +4,7 @@ const path = require('path');
 
 (async () => {
     // Charger les noms des personnages depuis le fichier JSON
-    const heroNames = JSON.parse(fs.readFileSync('datas/heroNames.json', 'utf8'));
+    const heroNames = JSON.parse(fs.readFileSync('../datas/heroNames.json', 'utf8'));
 
     // Initialiser un objet pour stocker toutes les données des personnages
     const charactersDatas = {};
@@ -13,6 +13,10 @@ const path = require('path');
     const browser = await puppeteer.launch();
 
     for (const heroName of heroNames) {
+        /* if (heroName != "Mercy") {
+            continue;
+        } */
+        
         const formattedHeroName = heroName.replace(/\s+/g, '_'); // Remplacer les espaces par des underscores
         const url = `https://overwatch.fandom.com/wiki/${formattedHeroName}`;
 
@@ -33,15 +37,40 @@ const path = require('path');
                 // Fonction pour extraire les capacités & armes
                 const getWeaponInfo = () => {
                     const weapons = [];
-                    document.querySelectorAll('img[alt="Key mouse 1"]').forEach(img => {
+                    // Key mouse 1 is used to identify weapons, key mouse 2 is also used to identify alt fire (like Moira, Widowmaker, Soldier...)
+                    document.querySelectorAll('img[alt="Key mouse 1"], img[alt="Key mouse 2"]').forEach(img => {
                         const weaponContainer = img.closest('.ability_box');
                         if (weaponContainer) {
                             const weaponName = weaponContainer.querySelector('.abilityHeader')?.innerText.trim();
                             const weaponDescription = weaponContainer.querySelector('.summaryInfoAndImage i')?.innerText.trim();
-                            if (weaponName && weaponDescription) {
-                                // Vérifier si l'arme est déjà dans le tableau
-                                if (!weapons.some(item => item.name === weaponName)) {
-                                    weapons.push({ name: weaponName, description: weaponDescription });
+                            const weaponType = weaponContainer.querySelector('.summaryInfoAndImage span')?.innerText.trim();
+
+                            // Initialize stats object
+                            const stats = {};
+
+                            // Get the stats container (the next div after summaryInfoAndImage)
+                            const statsContainer = weaponContainer.querySelector('.summaryInfoAndImage').nextElementSibling;
+
+                            // Find all stats by iterating through each child div
+                            const statDivs = statsContainer.querySelectorAll('div[style*="display:block"]');
+                            statDivs.forEach(statDiv => {
+                                const statName = statDiv.querySelector('b')?.innerText.trim();
+                                const statValue = statDiv.querySelector('div:nth-child(2)')?.innerText.trim();
+                                if (statName && statValue) {
+                                    stats[statName] = statValue;
+                                }
+                            });
+
+                            if (weaponName && weaponDescription && weaponType) {
+                                const isDuplicate = weapons.some(item => item.name === weaponName);
+
+                                if (!isDuplicate) {
+                                    weapons.push({ 
+                                        name: weaponName, 
+                                        description: weaponDescription, 
+                                        weaponType,
+                                        stats
+                                    });
                                 }
                             }
                         }
@@ -68,7 +97,6 @@ const path = require('path');
                     });
                     return abilities.length > 0 ? abilities : null;
                 };
-                         
 
                 return {
                     RealName: getInfo('Real Name') || null,
@@ -102,7 +130,7 @@ const path = require('path');
 
     // Sauvegarder toutes les données dans un fichier JSON unique
     const savePath = path.join('datas', 'charactersDatas.json');
-    fs.writeFileSync(savePath, JSON.stringify(charactersDatas, null, 2));
+    fs.writeFileSync('../' + savePath, JSON.stringify(charactersDatas, null, 2));
 
     console.log('All characters data saved successfully!');
 
