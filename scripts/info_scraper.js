@@ -10,7 +10,14 @@ const path = require('path');
 
 (async () => {
     // Load hero names from the JSON file
-    const heroNames = JSON.parse(fs.readFileSync('../datas/heroNames.json', 'utf8'));
+    let heroNames;
+    try {
+        heroNames = JSON.parse(fs.readFileSync('datas/heroNames.json', 'utf8'));
+    } catch (error) {
+        console.error('Failed to load hero names from JSON file. ' +
+            'Make sure to launch characters_scraper first.');
+        process.exit(1);
+    }
 
     // Initialize an object to store all character data
     const charactersDatas = {};
@@ -31,10 +38,11 @@ const path = require('path');
         const page = await browser.newPage();
         try {
             console.log(`Scraping data for: ${heroName}...`);
-            await page.goto(url, { waitUntil: 'domcontentloaded' });
+            await page.goto(url, {waitUntil: 'domcontentloaded'});
 
             // Extract character information
-            const characterData = await page.evaluate(() => {
+            // Add character data to the charactersDatas object
+            charactersDatas[heroName] = await page.evaluate(() => {
                 const rows = [...document.querySelectorAll('tbody tr')];  // Select all <tr> elements in <tbody>
 
                 /**
@@ -110,7 +118,7 @@ const path = require('path');
                             if (abilityName && abilityDescription && hotkey) {
                                 // Check if the ability is already in the array
                                 if (!abilities.some(item => item.name === abilityName)) {
-                                    abilities.push({ name: abilityName, description: abilityDescription, hotkey });
+                                    abilities.push({name: abilityName, description: abilityDescription, hotkey});
                                 }
                             }
                         }
@@ -137,9 +145,6 @@ const path = require('path');
                 };
             });
 
-            // Add character data to the charactersDatas object
-            charactersDatas[heroName] = characterData;
-
             console.log(`Data scraped for: ${heroName}`);
 
         } catch (error) {
@@ -151,7 +156,7 @@ const path = require('path');
 
     // Save all character data to a single JSON file
     const savePath = path.join('datas', 'charactersDatas.json');
-    fs.writeFileSync('../' + savePath, JSON.stringify(charactersDatas, null, 2));
+    fs.writeFileSync(savePath, JSON.stringify(charactersDatas, null, 2));
 
     console.log('All characters data saved successfully!');
 
