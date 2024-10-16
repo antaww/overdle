@@ -22,7 +22,7 @@ const fs = require('fs');
     console.log(`${heroNames.length} hero names found.`);
 
     // Sauvegarder les noms dans un fichier JSON
-    fs.writeFileSync('../datas/heroNames.json', JSON.stringify(heroNames, null, 2));
+    fs.writeFileSync('datas/heroNames.json', JSON.stringify(heroNames, null, 2));
 
     console.log('Hero names saved to datas/heroNames.json.');
 
