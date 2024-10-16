@@ -1,7 +1,7 @@
 <script>
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	// todo: create overdle logo (overwatch, cross out watch and write dle under)
+	import ow_logo from '$lib/images/Overwatch-Logo.png';
 </script>
 
 <svelte:head>
@@ -10,16 +10,11 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+	<div class="header">
+		<img src={ow_logo} alt="Overwatch logo" width="60%" />
 
 		to your new<br />SvelteKit app
-	</h1>
+	</div>
 
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
@@ -29,31 +24,32 @@
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0.6;
+				width: 100%;
+    }
 
-	h1 {
-		width: 100%;
-	}
+    h1 {
+        width: 100%;
+    }
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
+    .welcome {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding: 0 0 calc(100% * 495 / 2048) 0;
+    }
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+    .header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+		}
 </style>
