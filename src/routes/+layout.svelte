@@ -4,14 +4,14 @@
 </script>
 
 <div class="app">
-	<Header />
+	<Header/>
 
 	<main>
-		<slot />
+		<slot/>
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>Overdle by <a href="https://github.com/antaww" class="gradient-text">antaww</a>.</p>
 	</footer>
 </div>
 
