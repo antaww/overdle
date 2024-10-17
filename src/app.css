@@ -110,3 +110,14 @@ button:focus:not(:focus-visible) {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+input:focus {
+	outline: none;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+}
