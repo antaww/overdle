@@ -12,7 +12,7 @@ const path = require('path');
     // Load hero names from the JSON file
     let heroNames;
     try {
-        heroNames = JSON.parse(fs.readFileSync('datas/heroNames.json', 'utf8'));
+        heroNames = JSON.parse(fs.readFileSync('public/datas/heroNames.json', 'utf8'));
     } catch (error) {
         console.error('Failed to load hero names from JSON file. ' +
             'Make sure to launch characters_scraper first.');
@@ -155,7 +155,7 @@ const path = require('path');
     }
 
     // Save all character data to a single JSON file
-    const savePath = path.join('datas', 'charactersDatas.json');
+    const savePath = path.join('public/datas', 'charactersDatas.json');
     fs.writeFileSync(savePath, JSON.stringify(charactersDatas, null, 2));
 
     console.log('All characters data saved successfully!');
