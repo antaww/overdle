@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: "overwatch";
-	src: url(https://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.woff);
+	src: url("/fonts/bignoodletoo.woff") format("woff");
 }
 
 :root {
