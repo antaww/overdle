@@ -20,6 +20,6 @@ vite.config.ts.timestamp-*
 
 node_modules
 .idea
-src/lib/datas
+src/lib/datas/*.json
 
 public/build
