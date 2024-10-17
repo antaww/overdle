@@ -1,1 +1,2 @@
-## 👀 This folder contains empty json files to welcome scrapers' results.
+## 👀 This folder contains the data files used in the project.
+
