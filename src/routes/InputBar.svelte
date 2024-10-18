@@ -1,19 +1,48 @@
 <script lang="ts">
 	import heroes from '$lib/datas/heroes.json';
 	import {tick} from 'svelte';
+	import TriesBoard from "./TriesBoard.svelte";
 
 	let query = '';
 	let suggestions: any[] = [];
 	let tries: string[] = []; // Stock the list of tried heroes
 	let invalidInput = false; // State to trigger the shake animation
 
-	// Filter suggestions based on the query
-	const filterSuggestions = () => {
-		suggestions = query.length > 0
-			? heroes.filter(hero => hero.name.toLowerCase().includes(query.toLowerCase())).sort()
-			: [];
+	// Function to read a specific cookie by name
+	const getCookie = (name: string) => {
+		try {
+			const cookieValue = document.cookie
+				.split('; ')
+				.find(row => row.startsWith(name))
+				?.split('=')[1];
+			return cookieValue ? JSON.parse(cookieValue) : [];
+		} catch (error) {
+			console.error(error);
+			return [];
+		}
 	};
 
+	// Load tries from the cookie on page load
+	const loadTries = () => {
+		const savedTries = getCookie('tries');
+		if (savedTries.length > 0) {
+			tries = savedTries;
+		}
+	};
+
+	// Call loadTries on component mount
+	loadTries();
+	console.log(tries);
+
+	// Filter heroes based on the query and exclude already tried heroes
+	const filterSuggestions = () => {
+		suggestions = query.length > 0
+			? heroes.filter(hero =>
+				hero.name.toLowerCase().includes(query.toLowerCase()) &&
+				!tries.some(triedHero => triedHero.name === hero.name)
+			).sort()
+			: [];
+	};
 	// Send a POST request to the server
 	const sendTry = async (hero: string) => {
 		// Vérifier si le nom est valide
@@ -26,11 +55,15 @@
 			return;
 		}
 
-		// Ajouter le héros à la liste des essais
-		tries = [...tries, hero];
-		document.cookie = `tries=${JSON.stringify(tries)}; path=/`;
+		// Add the hero to the list of tries
+		if (!tries.some(h => h.name === hero)) {
+			tries = [...tries, heroes.find(h => h.name === hero)];
+			document.cookie = `tries=${JSON.stringify(tries)}; path=/`;
+			// close the suggestions
+			suggestions = [];
+		}
 
-		// Envoyer la requête au serveur
+		// Send the hero to the server
 		try {
 			const response = await fetch('/try', {
 				method: 'POST',
@@ -87,7 +120,9 @@
 			</ul>
 		</div>
 	{/if}
+
 </div>
+<TriesBoard bind:heroes={tries}/>
 
 <style>
 	.autocomplete {
@@ -96,14 +131,12 @@
 
 	input {
 		padding: 8px;
-		width: 100%;
 		margin-bottom: 10px;
 		font-size: 1rem;
 	}
 
 	.suggestions {
 		position: absolute;
-		top: 100%; /* Start the dropdown right below the input */
 		left: 0;
 		right: 0;
 		background-color: #0c0c0c;
@@ -128,6 +161,7 @@
 		margin-bottom: 5px;
 		cursor: pointer;
 		transition: background-color 0.2s linear;
+		text-transform: uppercase;
 	}
 
 	li:hover {

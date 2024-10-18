@@ -2,11 +2,17 @@
 
 @font-face {
 	font-family: "overwatch";
-	src: url("/fonts/bignoodletoo.woff") format("woff");
+	src: url("/fonts/config.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "overwatch-medium";
+	src: url("/fonts/config-medium.woff2") format("woff2");
 }
 
 :root {
 	--font-body: "overwatch", sans-serif;
+	--font-body-medium: "overwatch-medium", sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--color-bg-0: rgb(202, 216, 228);
 	--color-bg-1: hsl(0, 0%, 18%);
@@ -81,6 +87,7 @@ input,
 button {
 	font-size: inherit;
 	font-family: inherit;
+	text-transform: uppercase;
 }
 
 button:focus:not(:focus-visible) {
@@ -120,4 +127,9 @@ form {
 	align-items: center;
 	justify-content: center;
 	flex-flow: column;
+}
+
+th, td {
+	text-align: center;
+	font-weight: 100;
 }
