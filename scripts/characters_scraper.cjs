@@ -3,7 +3,7 @@ const fs = require('fs');
 
 (async () => {
 	// Lancer le navigateur
-	const browser = await puppeteer.launch({headless: true});
+	const browser = await puppeteer.launch({headless: "shell"});
 	const page = await browser.newPage();
 
 	// URL de la page Blizzard avec les héros Overwatch

@@ -1,4 +1,509 @@
 {
+  "Juno": {
+    "RealName": "Juno Teo Minh",
+    "Birth": "March 22nd[1]",
+    "Age": "19[1]",
+    "Nationality": "Martian",
+    "Occupation": "Medic[2]Navigator[1]",
+    "Base": "Red Promise Colony, Mars (formerly)\nWatchpoint: Gibraltar",
+    "Affiliation": "Project Red Promise",
+    "Relations": "Jiayi Teo (mother), Khiem Van Minh (father)",
+    "Voice": "Xanthe Huynh (English)\nExpandValérie Bachère (French)\n Özge Kayalar[3] (German)\n Rika Tachibana[4] (Japanese)\n Yoon Eun-seo (Korean)\n Michelle Giudice (Brazilian Portuguese)\n Vasilisa Eldarova (Russian)\n Desireé González (Latin American Spanish)",
+    "Role": "Support",
+    "Health": "75",
+    "Shields": "150",
+    "Weapons": [
+      {
+        "name": "Mediblaster",
+        "description": "Burst fire weapon that heals allies and damages enemies.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "7.5 - 2.25 (per round)\n90 - 27 (per burst)",
+          "Falloff range": "20 - 35 meters (damage and healing)",
+          "Headshot": "✕",
+          "Healing": "6 - 1.8 (per round)\n72 - 21.6 (per burst)",
+          "Rate of fire": "1.29 shots/s",
+          "Bullets per shot": "12",
+          "Ammo per shot": "12 per shot",
+          "Ammo": "180",
+          "Reload time": "1.8 seconds",
+          "Projectile radius": "0.05 meters"
+        }
+      },
+      {
+        "name": "Pulsar Torpedoes",
+        "description": "Press Secondary Fire to lock on, then Primary Fire to fire homing projectiles. Heals allies over time and damages enemies.",
+        "weaponType": "10 seconds",
+        "stats": {
+          "Damage": "85",
+          "Headshot": "✕",
+          "Healing": "85 (direct)\n50 (over time)",
+          "Cast time": "0 + 0.3 seconds",
+          "Duration": "2.5 seconds (HoT)\n0.5 - 1 seconds (lock-on)\n0.38 - 4 seconds (targeting)",
+          "Max. range": "40 meters (targeting)"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Martian Overboots\nSPACE",
+        "description": "While airborne, press Jump to double jump and hold Jump to hover.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Glide Boost\nLSHIFT",
+        "description": "Glide horizontally with increased movement speed.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Hyper Ring\nE",
+        "description": "Deploy a ring that increases movement speed of allies that pass through it.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Orbital Ray\nQ",
+        "description": "Call down a ray that travels forward, healing allies and increasing their damage.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Ana": {
+    "RealName": "Ana Amari (أنا عماري)",
+    "Birth": "January 1st[1]",
+    "Age": "62 (Overwatch 2)[1]60 (Overwatch)[2]",
+    "Nationality": "Egyptian",
+    "Occupation": "Sharpshooter (formerly)Overwatch second-in-command, captain[3] (formerly)Bounty hunter",
+    "Base": "Cairo, Egypt (formerly)Zurich, Switzerland (formerly)[4]Mobile",
+    "Affiliation": "Egyptian Army (formerly)El-Sa'ka Forces (formerly)Overwatch (formerly)",
+    "Relations": "Unnamed mother[4] Sam (husband/partner)   Fareeha Amari (daughter)",
+    "Voice": "Aysha Selim (English)\nExpandMarie Vincent (French, 1st voice)\nIsabelle Leprince (French, 2nd voice)\nMartina Treger (German)\nElisabetta Cesone (Italian)\nYoshiko Sakakibara (Japanese)\nLee Sun-ju (Korean, 1st voice)\nLee Yeong-ri (Korean, 2nd voice)\nWu Xiangtong (Mainland Mandarin)\nCuei Guo-fu (Taiwanese Mandarin)\nMiriam Aleksandrowicz † (Polish)\nÂngela Bonatti (Brazilian Portuguese, 1st voice)\nMarize Motta (Brazilian Portuguese, 2nd voice)\nLyudmila Gnilova (Russian)\nAna García Olivares (European Spanish)\nAndrea Coto (Latin American Spanish, main)\nYolanda Vidal (Latin American Spanish, temp.)",
+    "Role": "Support",
+    "Health": "250",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Biotic Rifle",
+        "description": "Long-range rifle that heals allies and damages enemies.\n Hold to zoom in.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "70 over 0.59 seconds",
+          "Headshot": "✕",
+          "Healing": "70 over 0.59 seconds",
+          "Rate of fire": "0.8 seconds recovery",
+          "Ammo": "15",
+          "Reload time": "1.5 seconds animation",
+          "Cast time": "0.24 seconds for scope in\n0.16 seconds for scope out",
+          "Duration": "0.59 seconds effect",
+          "Spread angle": "None",
+          "M. speed penalty": "-65% (scoped)",
+          "Projectile speed": "125 m/s (unscoped)",
+          "Projectile radius": "0.15 meters (hip fire)\n0.08 meters (enemies, ADS)\n0.3 meters (allies, ADS)"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Sleep Dart\nLSHIFT",
+        "description": "Fires a dart that puts an enemy to sleep.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Biotic Grenade\nE",
+        "description": "Throws a grenade that heals and increases healing on allies, while damaging and preventing healing on enemies.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Nano Boost\nQ",
+        "description": "Increases an ally's damage, while reducing damage taken.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Ashe": {
+    "RealName": "Elizabeth Caledonia \"Calamity\" Ashe",
+    "Birth": "October 1st[1]",
+    "Age": "41 (Overwatch 2)[1]39 (Overwatch)[2]",
+    "Nationality": "American",
+    "Occupation": "Thief, gang leader",
+    "Base": "Deadlock Gorge, Arizona, USA",
+    "Affiliation": "Arbalest Arms Company (formerly)Deadlock Gang",
+    "Relations": "Caledonia Ashe (great-great-great grandmother)Mr. Ashe (father), Mrs. Ashe (mother)",
+    "Voice": "Jennifer Hale (English)\nExpandOlivia Nicosia (French)Nana Spier (German)Tania De Domenico (Italian)Meiko Kawasaki (Japanese)Sa Moon-young (Korean)TK (Chinese Mandarin)Cian Sin-yu (Taiwanese Mandarin)Anna Wodzyńska (Polish)Mabel Cezar (Brazilian Portuguese)Viktorija Pivko (Russian)Danai Querol (European Spanish)Ale Delint (Latin American Spanish)",
+    "Role": "Damage",
+    "Health": "250",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "The Viper",
+        "description": "Semi-automatic rifle.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "35 – 10.5",
+          "Falloff range": "20 – 40 meters",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "3.75 shots/s",
+          "Ammo": "12",
+          "Reload time": "0.5 seconds (initial animation)\n+0.25 seconds per bullet\n3.5 seconds (full reload animation)",
+          "Spread angle": "1.85 degrees (max)",
+          "Projectile radius": "0.08 meters"
+        }
+      },
+      {
+        "name": "The Viper (ADS)",
+        "description": "Hold to zoom in, increasing damage and accuracy but slowing rate of fire.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "75 – 22.5",
+          "Falloff range": "30 – 50 meters",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "0.65 second recovery",
+          "Ammo": "12",
+          "Reload time": "0.5 seconds (initial animation)\n+0.2 seconds per bullet\n2.9 seconds (full reload animation)",
+          "Cast time": "0.192 seconds (scoping in)\n0.160 seconds for (scope out)",
+          "Spread angle": "None",
+          "M. speed penalty": "-25%",
+          "Projectile radius": "0.08 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Dynamite\nE",
+        "description": "Throw an explosive that detonates after a short delay or immediately when shot.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Coach Gun\nLSHIFT",
+        "description": "Blast enemies in front of you and knock yourself backwards.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "B.O.B.\nQ",
+        "description": "Deploy Bob. He charges forward and knocks enemies into the air, then attacks with his arm cannons.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Baptiste": {
+    "RealName": "Jean-Baptiste Augustin",
+    "Birth": "March 12th[1]",
+    "Age": "38 (Overwatch 2)[1]36 (Overwatch)[2]",
+    "Nationality": "Haitian",
+    "Occupation": "Combat medic",
+    "Base": "Tortuga, Haiti (formerly)Watchpoint: Gibraltar",
+    "Affiliation": "Caribbean Coalition (formerly), Talon (formerly)Overwatch",
+    "Relations": "Several cousins[3]",
+    "Voice": "Benz Antoine (English)\nExpandJean-Baptiste Anoumon (French)Sascha Rotermund (German)Maurizio Merluzzo (Italian)Shunsuke Sakuya (Japanese)Choi Seung-hoon (Korean)Ma Yang (Chinese Mandarin)Chen Yan-jyun (Taiwanese Mandarin)Łukasz Talik (Polish)Pierre Bittencourt (Brazilian Portuguese)Ivan Traore (Russian)Juan Antonio García Sainz de la Maza (European Spanish)Alfredo Gabriel Basurto (Latin American Spanish)",
+    "Role": "Support",
+    "Health": "250",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Biotic Launcher",
+        "description": "Three-round burst gun.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "25 - 7.2 (per round)\n75 - 21.6 (per shot)",
+          "Falloff range": "25 - 45 meters",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "1.7 shots/s",
+          "Bullets per shot": "3",
+          "Ammo per shot": "3",
+          "Ammo": "36",
+          "Reload time": "1.5 seconds animation",
+          "Projectile radius": "0.08 meters"
+        }
+      },
+      {
+        "name": "Biotic Launcher Alt Fire",
+        "description": "Lob a healing projectile that heals all allies near the impact.",
+        "weaponType": "Arcing projectile",
+        "stats": {
+          "Healing": "20 (direct hit)\n50 (splash, ally)",
+          "Rate of fire": "1.11 shots/s",
+          "Ammo": "13",
+          "Reload time": "1.5 seconds animation",
+          "Area of effect": "3 meter radius",
+          "Projectile speed": "60 m/s",
+          "Projectile radius": "None"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Exo Boots\nLCONTROL",
+        "description": "Hold crouch to jump higher.",
+        "hotkey": "LCONTROL"
+      },
+      {
+        "name": "Regenerative Burst\nLSHIFT",
+        "description": "Activate to heal yourself and nearby allies instantly, with additional healing over time. Instant heal is doubled for targets less than half health.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Immortality Field\nE",
+        "description": "Toss a device that prevents allies from dying. The device can be destroyed.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Amplification Matrix\nQ",
+        "description": "Project a matrix that doubles the damage and healing of allied projectiles.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Bastion": {
+    "RealName": null,
+    "Birth": null,
+    "Age": "32 (Overwatch 2)[1]30 (Overwatch)[2]",
+    "Nationality": null,
+    "Occupation": "Battle automaton (formerly)Workshop assistant[1]",
+    "Base": "Gothenburg, Sweden",
+    "Affiliation": "Ironclad Guild[1]",
+    "Relations": null,
+    "Voice": "Chris Metzen[3]",
+    "Role": "Damage",
+    "Health": "250",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Configuration: Recon",
+        "description": "Mobile, with a lightweight and highly accurate weapon.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "25 - 7.5",
+          "Falloff range": "30 - 50 meters",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "5 shots/s",
+          "Ammo": "25",
+          "Reload time": "1.2 seconds",
+          "Spread angle": "None",
+          "Projectile radius": "0.08 meters"
+        }
+      },
+      {
+        "name": "Configuration: Assault\nLSHIFT",
+        "description": "A slow moving tank with a powerful rotary cannon.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "12 - 3.6",
+          "Falloff range": "30 - 50 meters",
+          "Headshot": "✕",
+          "Rate of fire": "30 shots/s",
+          "Ammo": "∞",
+          "Spread angle": "2 degrees",
+          "M. speed penalty": "-35%",
+          "Projectile radius": "0.05 meters"
+        }
+      },
+      {
+        "name": "A-36 Tactical Grenade",
+        "description": "Fire a bomb that bounces off walls and explodes when it hits enemies or the ground.",
+        "weaponType": "8 seconds",
+        "stats": {
+          "Damage": "15 (direct hit bonus)\n100 - 50 (splash, enemy)\n50 - 25 (splash, self)",
+          "Headshot": "✕",
+          "Cast time": "0 + 0.5 seconds",
+          "Duration": "0.35 seconds (explosion delay)",
+          "Area of effect": "4 meters (explosion)",
+          "Knockback speed": "17.5 m/s (self)\n10.5 m/s (enemy)",
+          "Projectile speed": "40 m/s",
+          "Projectile radius": "0.4 meters"
+        }
+      },
+      {
+        "name": "Self-Repair",
+        "description": "Hold to heal yourself.",
+        "weaponType": "1 second",
+        "stats": {
+          "Healing": "90 per second",
+          "Cast time": "0.5 second delay",
+          "Duration": "Up to 3.33 seconds"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Reconfigure\nLSHIFT",
+        "description": "Switch between weapon configurations.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Configuration: Artillery\nQ",
+        "description": "Become immobile and fire up to three powerful artillery shells.",
+        "hotkey": "Q"
+      },
+      {
+        "name": "Configuration: Tank\nQ",
+        "description": "Mobile with a powerful cannon.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Brigitte": {
+    "RealName": "Brigitte Lindholm",
+    "Birth": "September 22nd",
+    "Age": "25 (Overwatch 2)23 (Overwatch)",
+    "Nationality": "Swedish",
+    "Occupation": "Mechanical engineerAdventurerSquire",
+    "Base": "Gothenburg, Sweden (formerly)Watchpoint: Gibraltar",
+    "Affiliation": "Overwatch",
+    "Relations": "Torbjörn Lindholm (father) Ingrid Lindholm (mother) Reinhardt Wilhelm (godfather) Various elder siblings[1]Various nieces and nephews,[1] including Astrid Lindholm, Alma Lindholm, and Marta",
+    "Voice": "Matilda Smedius[2] (English)\nExpandCaroline Mozzone (French)\nIngrid Donnadieu (French - formerly)\nRegina Beckhaus (German)\nMartina Tamburello (Italian)\nYuki Ōmori (Japanese)\nMun Yu-jeong (Korean)\nZhang Qi (Chinese Mandarin)\nYe Yu-jia (Taiwanese Mandarin)\nMarta Markowicz-Dziarkowska (Polish)\nEwa Prus (Polish - formerly)\nFlora Paulita (Brazilian Portuguese)\nLhays Macêdo (Brazilian Portuguese - Honor and Glory)\nIuliia Churakova (Russian)\nAna Valeiras (European Spanish)\nAnnie Rojas (Latin American Spanish)",
+    "Role": "Support",
+    "Health": "200",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Rocket Flail",
+        "description": "Melee weapon with extended range.",
+        "weaponType": "Melee",
+        "stats": {
+          "Damage": "45",
+          "Headshot": "✕",
+          "Rate of fire": "1 swing per 0.6 seconds",
+          "Duration": "0.240 seconds (hitbox active)",
+          "Max. range": "6 meters"
+        }
+      },
+      {
+        "name": "Barrier Shield",
+        "description": "Hold  to deploy a frontal energy barrier.",
+        "weaponType": "5 seconds (destroyed)",
+        "stats": {
+          "Barrier health": "250 (default)\n700 (during Rally)",
+          "Cast time": "None",
+          "M. speed penalty": "-30%"
+        }
+      },
+      {
+        "name": "Shield Bash",
+        "description": "Available when Barrier Shield is deployed. Dash forward to knock back an enemy.",
+        "weaponType": "5 seconds",
+        "stats": {
+          "Damage": "50",
+          "Headshot": "✕",
+          "Cast time": "0.02 + 0.43 seconds",
+          "Duration": "0.3 seconds",
+          "Max. range": "12 meters",
+          "Area of effect": "60° front cone angle radius",
+          "M. speed buff": "+400%"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Repair Pack\nE",
+        "description": "Heals an ally for a short duration.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Whip Shot\nLSHIFT",
+        "description": "Launch your flail forward to knock an enemy away from you.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Rally\nQ",
+        "description": "Gain armor, empower Barrier Shield and provide extra health to nearby allies.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Cassidy": {
+    "RealName": "Cole Cassidy",
+    "Birth": "July 31st",
+    "Age": "39 (Overwatch 2)37 (Overwatch)",
+    "Nationality": "American",
+    "Occupation": "Factory worker (formerly)Farmhand (formerly)Criminal (formerly)Overwatch agent Bounty hunterMercenary",
+    "Base": "Santa Fe, New Mexico, USA (formerly)Watchpoint: Gibraltar",
+    "Affiliation": "Various employers, including the Ace Valentine megafarm (formerly)Deadlock Gang (formerly) Blackwatch (formerly)Overwatch",
+    "Relations": null,
+    "Voice": "Matthew Mercer [3] (English)\nExpandBoris Rehlinger (French)Torben Liebrecht (German)Alessandro D'Errico (Italian)Jūrōta Kosugi (Japanese)Kwak Yoon-sang (Korean)Tutehameng (Chinese Mandarin)Li Jin (Chinese Mandarin; formerly)Sia Jhih-shih (Taiwanese Mandarin)Kamil Pruban (Polish)Guilherme Lopes (Brazilian Portuguese)Aleksey Miasnikov (Russian)Gabriel Jiménez (European Spanish)David Camarillo (Latin American Spanish)José Arenas (Latin American Spanish; formerly)",
+    "Role": "Damage",
+    "Health": "275",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Peacekeeper",
+        "description": "Accurate, powerful revolver.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "70 - 21",
+          "Falloff range": "20 - 30 meters",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "2 shots/s",
+          "Ammo": "6",
+          "Reload time": "1.5 seconds animation",
+          "Spread angle": "None",
+          "Projectile radius": "0.08 meters"
+        }
+      },
+      {
+        "name": "Peacekeeper Alt Fire",
+        "description": "Wildly fire remaining rounds.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "45 - 13.5",
+          "Falloff range": "20 - 30 meters",
+          "Headshot": "✕",
+          "Rate of fire": "8.93 shots/s",
+          "Ammo per shot": "All remaining ammo",
+          "Ammo": "6",
+          "Reload time": "1.5 seconds animation",
+          "Spread angle": "6.5 degrees",
+          "Projectile radius": "0.08 meters"
+        }
+      },
+      {
+        "name": "Deadeye\nQ",
+        "description": "Face off against your enemies. Press Q to lock on, then Q or  to fire.",
+        "weaponType": "1800 points",
+        "stats": {
+          "Damage": "150/s (first 2 seconds)\n300/s (remaining duration)",
+          "Headshot": "✕",
+          "Rate of fire": "8.93 shots/s",
+          "Ammo per shot": "1 per target",
+          "Dmg. reduction": "-40% ... 0% taken",
+          "Cast time": "0.7 + 0.3 seconds (when fired)\n0.3 + 0.4 seconds (when canceled)",
+          "Duration": "7 seconds",
+          "Max. range": "200 meters",
+          "M. speed penalty": "-70% ... -35%"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Combat Roll\nLSHIFT",
+        "description": "Roll in the direction you're moving to take reduced damage and reload.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Flashbang\nE",
+        "description": "Hinder enemies in front of you, slowing them and preventing them from using movement abilities.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Deadeye\nQ",
+        "description": "Face off against your enemies. Press Q to lock on, then Q or  to fire.",
+        "hotkey": "Q"
+      },
+      {
+        "name": "Magnetic Grenade\nE",
+        "description": "Throw a homing grenade that sticks to enemies, slowing them and preventing them from using movement abilities.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Magnetic Grenade (old)\nE",
+        "description": "Throw a short-range grenade that homes in on nearby enemies and deals additional damage if it sticks to them.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Flashbang (old)\nE",
+        "description": "Stun enemies in front of you.",
+        "hotkey": "E"
+      }
+    ]
+  },
   "D.Va": {
     "RealName": "Hana Song (송하나)",
     "Birth": "June 22nd",
@@ -8,7 +513,7 @@
     "Base": "MEKA Base, Busan, South Korea (formerly)Watchpoint: Gibraltar",
     "Affiliation": "Mobile Exo-Force of the Korean Army (MEKA) (South Korean Army)Overwatch",
     "Relations": null,
-    "Voice": "Charlet Chung[1] (English)\nGeneviève Doang (French)Julia Meynen (German)Martina Felli (Italian)Risa Taneda (Japanese)Kim Hyeon-ji (Korean)Tao Dian (Chinese Mandarin)Mu Syuan-ming (Taiwanese Mandarin)Zuzanna Galia (Polish)Juliana Vasconcelos (Brazilian Portuguese)Ekaterina Semyonova (Russian)Tania Ugía (European Spanish)Meli G (Latin American Spanish)",
+    "Voice": "Charlet Chung[1] (English)\nExpandGeneviève Doang (French)Julia Meynen (German)Martina Felli (Italian)Risa Taneda (Japanese)Kim Hyeon-ji (Korean)Tao Dian (Chinese Mandarin)Mu Syuan-ming (Taiwanese Mandarin)Zuzanna Galia (Polish)Juliana Vasconcelos (Brazilian Portuguese)Ekaterina Semyonova (Russian)Tania Ugía (European Spanish)Meli G (Latin American Spanish)",
     "Role": "Tank",
     "Health": "225 (Open queue)375 (Role queue)175 (Pilot Form)",
     "Shields": null,
@@ -87,7 +592,7 @@
     "Base": "Oyo, Nigeria (formerly) Rome, Italy",
     "Affiliation": "Ogundimu Synergies Inc. (formerly)Talon",
     "Relations": "Akinjide Adeyemi (mentor)",
-    "Voice": "Sahr Ngaujah (English)\nDoudou Masta (French)\nTobias Meister (German)\nMassimo Corvo (Italian)\nJōji Nakata (Japanese)\nAhn Jang-hyeok (Korean)\nLiu Cong (Mainland Mandarin)\nWang Hsi-hua (Taiwanese Mandarin)\nPiotr Grabowski (Polish)\nLuiz Carlos Persy (Brazilian Portuguese)\nArtur Ivanov (Russian)\nMiguel Ángel Jenner (European Spanish)\nJuan Carlos Tinoco (Latin American Spanish)",
+    "Voice": "Sahr Ngaujah (English)\nExpandDoudou Masta (French)\nTobias Meister (German)\nMassimo Corvo (Italian)\nJōji Nakata (Japanese)\nAhn Jang-hyeok (Korean)\nLiu Cong (Mainland Mandarin)\nWang Hsi-hua (Taiwanese Mandarin)\nPiotr Grabowski (Polish)\nLuiz Carlos Persy (Brazilian Portuguese)\nArtur Ivanov (Russian)\nMiguel Ángel Jenner (European Spanish)\nJuan Carlos Tinoco (Latin American Spanish)",
     "Role": "Tank",
     "Health": "375 (Open queue)525 (Role queue)",
     "Shields": null,
@@ -204,6 +709,266 @@
       }
     ]
   },
+  "Echo": {
+    "RealName": "Echo",
+    "Birth": "February 5th",
+    "Age": "14",
+    "Nationality": null,
+    "Occupation": "Multirole adaptive robot",
+    "Base": "Switzerland (formerly)United States (formerly)Watchpoint: Gibraltar",
+    "Affiliation": "Overwatch",
+    "Relations": "Mina Liao (creator)",
+    "Voice": "Jeannie Bolet (English)\nExpandLauren Tom (English, Reunion)Hojo Shin (English, Zero Hour/Blizzcon 2019 Demo)Françoise Cadol (French)Ranja Bonalana (German)Cinzia Massironi (Italian)Chifuyu (Japanese)An Soyeon (Korean)Ye Zhiqiu (Chinese Mandarin)Wang Ruei-cin (Taiwanese Mandarin)Anna Gajewska (Polish)Adna Cruz (Brazilian Portuguese)Zhanna Nikonova (Russian)Pilar Martín (European Spanish)Jessica Ángeles (Latin American Spanish)",
+    "Role": "Damage",
+    "Health": "225",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Tri-Shot",
+        "description": "Fires 3 shots at once, in a triangle pattern.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "17 (per pellet)\n51 (per shot)",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "0.3 second recovery\n(3 shots per second)",
+          "Bullets per shot": "3",
+          "Ammo per shot": "1",
+          "Ammo": "12",
+          "Reload time": "1.5 seconds animation",
+          "Projectile speed": "75 m/s",
+          "Projectile radius": "0.175 meters"
+        }
+      },
+      {
+        "name": "Sticky Bombs",
+        "description": "Fire a volley of sticky bombs that detonate after a delay.",
+        "weaponType": "6 seconds",
+        "stats": {
+          "Damage": "5 (direct hit bonus)\n25 (explosion, enemy)\n12.5 (explosion, self)",
+          "Headshot": "✕",
+          "Bullets per shot": "6",
+          "Cast time": "0.05 + 0.3 seconds",
+          "Duration": "1 second (explosion delay)",
+          "Area of effect": "2 meter explosion radius",
+          "Projectile speed": "50 m/s",
+          "Projectile radius": "0.305 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Glide\nSPACE",
+        "description": "Hold jump to glide while falling.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Flight\nLSHIFT",
+        "description": "Fly forward quickly and then free-fly briefly.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Focusing Beam\nE",
+        "description": "Channel a beam for a few seconds. Deals very high damage to targets under half health.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Duplicate\nQ",
+        "description": "Become a copy of the targeted enemy hero. They cannot swap heroes for the duration.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Genji": {
+    "RealName": "Genji Shimada (島田 源氏)[1]",
+    "Birth": "October 28th",
+    "Age": "37 (Overwatch 2)35 (Overwatch)",
+    "Nationality": "Japanese",
+    "Occupation": "Adventurer",
+    "Base": "Hanamura, Japan (formerly)Shambali Monastery, Nepal (formerly)Watchpoint: Gibraltar",
+    "Affiliation": "Shimada Clan (formerly)Blackwatch (formerly)Overwatch (left, later rejoined)Shambali (temporary)",
+    "Relations": "Sojiro Shimada (father)\nRumiko Shimada (mother)\n Hanzo Shimada (older brother)",
+    "Voice": "Gaku Space  [2][3] (English)\nExpandBernard Gabay (French)\nYusuke Yamasaki (German)\nPaolo De Santis (Italian)\nYoshihisa Kawahara (Japanese)\nKim Hye-seong (Korean)\nPeng Bo (Chinese Mandarin)\nHu Jhensi (Taiwanese Mandarin)\nGrzegorz Kwiecień (Polish)\nPaulo Vignolo (Brazilan Portuguese)\nAlexander Tsoi (Russian)\nFran Jiménez (European Spanish)\nÓscar Flores (Latin American Spanish)\nAbraham Vega (Latin American Spanish, temporarily)",
+    "Role": "Damage",
+    "Health": "250",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Shuriken",
+        "description": "Throw an accurate burst of 3 projectiles.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "27 (per shuriken)\n81 (per shot)",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "1.14 shots/s",
+          "Bullets per shot": "3",
+          "Ammo per shot": "3",
+          "Ammo": "30",
+          "Reload time": "1.5 seconds",
+          "Spread angle": "None",
+          "Projectile speed": "60 meters per second",
+          "Projectile radius": "0.175 meters"
+        }
+      },
+      {
+        "name": "Shuriken Alt Fire",
+        "description": "Throw a fan of 3 projectiles in an arc.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "27 (per shuriken)\n81 (per shot)",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "1.47 shots/s",
+          "Bullets per shot": "3",
+          "Ammo per shot": "3",
+          "Ammo": "24",
+          "Reload time": "1.5 seconds",
+          "Spread angle": "9 degrees",
+          "Projectile speed": "60 meters per second",
+          "Projectile radius": "0.175 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Cyber-Agility\nSPACE",
+        "description": "Climb on walls and double jump.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Swift Strike\nLSHIFT",
+        "description": "Rapidly dash forward and inflict damage on enemies. Eliminations reset the cooldown.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Deflect\nE",
+        "description": "Deflect incoming projectiles towards the direction you are aiming and block melee attacks.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Dragonblade\nQ",
+        "description": "Unsheathe a deadly melee weapon.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Hanzo": {
+    "RealName": "Hanzo Shimada (島田 半蔵)[1]",
+    "Birth": "November 3rd",
+    "Age": "40 (Overwatch 2)38 (Overwatch)",
+    "Nationality": "Japanese",
+    "Occupation": "AssassinMercenary (temporary)[2]",
+    "Base": "Hanamura, Japan (formerly)",
+    "Affiliation": "Shimada Clan (formerly)",
+    "Relations": "Rumiko Shimada (mother), Sojiro Shimada (father)\n Genji Shimada (younger brother)",
+    "Voice": "Paul Nakauchi[3] (English)\nExpandLionel Tua (French)\nBernd Vollbrecht (German)\nLorenzo Scattorin (Italian)\nShūhei Sakaguchi (Japanese)\nHan Shin (Korean)\nLiu Beichen (Mainland Mandarin)\nKang Dian-hong (Taiwanese Mandarin)\nKrzysztof Cybiński (Polish)\nReginaldo Primo (Brazilian Portuguese, 1st voice)\nRodrigo Horta (Brazilian Portuguese, 2nd voice)\nIlya Isaev (Russian)\nMiguel Ángel Montero (European Spanish)\nDan Osorio (Latin American Spanish)",
+    "Role": "Damage",
+    "Health": "250",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Storm Bow",
+        "description": "Hold to charge then release to launch arrows further.",
+        "weaponType": "Arcing projectile",
+        "stats": {
+          "Damage": "125 (max charge)\n25 (min charge)",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "0.72 shots/s (max charge)\n2 shots/s (min charge)",
+          "Ammo": "∞",
+          "Spread angle": "None",
+          "M. speed penalty": "-30%",
+          "Projectile speed": "110 m/s (max charge)\n25 m/s (min charge)",
+          "Projectile radius": "0.1 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Wall Climb\nSPACE",
+        "description": "Jump at walls to climb up them.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Sonic Arrow\nLSHIFT",
+        "description": "Reveals enemies for a short time upon impact.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Storm Arrows\nE",
+        "description": "The next 5 arrows ricochet and fire instantly at reduced damage.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Lunge\nSPACE",
+        "description": "Double Jump.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Dragonstrike\nQ",
+        "description": "Launch a deadly Dragon Spirit that devastates enemies it passes through.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Illari": {
+    "RealName": "Illari Quispe Ruiz[1]",
+    "Birth": "December 21st[1]",
+    "Age": "18[1]",
+    "Nationality": "Peruvian",
+    "Occupation": "Inti warriorVigilante[2]",
+    "Base": "Runasapi, Peru",
+    "Affiliation": "Inti Warriors",
+    "Relations": null,
+    "Voice": "Andre Cisneros (English and Latin American Spanish)\nExpandDaniela Traverso (French)\nKarolina Nägele (German)\nElisa Cavalli Carbone (Italian)\nAnju Shiranami (Japanese)\nYu Yeong (Korean)\nCarol Sodré (Brazilian Portuguese)\nAlicia Valadés (European Spanish)",
+    "Role": "Support",
+    "Health": "250",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Solar Rifle",
+        "description": "Long-range auto charging rifle.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "70 - 21 (max charge)\n20 - 6 (min charge)",
+          "Falloff range": "30 - 50 meters",
+          "Headshot": "✓ (x1.5)",
+          "Rate of fire": "1.11 shot/s (max charge)\n2.00 shots/s (min charge)",
+          "Ammo": "14",
+          "Reload time": "1.8 seconds",
+          "Spread angle": "None",
+          "Projectile radius": "0.13 meters"
+        }
+      },
+      {
+        "name": "Solar Rifle Alt Fire",
+        "description": "Medium range healing beam that consumes solar energy.",
+        "weaponType": "Beam",
+        "stats": {
+          "Headshot": "✕",
+          "Healing": "115 per second",
+          "Reload time": "2.9 seconds (recharge to full)\n3.36 seconds (cooldown when fully depleted)",
+          "Max. range": "15.3 meters",
+          "Spread angle": "None",
+          "Projectile radius": "0.25 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Outburst\nLSHIFT",
+        "description": "Launches you in the direction you are moving. Knocking back enemies. Hold jump to go higher.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Healing Pylon\nE",
+        "description": "Deploy a pylon that heals allies.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Captive Sun\nQ",
+        "description": "Fire an explosive ball of solar energy. Enemies hit are slowed and explode after taking significant damage.",
+        "hotkey": "Q"
+      }
+    ]
+  },
   "Junker Queen": {
     "RealName": "Odessa \"Dez\" Stone[1]",
     "Birth": "June 14th",
@@ -213,7 +978,7 @@
     "Base": "Junkertown, Australia",
     "Affiliation": "Wastelanders (temporarily)Junkers",
     "Relations": "Stone (father), unnamed mother5 siblings[2]",
-    "Voice": "Leah de NieseSiho Ellsmore (Junkertown announcer, 2017-2022)Davida McKenzie (trailer) (English)\nAudrey Sourdive (French)\nBarbara Kelsch (French - former Junkertown announcer)\nBianca Krahl (German)\nJolanda Granato (Italian)\nYuriko Fuchizaki (Japanese)\nKim Hyeon-sim (Korean)\nOlga Omeljaniec (Polish)\nMonika Węgiel-Jarocińska (Polish - formerly)\nCamila Maia (Brazilian Portuguese)\nCarla Araújo (Brazilian Portuguese - former Junkertown announcer)\nAnastasia Lapina (Russian)\nYolanda Pérez Segoviano (European Spanish)\nBetzabé Jara (Latin American Spanish)",
+    "Voice": "Leah de NieseSiho Ellsmore (Junkertown announcer, 2017-2022)Davida McKenzie (trailer) (English)\nExpandAudrey Sourdive (French)\nBarbara Kelsch (French - former Junkertown announcer)\nBianca Krahl (German)\nJolanda Granato (Italian)\nYuriko Fuchizaki (Japanese)\nKim Hyeon-sim (Korean)\nOlga Omeljaniec (Polish)\nMonika Węgiel-Jarocińska (Polish - formerly)\nCamila Maia (Brazilian Portuguese)\nCarla Araújo (Brazilian Portuguese - former Junkertown announcer)\nAnastasia Lapina (Russian)\nYolanda Pérez Segoviano (European Spanish)\nBetzabé Jara (Latin American Spanish)",
     "Role": "Tank",
     "Health": "375 (Open queue)525 (Role queue)",
     "Shields": null,
@@ -265,6 +1030,272 @@
       {
         "name": "Rampage\nQ",
         "description": "Charge foward. Wounds enemies, dealing damage over time and preventing them from being healed.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Junkrat": {
+    "RealName": "Jamison Fawkes",
+    "Birth": "February 29th",
+    "Age": "27",
+    "Nationality": "Australian",
+    "Occupation": "Anarchist, Thief, Demolitionist, Mercenary, Scavenger",
+    "Base": "Junkertown, Australia (formerly)",
+    "Affiliation": "Junkers (formerly)",
+    "Relations": null,
+    "Voice": "Chris Parson (English)\nExpandStéphane Ronchewski (French)\nManuel Straube (German)\nMatteo Zanotti (Italian)\nHiroki Gotō (Japanese)\nJin Jeong-il (Korean)\nZhang Xin (Mainland Mandarin)\nNiu Kai-yang (Taiwanese Mandarin)\nKrzysztof Plewako-Szczerbiński (Polish)\nChristiano Torreão (Brazilian Portuguese)\nDanil Schelbanov (Russian)\nCésar Díaz Capilla (European Spanish)\nAlfonso Obregón (Latin American Spanish, 1st voice)\nGeezus González (Latin American Spanish, 2nd voice)",
+    "Role": "Damage",
+    "Health": "250",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Frag Launcher",
+        "description": "Bouncing explosive projectile weapon.",
+        "weaponType": "Arcing projectile",
+        "stats": {
+          "Damage": "45 (direct hit)\n80 - 10 (splash, enemy)",
+          "Headshot": "✕",
+          "Rate of fire": "1 shot per 0.667 seconds\nrecovery stops while using melee",
+          "Ammo": "5",
+          "Reload time": "1.5 seconds animation",
+          "Area of effect": "2 meters (splash radius)",
+          "Spread angle": "None",
+          "Knockback speed": "9.4 m/s (max, enemy)\n4.7 m/s (max, self)",
+          "Projectile speed": "25 m/s",
+          "Projectile radius": "0.35 meters (0.175 meters after second bounce)"
+        }
+      },
+      {
+        "name": "Concussion Mine\nLSHIFT",
+        "description": "Throw a knockback mine with LSHIFT then detonate it with .",
+        "weaponType": "7 seconds",
+        "stats": {
+          "Damage": "120 – 55",
+          "Headshot": "✕",
+          "Ammo": "2 charges",
+          "Health": "25",
+          "Cast time": "0.128 second for throw + 0.112 s. recovery for detonation",
+          "Duration": "Until detonated or replaced",
+          "Area of effect": "3 meters radius",
+          "Knockback speed": "21.2 m/s",
+          "Projectile speed": "25 m/s",
+          "Projectile radius": "0.2 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Concussion Mine\nLSHIFT",
+        "description": "Throw a knockback mine with LSHIFT then detonate it with .",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Steel Trap\nE",
+        "description": "Place an immobilizing trap.",
+        "hotkey": "E"
+      },
+      {
+        "name": "RIP-Tire\nQ",
+        "description": "Drive and detonate an exploding tire.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Kiriko": {
+    "RealName": "Kiriko Kamori (家守 霧子)",
+    "Birth": "July 7th",
+    "Age": "21",
+    "Nationality": "Japanese",
+    "Occupation": "VigilanteShrine caretaker (Miko)[3]",
+    "Base": "Kanezaka, Japan",
+    "Affiliation": "Yamagami BladesYōkai",
+    "Relations": "Asa Yamagami (mother)  Toshiro Yamagami (father)  Unnamed grandmother[2]",
+    "Voice": "Sally Amaki[4] (English)\nExpandAnna Lauzeray-Gishi (French) \n Anna Ewelina (German)\n Elisa Contestabile (Italian)\n Fairouz Ai[5] (Japanese)\n Kim Ha-ru (Korean)\n Sara Lityńska (Polish)\n Lia Mello[6] (Brazilian Portuguese)\n Iuliia Gorokhova (Russian)\n Pilar Puebla (European Spanish)\n Yetzary Olcort (Latin American Spanish)",
+    "Role": "Support",
+    "Health": "225",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Healing Ofuda",
+        "description": "Channel a burst of healing talismans that can seek targeted allies.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Healing": "13 (per talisman)\n26 (per burst)",
+          "Rate of fire": "0.2 seconds (per burst)\n1.7 seconds (full clip)",
+          "Bullets per shot": "2",
+          "Ammo per shot": "1 per shot",
+          "Ammo": "5",
+          "Reload time": "0.9 seconds",
+          "Max. range": "35 meters (lock on)",
+          "Projectile speed": "24 m/s (homing)\n18 m/s (non-homing)",
+          "Projectile radius": "None"
+        }
+      },
+      {
+        "name": "Kunai",
+        "description": "Thrown projectile that deals increased critical damage.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "60",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "1 shot per 0.55 seconds",
+          "Ammo": "15",
+          "Reload time": "1 second",
+          "Spread angle": "None",
+          "Projectile speed": "90 m/s",
+          "Projectile radius": "0.225 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Wall Climb (Kiriko)\nSPACE",
+        "description": "Jump at walls to climb up them.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Swift Step\nLSHIFT",
+        "description": "Teleport directly to an ally.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Protection Suzu\nE",
+        "description": "Throw a protective charm to make allies become briefly invulnerable and cleansed of most negative effects.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Kitsune Rush\nQ",
+        "description": "Summon a fox spirit that rushes forward, accelerating the movement, attack speed, and cooldowns of allies that follow its path.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Lifeweaver": {
+    "RealName": "Niran Pruksamanee  (นิรันดร์ \"บัว\" พฤกษามณี [1])",
+    "Birth": "April 28th",
+    "Age": "31",
+    "Nationality": "Thai",
+    "Occupation": "Scientist[3]Artist[3]Activist[3]Adventurer[4]",
+    "Base": "Chiang Mai, Thailand (formerly)Architech Academy, India (formerly)Atlantic Arcology",
+    "Affiliation": "Vishkar Corporation (formerly)The Collective",
+    "Relations": "Unnamed parentsUnnamed older sister, unnamed younger brother[5]",
+    "Voice": "Phuwin Tangsakyuen (English)\nExpandRémi Gutton (French)\n Sebastian Griegel (German)\n Luca Appetiti (Italian)\n Shūsaku Shirakawa (Japanese)\n Ryu Seung-gon (Korean)\n Qiao Zi-hao (Taiwanese Mandarin)\n Tomasz Olejnik (Polish)\n Vinícius Estefanuto (Brazilian Portuguese)\n Sergei Gabrielyan Jr. (Russian)\n Óscar Garibay (Latin American Spanish)",
+    "Role": "Support",
+    "Health": "225",
+    "Shields": "50",
+    "Weapons": [
+      {
+        "name": "Healing Blossom",
+        "description": "Hold to charge a healing burst. Release to heal a targeted ally. Passively charges at a reduced rate while not in use.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Healing": "80 over 0.3 seconds (max charge)\n10 (min charge)",
+          "Rate of fire": "0.69 shots/s (max charge)\n3.33 shots/s (min charge)",
+          "Ammo": "16",
+          "Reload time": "1.5 seconds",
+          "Max. range": "30 meters (targeting)",
+          "Projectile speed": "60 m/s",
+          "Projectile radius": "0.25 meters"
+        }
+      },
+      {
+        "name": "Thorn Volley",
+        "description": "Rapidly fire a spread of projectiles.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "6 (per thorn)\n12 (per shot)",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "11 shots/s",
+          "Bullets per shot": "2",
+          "Ammo per shot": "2",
+          "Ammo": "100",
+          "Reload time": "1.5 seconds",
+          "Projectile speed": "80 m/s",
+          "Projectile radius": "0.2 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Petal Platform\nLSHIFT",
+        "description": "Throw a platform that springs upwards when stepped on. Resets when not in use.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Rejuvenating Dash\nSPACE",
+        "description": "Dash towards your traveling direction and lightly heal yourself.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Life Grip\nE",
+        "description": "Pull an ally to your location, protecting them as they travel.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Tree of Life\nQ",
+        "description": "Place a tree that instantly heals allies upon sprouting and continues healing periodically as it lives.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Lúcio": {
+    "RealName": "Lúcio Correia dos Santos",
+    "Birth": "March 20th",
+    "Age": "28",
+    "Nationality": "Brazilian",
+    "Occupation": "DJ Freedom fighter",
+    "Base": "Rio de Janeiro, Brazil",
+    "Affiliation": "Overwatch",
+    "Relations": "Benicio Correia dos Santos (father)",
+    "Voice": "Jonny Cruz[1] (English)\nExpandDonald Reignoux (French) Leonhard Mahlich (German)Massimo Triggiani (Italian)Sun Ye (Mandarin (China))Jia Wun-an(Mandarin (Taiwan))Kazuyuki Okitsu (Japanese)Lee Ho-San (Korean)Vladimir Golitsyn (Russian)Daniel Müller (Brazilian Portuguese)Eduardo Garza (American Spanish)Ricardo Escobar (European Spanish)",
+    "Role": "Support",
+    "Health": "225",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Sonic Amplifier",
+        "description": "Sonic projectile launcher.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "22 (per round)\n88 (per burst)",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "1.08 shots/s",
+          "Bullets per shot": "4",
+          "Ammo per shot": "4",
+          "Ammo": "20",
+          "Reload time": "1.5 seconds animation",
+          "Spread angle": "None",
+          "Projectile speed": "50 meters per second",
+          "Projectile radius": "0.25 meters"
+        }
+      },
+      {
+        "name": "Soundwave",
+        "description": "Create a short-range blast wave to knock enemies away from you.",
+        "weaponType": "4 seconds",
+        "stats": {
+          "Damage": "45",
+          "Headshot": "✕",
+          "Duration": "0.56 s. recovery for primary",
+          "Max. range": "8 meters",
+          "Knockback speed": "17 m/s"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Crossfade\nLSHIFT",
+        "description": "Switches between two songs: Healing Boost heals nearby allies, and Speed Boost makes nearby allies move faster.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Amp It Up\nE",
+        "description": "Increase the effectiveness of your current song.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Sound Barrier\nQ",
+        "description": "Create temporary extra health for nearby allies.",
         "hotkey": "Q"
       }
     ]
@@ -335,6 +1366,200 @@
       }
     ]
   },
+  "Mei": {
+    "RealName": "Mei-Ling Zhou (周美灵)",
+    "Birth": "September 5th",
+    "Age": "33 (biological)[1]approx. 42 (chronological)[2]",
+    "Nationality": "Chinese",
+    "Occupation": "Climatologist, Adventurer,",
+    "Base": "Xi’an, China (formerly)",
+    "Affiliation": "Overwatch Atlas News",
+    "Relations": null,
+    "Voice": "Elise Zhang (English and Chinese Mandarin)\nExpandAdeline Chetail (French)\nRubina Nath (German)\nKatia Sorrentino (Italian)\nLynn (Japanese)\nJeon Suk-kyeong (Korean)\nAngel Lin (Taiwanese Mandarin)\nMarta Dobecka (Polish)\nErika Menezes (Brazilian Portuguese)\nDaria Frolova (Russian)\nLaura Barriga (European Spanish)\nJoana Ruvalcaba (Latin American Spanish)",
+    "Role": "Damage",
+    "Health": "300",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Endothermic Blaster",
+        "description": "Short-range spray weapon that slows enemies.",
+        "weaponType": "Beam",
+        "stats": {
+          "Damage": "5",
+          "Headshot": "✕",
+          "Rate of fire": "20 shots/s",
+          "Ammo": "140",
+          "Reload time": "1.5 seconds animation",
+          "Duration": "0.6 seconds (slow)",
+          "Max. range": "10 meters",
+          "Movement slow": "-30%",
+          "Projectile speed": "20 m/s",
+          "Projectile radius": "0.555 meters"
+        }
+      },
+      {
+        "name": "Endothermic Blaster Alt Fire",
+        "description": "Long-range icicle launcher.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "85",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "1 shot per 0.8 seconds",
+          "Ammo per shot": "10 per shot",
+          "Ammo": "120",
+          "Reload time": "1.5 seconds animation",
+          "Cast time": "0.4 seconds + 0.4 s. recovery for shoot",
+          "Spread angle": "None",
+          "Projectile speed": "115 meters per second",
+          "Projectile radius": "0.2 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Cryo-Freeze\nLSHIFT",
+        "description": "Become invulnerable and heal yourself.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Ice Wall\nE",
+        "description": "Create a wall in front of you.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Blizzard\nQ",
+        "description": "(initial cast)",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Mercy": {
+    "RealName": "Angela Ziegler",
+    "Birth": "May 13th",
+    "Age": "39",
+    "Nationality": "Swiss",
+    "Occupation": "Field medic First responder",
+    "Base": "Zürich, Switzerland (formerly)Cairo, Egypt (formerly)Watchpoint: Gibraltar",
+    "Affiliation": "Overwatch",
+    "Relations": "Unnamed parents (deceased)",
+    "Voice": "Lucie Pohl (English)\nExpandSybille Tureau (French)\nFarina Brock (German)\nChiara Francese (Italian)\nSayaka Ōhara (Japanese)\nLee Hyeon-jin (Korean)\nTao Dian (Chinese Mandarin)\nYe Zhiqiu (Chinese Mandarin, Storm Rising)\nLiou Xiao-yun & Chen Mei-zhen (Taiwanese Mandarin)\nKarolina Kalina-Bulcewicz (Polish)\nChristiane  Louise † (Brazilian Portuguese, 1st voice)\nTonia Mesquita (Brazilian Portuguese, 2nd voice)\nOlga Pletnyova (Russian)\nAdelaida López (European Spanish)\nCirce Luna (Latin American Spanish)",
+    "Role": "Support",
+    "Health": "225",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Caduceus Staff\n1",
+        "description": "Hold to heal an ally.  Hold to increase an ally's damage inflicted.",
+        "weaponType": "Targeted",
+        "stats": {
+          "Healing": "60 per second",
+          "Dmg. amplification": "+30% dealt",
+          "Max. range": "15 meters"
+        }
+      },
+      {
+        "name": "Caduceus Blaster\n2",
+        "description": "Automatic weapon.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "20",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "5 shots/s",
+          "Ammo": "25",
+          "Reload time": "1.4 seconds",
+          "Spread angle": "None",
+          "Projectile speed": "50 m/s",
+          "Projectile radius": "0.275 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Angelic Descent\nSPACE",
+        "description": "Fall very slowly.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Guardian Angel\nLSHIFT",
+        "description": "Fly towards an ally. While in flight, Jump launches you forward, and and Crouch launches you upward.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Resurrect\nE",
+        "description": "Revive a dead teammate.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Valkyrie\nQ",
+        "description": "Gain the ability to fly. Abilities are enhanced.",
+        "hotkey": "Q"
+      },
+      {
+        "name": "Resurrect (old)\nQ",
+        "description": "Mercy radiates restorative power, bringing nearby dead allies back into the fight with full health.",
+        "hotkey": "Q"
+      }
+    ]
+  },
+  "Moira": {
+    "RealName": "Moira O'Deorain",
+    "Birth": "April 4th",
+    "Age": "50",
+    "Nationality": "Irish",
+    "Occupation": "GeneticistMinister of GeneticsTalon council member",
+    "Base": "Oasis, Iraq[1]",
+    "Affiliation": "Blackwatch (formerly)TalonThe Ministries",
+    "Relations": null,
+    "Voice": "Genevieve O'Reilly[2] (English)\nExpandDéborah Perret (French)\n Alexandra Lange (German)\n Marcella Silvestri (Italian)\n Mie Sonozaki (Japanese)\n Lee Mi-na (Korean)\n Li Shirong (Chinese Mandarin)\n Fu Chi-huei (Taiwanese Mandarin)\n Magdalena Cielecka (Polish, 1st voice)\n Wiktoria Gorodeckaja (Polish, 2nd voice)\n Isis Koschdoski (Brazilian Portuguese)\n Natalia Kolodyazhnaya (Russian)\n Esther Solans (European Spanish)\n Sarah Souza (Latin American Spanish)",
+    "Role": "Support",
+    "Health": "225",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Biotic Grasp",
+        "description": "Hold to heal all allies in front of you. Consumes biotic energy.",
+        "weaponType": "Beam",
+        "stats": {
+          "Healing": "70 per second, then lingers to heal 51 over 3 seconds",
+          "Ammo per shot": "20 energy per second",
+          "Ammo": "156 biotic energy",
+          "Cast time": "0.08 seconds for heal",
+          "Duration": "3 seconds (remainder)",
+          "Max. range": "15 meters",
+          "Projectile radius": "None"
+        }
+      },
+      {
+        "name": "Biotic Grasp Alt Fire",
+        "description": "Long range beam weapon. Damage dealt heals you and replenishes your biotic energy.",
+        "weaponType": "Beam",
+        "stats": {
+          "Damage": "65 per second",
+          "Headshot": "✕",
+          "Healing": "24 per second (self)",
+          "Ammo": "∞",
+          "Max. range": "20 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Biotic Orb\nE",
+        "description": "Launch a bouncing sphere that either heals nearby allies or damages nearby enemies.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Fade\nLSHIFT",
+        "description": "Disappear, move faster, and become invulnerable, but you cannot shoot.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Coalescence\nQ",
+        "description": "Fire a beam that heals allies and damages enemies.",
+        "hotkey": "Q"
+      }
+    ]
+  },
   "Orisa": {
     "RealName": null,
     "Birth": "May 9th",
@@ -344,7 +1569,7 @@
     "Base": "Numbani, Africa",
     "Affiliation": "Numbani",
     "Relations": "Efi Oladele (creator)",
-    "Voice": "Cherrelle Skeete[1] (English)\nCorinne Wellong (French)Dela Dabulamanzi (German)Elisabetta Spinelli (Italian)Atsumi Tanezaki (Japanese)Kang Shi-hyeon (Korean)Sonia Bohosiewicz (Polish)Marisa Leal (Brazilian Portuguese)Anna Levina (Russian)Han Jiaojiao (Simplified Chinese)Long Sian-huei (Traditional Chinese)María Blanco (European Spanish)",
+    "Voice": "Cherrelle Skeete[1] (English)\nExpandCorinne Wellong (French)Dela Dabulamanzi (German)Elisabetta Spinelli (Italian)Atsumi Tanezaki (Japanese)Kang Shi-hyeon (Korean)Sonia Bohosiewicz (Polish)Marisa Leal (Brazilian Portuguese)Anna Levina (Russian)Han Jiaojiao (Simplified Chinese)Long Sian-huei (Traditional Chinese)María Blanco (European Spanish)",
     "Role": "Tank",
     "Health": "125 (Open queue)275 (Role queue)",
     "Shields": null,
@@ -437,6 +1662,61 @@
       }
     ]
   },
+  "Pharah": {
+    "RealName": "Fareeha Amari (فريحة عماري)",
+    "Birth": "April 15th",
+    "Age": "34 (Overwatch 2)32 (Overwatch)",
+    "Nationality": "Canadian/[2] Egyptian",
+    "Occupation": "Security chief",
+    "Base": "Cairo, Egypt (formerly)Giza, Egypt (formerly)Watchpoint: Gibraltar",
+    "Affiliation": "Egyptian Army (formerly)Helix Security International (formerly)Overwatch",
+    "Relations": "Ana Amari (mother) Sam English (father)",
+    "Voice": "Jen Cohn (English)\nExpandEthel Houbiers (French)Ghadah Al-Akel (German, first voice)Silvia Mißbach (German, second voice)Debora Magnaghi (Italian)Guiyue (Mandarin (China))Fong You-wei (Mandarin (Taiwan))Romi Park (Japanese)Cho Hyeon-jung (Korean)Elena Morozova (Russian)Marcela Duarte (Brazilan Portuguese)Irina Índigo (American Spanish)Diana Torres (European Spanish)",
+    "Role": "Damage",
+    "Health": "225",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Rocket Launcher",
+        "description": "Long-range explosive projectile weapon.",
+        "weaponType": "Projectile",
+        "stats": {
+          "Damage": "40 (direct hit)\n80 – 24.6 (splash, enemy)\n20 – 6.15 (splash, self)",
+          "Headshot": "✕",
+          "Rate of fire": "1.25 shots/second",
+          "Ammo": "6",
+          "Reload time": "1.5 seconds animation",
+          "Area of effect": "2.5 meter radius (explosion)",
+          "Spread angle": "None",
+          "Knockback speed": "7 m/s (max, enemy)\n14.1 m/s (max, self)",
+          "Projectile speed": "40 m/s",
+          "Projectile radius": "0.35 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Hover Jets\nSPACE",
+        "description": "Hold to hover.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Jump Jet\nLSHIFT",
+        "description": "Fly rapidly upwards. Grants some fuel.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Concussive Blast\nE",
+        "description": "Launch an explosive blast to knock back enemies.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Barrage\nQ",
+        "description": "Launch a continuous volley of mini-rockets.",
+        "hotkey": "Q"
+      }
+    ]
+  },
   "Ramattra": {
     "RealName": null,
     "Birth": "March 29th",
@@ -446,7 +1726,7 @@
     "Base": "Shambali Monastery, Nepal (formerly)",
     "Affiliation": "Shambali (formerly)Null Sector",
     "Relations": "Anubis (creator)",
-    "Voice": "Ramon Tikaram (English)\nLoïc Houdré (French)\n Dietmar Wunder (German)\n Alberto Angrisano (Italian)\n Setsuji Satō (Japanese)\n Kang Koo-han (Korean)\n Waldemar Barwiński (Polish)\n Felipe Grinnan (Brazilian Portuguese)\n Anton Baghyrov (Russian)\n Adolfo Pastor (European Spanish)\n Beto Castillo (Latin American Spanish)",
+    "Voice": "Ramon Tikaram (English)\nExpandLoïc Houdré (French)\n Dietmar Wunder (German)\n Alberto Angrisano (Italian)\n Setsuji Satō (Japanese)\n Kang Koo-han (Korean)\n Waldemar Barwiński (Polish)\n Felipe Grinnan (Brazilian Portuguese)\n Anton Baghyrov (Russian)\n Adolfo Pastor (European Spanish)\n Beto Castillo (Latin American Spanish)",
     "Role": "Tank",
     "Health": "250 (Open queue)400 (Role queue)",
     "Shields": null,
@@ -510,6 +1790,56 @@
       }
     ]
   },
+  "Reaper": {
+    "RealName": "Gabriel Reyes",
+    "Birth": "December 14th",
+    "Age": "60 (Overwatch 2)58 (Overwatch)",
+    "Nationality": "American",
+    "Occupation": "Police officer (formerly)Soldier (formerly)Strike commander (formerly)Blackwatch commander (formerly)Talon Field agent/council member",
+    "Base": "Los Angeles, United States (formerly)Rome, Italy",
+    "Affiliation": "Los Angeles Police Department (formerly)United States Army (formerly)Soldier Enhancement Program (formerly)Overwatch (formerly)Blackwatch (formerly)Talon",
+    "Relations": "Martina Reyes (wife)[2]Unnamed son[2]",
+    "Voice": "Keith Ferguson (English)\nExpandJérémie Covillault (French)Torsten Michaelis (German)Oliviero Corbetta (Italian)Jia Qiu (Mandarin (China))Lin Gu-jhen(Mandarin (Taiwan))Ryōta Takeuchi (Japanese)Shin Yong-u (Korean)Maksim Dakhnenko (Russian)Duda Ribeiro (Brazilian Portuguese)José Luis Orozco (American Spanish)Iñaki Crespo (European Spanish)",
+    "Role": "Damage",
+    "Health": "300",
+    "Shields": null,
+    "Weapons": [
+      {
+        "name": "Hellfire Shotguns",
+        "description": "Short-range spread weapons.",
+        "weaponType": "Shotgun",
+        "stats": {
+          "Damage": "5.4 – 1.62 per pellet\n108 – 36 per shot",
+          "Falloff range": "10 – 20 meters",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "0.496 seconds recovery",
+          "Bullets per shot": "20",
+          "Ammo per shot": "1",
+          "Ammo": "8",
+          "Reload time": "1.5 seconds animation",
+          "Spread angle": "6",
+          "Projectile radius": "0.05 meters"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Wraith Form\nLSHIFT",
+        "description": "Move faster and become invulnerable, but you cannot shoot.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Shadow Step\nE",
+        "description": "Teleport to a targeted location.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Death Blossom\nQ",
+        "description": "Damage all nearby enemies.",
+        "hotkey": "Q"
+      }
+    ]
+  },
   "Reinhardt": {
     "RealName": "Reinhardt Wilhelm",
     "Birth": "June 26th",
@@ -519,7 +1849,7 @@
     "Base": "Stuttgart, Germany (formerly)Watchpoint: Gibraltar",
     "Affiliation": "German Armed Forces (formerly)\nCrusaders (formerly)\nOverwatch",
     "Relations": "Balderich von Adler (mentor)  Brigitte Lindholm (goddaughter)[1]",
-    "Voice": "Darin De Paul[2] (English)\nPatrice Melennec (French)Gerhard Jilka (German)Paolo Marchese (Italian, first voice)\nPietro Ubaldi (Italian, second voice)\nYuan Guoqing (Mandarin (China))Chen You-wun(Mandarin(Taiwan))Kenji Nomura (Japanese)\nKwon Hyeok-su (Korean)Gennadii Novikov (Russian) \nEduardo Borgerth (Brazilian Portuguese)\nHumberto Solórzano (American Spanish)\nAntonio García Moral (European Spanish)",
+    "Voice": "Darin De Paul[2] (English)\nExpandPatrice Melennec (French)Gerhard Jilka (German)Paolo Marchese (Italian, first voice)\nPietro Ubaldi (Italian, second voice)\nYuan Guoqing (Mandarin (China))Chen You-wun(Mandarin(Taiwan))Kenji Nomura (Japanese)\nKwon Hyeok-su (Korean)Gennadii Novikov (Russian) \nEduardo Borgerth (Brazilian Portuguese)\nHumberto Solórzano (American Spanish)\nAntonio García Moral (European Spanish)",
     "Role": "Tank",
     "Health": "250 (Open queue)400 (Role queue)",
     "Shields": null,
@@ -576,7 +1906,7 @@
     "Base": "Junkertown, Australia (formerly)",
     "Affiliation": "Australian Liberation Front (formerly)Junkers (formerly)Wreckers (formerly)",
     "Relations": null,
-    "Voice": "Josh Petersdorf (English)\nFrédéric Souterelle (French)\nMilton Welsh (German)\nRenzo Ferrini (Italian)\nNaomi Kusumi (Japanese)\nKim Dae-jung (Korean)\nMeng Xianglong (Mainland Mandarin)\nLi Ying-li (Taiwanese Mandarin)\nJacek Król (Polish)\nMárcio Dondi (Brazilian Portuguese)\nAleksey Rozin (Russian)\nPedro Tena (European Spanish)\nMiguel Ángel Ghigliazza † (Latin American Spanish, 1st voice)\nVictor Hugo Aguilar (Latin American Spanish, 2nd voice)\nEduardo Fonseca (Latin American Spanish, 3rd voice)",
+    "Voice": "Josh Petersdorf (English)\nExpandFrédéric Souterelle (French)\nMilton Welsh (German)\nRenzo Ferrini (Italian)\nNaomi Kusumi (Japanese)\nKim Dae-jung (Korean)\nMeng Xianglong (Mainland Mandarin)\nLi Ying-li (Taiwanese Mandarin)\nJacek Król (Polish)\nMárcio Dondi (Brazilian Portuguese)\nAleksey Rozin (Russian)\nPedro Tena (European Spanish)\nMiguel Ángel Ghigliazza † (Latin American Spanish, 1st voice)\nVictor Hugo Aguilar (Latin American Spanish, 2nd voice)\nEduardo Fonseca (Latin American Spanish, 3rd voice)",
     "Role": "Tank",
     "Health": "600 (Open queue)750 (Role queue)",
     "Shields": null,
@@ -638,7 +1968,7 @@
     "Base": "The Hague, Netherlands (formerly)International Space Station (formerly)",
     "Affiliation": "Talon",
     "Relations": null,
-    "Voice": "Boris Hiestand (English)\nYann Guillemot (French)Richard Gonlag (German)Liu Yijia (Mandarin (China))Huang Tian-you(Mandarin(Taiwan))Takahiro Shimada (Japanese)Luca Semeraro (Italian)Luis Ferando Ríos(European Spanish)Marcelo Pissardini (Brazilian Portuguese)Wojciech Kalarus (Polish) Igor Taradaikin (Russian)",
+    "Voice": "Boris Hiestand (English)\nExpandYann Guillemot (French)Richard Gonlag (German)Liu Yijia (Mandarin (China))Huang Tian-you(Mandarin(Taiwan))Takahiro Shimada (Japanese)Luca Semeraro (Italian)Luis Ferando Ríos(European Spanish)Marcelo Pissardini (Brazilian Portuguese)Wojciech Kalarus (Polish) Igor Taradaikin (Russian)",
     "Role": "Tank",
     "Health": "200 (Open queue)350 (Role queue)",
     "Shields": "275",
@@ -692,884 +2022,6 @@
       }
     ]
   },
-  "Winston": {
-    "RealName": "Winston",
-    "Birth": "June 6th",
-    "Age": "31",
-    "Nationality": null,
-    "Occupation": "Test subject (formerly)Scientist Adventurer",
-    "Base": "Horizon Lunar Colony (formerly) Watchpoint: Gibraltar",
-    "Affiliation": "Lucheng Interstellar (formerly) Overwatch",
-    "Relations": null,
-    "Voice": "Crispin Freeman[2]\nDee Bradley Baker (as a baby) (English)\n\nFrantz Confiac (French) Matti Klemm (German)Dario Oppido (Italian)Atsushi Imaruoka (Japanese)Lim Chae-heon (Korean)Jorge Vasconcelos (Brazilian Portuguese)Sergey Chikachev (Russian)Meng Xianglong (Mandarin (China))Fu Shuang(Mandarin (Taiwan))Arturo Casanova(American Spanish)Francisco Javier Martínez (European Spanish)",
-    "Role": "Tank",
-    "Health": "225 (Open queue)375 (Role queue)",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Tesla Cannon",
-        "description": "Electric frontal-cone weapon.",
-        "weaponType": "Beam",
-        "stats": {
-          "Damage": "70 per second",
-          "Headshot": "✕",
-          "Ammo per shot": "20 per second",
-          "Ammo": "100",
-          "Reload time": "1.7 seconds animation",
-          "Max. range": "8 meters",
-          "Spread angle": "45 degrees"
-        }
-      },
-      {
-        "name": "Tesla Cannon Alt Fire",
-        "description": "Hold to charge, release to fire focused electricity",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "15 (min charge)\n50 (max charge)",
-          "Headshot": "✕",
-          "Ammo per shot": "4 - 12",
-          "Cast time": "0.3 seconds (to min charge)\n0.85 second (to full charge)\n0.75 recovery",
-          "Max. range": "40 meters",
-          "Projectile radius": "0.33 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Barrier Projector\nE",
-        "description": "Deploy a protective energy dome.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Jump Pack\nLSHIFT",
-        "description": "Leap forward into the air. Landing on an enemy damages them.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Primal Rage\nQ",
-        "description": "Gain immense health, but you can only leap and punch enemies.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Wrecking Ball": {
-    "RealName": "Hammond",
-    "Birth": "October 15th",
-    "Age": "16",
-    "Nationality": null,
-    "Occupation": "Test subject (formerly)Mech pilot, mechanicBodyguard",
-    "Base": "Horizon Lunar Colony (formerly)Junkertown",
-    "Affiliation": "Lucheng Interstellar (formerly)Junkers",
-    "Relations": null,
-    "Voice": "Dee Bradley Baker & Jonathan Lipow (English)\nDaniel Njo Lobé (French)TuTeHaMeng (Mandarin (China))[1]Wellington Lima (Brazilian Portuguese)Walter Rivetti (Italian) Aleksey Voytyuk (Russian)",
-    "Role": "Tank",
-    "Health": "300 (Open queue)450 (Role queue)",
-    "Shields": "150",
-    "Weapons": [
-      {
-        "name": "Quad Cannons",
-        "description": "Automatic assault weapons.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "5 – 1.5 per shot",
-          "Falloff range": "15 – 25 meters",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "25 shots per second",
-          "Ammo": "80",
-          "Reload time": "1.6 seconds animation",
-          "Spread angle": "~2 degrees",
-          "Projectile radius": "0.05 meters"
-        }
-      },
-      {
-        "name": "Grappling Claw",
-        "description": "Launch a grappling claw to rapidly swing around the area. Enables high speed collisions to damage and knockback enemies.",
-        "weaponType": "5 seconds (after fireball)\n1 second (no fireball)",
-        "stats": {
-          "Damage": "60 (high speed)",
-          "Headshot": "✕",
-          "Duration": "6 seconds (max. grapple time)\n1.5 seconds (fireball)",
-          "Max. range": "23 meters (max)\n6 meters (retracted)",
-          "Movement speed": "9 m/s (retracting)",
-          "M. speed buff": "+100% (max, grappling)\n+80% (max, released)",
-          "Knockback speed": "22 m/s"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Roll\nLSHIFT",
-        "description": "Transform into a ball and increase maximum movement speed.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Adaptive Shield\nE",
-        "description": "Create temporary extra health that increase with more nearby enemies. Some of the health can be transferred to allies.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Piledriver\nLCONTROL",
-        "description": "Slam into the ground below to damage and launch enemies upward.",
-        "hotkey": "LCONTROL"
-      },
-      {
-        "name": "Minefield\nQ",
-        "description": "Deploy a massive field of proximity mines.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Zarya": {
-    "RealName": "Aleksandra Zaryanova (Александра Зарянова)",
-    "Birth": "December 4th",
-    "Age": "30 (Overwatch 2)28 (Overwatch)",
-    "Nationality": "Russian",
-    "Occupation": "Soldier",
-    "Base": "Krasnoyarsk Front, Russia (formerly)Novanskoye Forward Base, Siberia, Russia (formerly)Watchpoint: Gibraltar",
-    "Affiliation": "Russian Defense ForcesVolskaya Industries (temporarily)Overwatch",
-    "Relations": "Unnamed father[2]\n Ira Zaryanova,  Marisha Zaryanova (sisters)Extended family, including two other siblings or cousins[1]",
-    "Voice": "Dolya Gavanski (English)\nAlexia Lunel (French, first voice)Katharina Spiering (German)Maddalena Vadacca (Italian)Mitsuki Saiga (Japanese)Yang Yu-jin (Korean)Fernanda Mammana (Brazilian Portuguese)Irina Kireeva (Russian)Hong Haitian (Mandarin (China))Jiang Wei-jin (Mandarin (Taiwan), first voice)Wei Jing-ci (Mandarin (Taiwan), second voice)Laura Torres (American Spanish)María Jesús Varona (European Spanish)",
-    "Role": "Tank",
-    "Health": "175 (Open queue)325 (Role queue)",
-    "Shields": "225",
-    "Weapons": [
-      {
-        "name": "Particle Cannon",
-        "description": "Short-range linear beam weapon.",
-        "weaponType": "Beam",
-        "stats": {
-          "Damage": "95 per second (at 0%)\n190 per second (100% Energy)",
-          "Headshot": "✕",
-          "Rate of fire": "20 ticks per second",
-          "Ammo": "100",
-          "Reload time": "1.5 seconds animation",
-          "Max. range": "15 meters",
-          "Projectile radius": "0.2 meters"
-        }
-      },
-      {
-        "name": "Particle Cannon Alt Fire",
-        "description": "Energy grenade launcher.",
-        "weaponType": "Arcing projectile",
-        "stats": {
-          "Damage": "55 – 11 (enemy, 0% Energy)\n110 – 22 (enemy, 100% Energy)\n27.5 – 5.5 (self, 0% Energy)\n55 – 11 (self, 100% Energy)",
-          "Headshot": "✕",
-          "Rate of fire": "1 shot/s",
-          "Ammo per shot": "25",
-          "Ammo": "100",
-          "Reload time": "1.5 seconds",
-          "Cast time": "0.01 seconds\n0.4 seconds recovery for primary",
-          "Area of effect": "2.5 meter radius",
-          "Knockback speed": "5 m/s",
-          "Projectile speed": "25 m/s",
-          "Projectile radius": "0.35 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Particle Barrier\nLSHIFT",
-        "description": "Create a damage barrier around you.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Projected Barrier\nE",
-        "description": "Create a damage barrier around an ally.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Graviton Surge\nQ",
-        "description": "Launch a gravity well that pulls enemies to it.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Ashe": {
-    "RealName": "Elizabeth Caledonia \"Calamity\" Ashe",
-    "Birth": "October 1st[1]",
-    "Age": "41 (Overwatch 2)[1]39 (Overwatch)[2]",
-    "Nationality": "American",
-    "Occupation": "Thief, gang leader",
-    "Base": "Deadlock Gorge, Arizona, USA",
-    "Affiliation": "Arbalest Arms Company (formerly)Deadlock Gang",
-    "Relations": "Caledonia Ashe (great-great-great grandmother)Mr. Ashe (father), Mrs. Ashe (mother)",
-    "Voice": "Jennifer Hale (English)\nOlivia Nicosia (French)Nana Spier (German)Tania De Domenico (Italian)Meiko Kawasaki (Japanese)Sa Moon-young (Korean)TK (Chinese Mandarin)Cian Sin-yu (Taiwanese Mandarin)Anna Wodzyńska (Polish)Mabel Cezar (Brazilian Portuguese)Viktorija Pivko (Russian)Danai Querol (European Spanish)Ale Delint (Latin American Spanish)",
-    "Role": "Damage",
-    "Health": "250",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "The Viper",
-        "description": "Semi-automatic rifle.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "35 – 10.5",
-          "Falloff range": "20 – 40 meters",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "3.75 shots/s",
-          "Ammo": "12",
-          "Reload time": "0.5 seconds (initial animation)\n+0.25 seconds per bullet\n3.5 seconds (full reload animation)",
-          "Spread angle": "1.85 degrees (max)",
-          "Projectile radius": "0.08 meters"
-        }
-      },
-      {
-        "name": "The Viper (ADS)",
-        "description": "Hold to zoom in, increasing damage and accuracy but slowing rate of fire.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "75 – 22.5",
-          "Falloff range": "30 – 50 meters",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "0.65 second recovery",
-          "Ammo": "12",
-          "Reload time": "0.5 seconds (initial animation)\n+0.2 seconds per bullet\n2.9 seconds (full reload animation)",
-          "Cast time": "0.192 seconds (scoping in)\n0.160 seconds for (scope out)",
-          "Spread angle": "None",
-          "M. speed penalty": "-25%",
-          "Projectile radius": "0.08 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Dynamite\nE",
-        "description": "Throw an explosive that detonates after a short delay or immediately when shot.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Coach Gun\nLSHIFT",
-        "description": "Blast enemies in front of you and knock yourself backwards.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "B.O.B.\nQ",
-        "description": "Deploy Bob. He charges forward and knocks enemies into the air, then attacks with his arm cannons.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Bastion": {
-    "RealName": null,
-    "Birth": null,
-    "Age": "32 (Overwatch 2)[1]30 (Overwatch)[2]",
-    "Nationality": null,
-    "Occupation": "Battle automaton (formerly)Workshop assistant[1]",
-    "Base": "Gothenburg, Sweden",
-    "Affiliation": "Ironclad Guild[1]",
-    "Relations": null,
-    "Voice": "Chris Metzen[3]",
-    "Role": "Damage",
-    "Health": "250",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Configuration: Recon",
-        "description": "Mobile, with a lightweight and highly accurate weapon.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "25 - 7.5",
-          "Falloff range": "30 - 50 meters",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "5 shots/s",
-          "Ammo": "25",
-          "Reload time": "1.2 seconds",
-          "Spread angle": "None",
-          "Projectile radius": "0.08 meters"
-        }
-      },
-      {
-        "name": "Configuration: Assault\nLSHIFT",
-        "description": "A slow moving tank with a powerful rotary cannon.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "12 - 3.6",
-          "Falloff range": "30 - 50 meters",
-          "Headshot": "✕",
-          "Rate of fire": "30 shots/s",
-          "Ammo": "∞",
-          "Spread angle": "2 degrees",
-          "M. speed penalty": "-35%",
-          "Projectile radius": "0.05 meters"
-        }
-      },
-      {
-        "name": "A-36 Tactical Grenade",
-        "description": "Fire a bomb that bounces off walls and explodes when it hits enemies or the ground.",
-        "weaponType": "8 seconds",
-        "stats": {
-          "Damage": "15 (direct hit bonus)\n100 - 50 (splash, enemy)\n50 - 25 (splash, self)",
-          "Headshot": "✕",
-          "Cast time": "0 + 0.5 seconds",
-          "Duration": "0.35 seconds (explosion delay)",
-          "Area of effect": "4 meters (explosion)",
-          "Knockback speed": "17.5 m/s (self)\n10.5 m/s (enemy)",
-          "Projectile speed": "40 m/s",
-          "Projectile radius": "0.4 meters"
-        }
-      },
-      {
-        "name": "Self-Repair",
-        "description": "Hold to heal yourself.",
-        "weaponType": "1 second",
-        "stats": {
-          "Healing": "90 per second",
-          "Cast time": "0.5 second delay",
-          "Duration": "Up to 3.33 seconds"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Reconfigure\nLSHIFT",
-        "description": "Switch between weapon configurations.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Configuration: Artillery\nQ",
-        "description": "Become immobile and fire up to three powerful artillery shells.",
-        "hotkey": "Q"
-      },
-      {
-        "name": "Configuration: Tank\nQ",
-        "description": "Mobile with a powerful cannon.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Cassidy": {
-    "RealName": "Cole Cassidy",
-    "Birth": "July 31st",
-    "Age": "39 (Overwatch 2)37 (Overwatch)",
-    "Nationality": "American",
-    "Occupation": "Factory worker (formerly)Farmhand (formerly)Criminal (formerly)Overwatch agent Bounty hunterMercenary",
-    "Base": "Santa Fe, New Mexico, USA (formerly)Watchpoint: Gibraltar",
-    "Affiliation": "Various employers, including the Ace Valentine megafarm (formerly)Deadlock Gang (formerly) Blackwatch (formerly)Overwatch",
-    "Relations": null,
-    "Voice": "Matthew Mercer [3] (English)\nBoris Rehlinger (French)Torben Liebrecht (German)Alessandro D'Errico (Italian)Jūrōta Kosugi (Japanese)Kwak Yoon-sang (Korean)Tutehameng (Chinese Mandarin)Li Jin (Chinese Mandarin; formerly)Sia Jhih-shih (Taiwanese Mandarin)Kamil Pruban (Polish)Guilherme Lopes (Brazilian Portuguese)Aleksey Miasnikov (Russian)Gabriel Jiménez (European Spanish)David Camarillo (Latin American Spanish)José Arenas (Latin American Spanish; formerly)",
-    "Role": "Damage",
-    "Health": "275",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Peacekeeper",
-        "description": "Accurate, powerful revolver.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "70 - 21",
-          "Falloff range": "20 - 30 meters",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "2 shots/s",
-          "Ammo": "6",
-          "Reload time": "1.5 seconds animation",
-          "Spread angle": "None",
-          "Projectile radius": "0.08 meters"
-        }
-      },
-      {
-        "name": "Peacekeeper Alt Fire",
-        "description": "Wildly fire remaining rounds.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "45 - 13.5",
-          "Falloff range": "20 - 30 meters",
-          "Headshot": "✕",
-          "Rate of fire": "8.93 shots/s",
-          "Ammo per shot": "All remaining ammo",
-          "Ammo": "6",
-          "Reload time": "1.5 seconds animation",
-          "Spread angle": "6.5 degrees",
-          "Projectile radius": "0.08 meters"
-        }
-      },
-      {
-        "name": "Deadeye\nQ",
-        "description": "Face off against your enemies. Press Q to lock on, then Q or  to fire.",
-        "weaponType": "1800 points",
-        "stats": {
-          "Damage": "150/s (first 2 seconds)\n300/s (remaining duration)",
-          "Headshot": "✕",
-          "Rate of fire": "8.93 shots/s",
-          "Ammo per shot": "1 per target",
-          "Dmg. reduction": "-40% ... 0% taken",
-          "Cast time": "0.7 + 0.3 seconds (when fired)\n0.3 + 0.4 seconds (when canceled)",
-          "Duration": "7 seconds",
-          "Max. range": "200 meters",
-          "M. speed penalty": "-70% ... -35%"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Combat Roll\nLSHIFT",
-        "description": "Roll in the direction you're moving to take reduced damage and reload.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Flashbang\nE",
-        "description": "Hinder enemies in front of you, slowing them and preventing them from using movement abilities.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Deadeye\nQ",
-        "description": "Face off against your enemies. Press Q to lock on, then Q or  to fire.",
-        "hotkey": "Q"
-      },
-      {
-        "name": "Magnetic Grenade\nE",
-        "description": "Throw a homing grenade that sticks to enemies, slowing them and preventing them from using movement abilities.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Magnetic Grenade (old)\nE",
-        "description": "Throw a short-range grenade that homes in on nearby enemies and deals additional damage if it sticks to them.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Flashbang (old)\nE",
-        "description": "Stun enemies in front of you.",
-        "hotkey": "E"
-      }
-    ]
-  },
-  "Echo": {
-    "RealName": "Echo",
-    "Birth": "February 5th",
-    "Age": "14",
-    "Nationality": null,
-    "Occupation": "Multirole adaptive robot",
-    "Base": "Switzerland (formerly)United States (formerly)Watchpoint: Gibraltar",
-    "Affiliation": "Overwatch",
-    "Relations": "Mina Liao (creator)",
-    "Voice": "Jeannie Bolet (English)\nLauren Tom (English, Reunion)Hojo Shin (English, Zero Hour/Blizzcon 2019 Demo)Françoise Cadol (French)Ranja Bonalana (German)Cinzia Massironi (Italian)Chifuyu (Japanese)An Soyeon (Korean)Ye Zhiqiu (Chinese Mandarin)Wang Ruei-cin (Taiwanese Mandarin)Anna Gajewska (Polish)Adna Cruz (Brazilian Portuguese)Zhanna Nikonova (Russian)Pilar Martín (European Spanish)Jessica Ángeles (Latin American Spanish)",
-    "Role": "Damage",
-    "Health": "225",
-    "Shields": "A niche, but decent choice for Duplicate, assuming you are well acquainted with his playstyle and mechanics. You can cause a lot of chaos quickly with Wrecking Ball's kit, and in some cases you can knock enemies into environmental kills with his Grappling Claw. Minefield is great at denying a large swathe of the battlefield, and short of investing an ult of their own, there isn't much the enemy can do about it but clear away. Your ult will start charging as soon as your mines are activated. Note, however, that deploying more mines while the others are still active will replace the original mines.",
-    "Weapons": [
-      {
-        "name": "Tri-Shot",
-        "description": "Fires 3 shots at once, in a triangle pattern.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "17 (per pellet)\n51 (per shot)",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "0.3 second recovery\n(3 shots per second)",
-          "Bullets per shot": "3",
-          "Ammo per shot": "1",
-          "Ammo": "12",
-          "Reload time": "1.5 seconds animation",
-          "Projectile speed": "75 m/s",
-          "Projectile radius": "0.175 meters"
-        }
-      },
-      {
-        "name": "Sticky Bombs",
-        "description": "Fire a volley of sticky bombs that detonate after a delay.",
-        "weaponType": "6 seconds",
-        "stats": {
-          "Damage": "5 (direct hit bonus)\n25 (explosion, enemy)\n12.5 (explosion, self)",
-          "Headshot": "✕",
-          "Bullets per shot": "6",
-          "Cast time": "0.05 + 0.3 seconds",
-          "Duration": "1 second (explosion delay)",
-          "Area of effect": "2 meter explosion radius",
-          "Projectile speed": "50 m/s",
-          "Projectile radius": "0.305 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Glide\nSPACE",
-        "description": "Hold jump to glide while falling.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Flight\nLSHIFT",
-        "description": "Fly forward quickly and then free-fly briefly.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Focusing Beam\nE",
-        "description": "Channel a beam for a few seconds. Deals very high damage to targets under half health.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Duplicate\nQ",
-        "description": "Become a copy of the targeted enemy hero. They cannot swap heroes for the duration.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Genji": {
-    "RealName": "Genji Shimada (島田 源氏)[1]",
-    "Birth": "October 28th",
-    "Age": "37 (Overwatch 2)35 (Overwatch)",
-    "Nationality": "Japanese",
-    "Occupation": "Adventurer",
-    "Base": "Hanamura, Japan (formerly)Shambali Monastery, Nepal (formerly)Watchpoint: Gibraltar",
-    "Affiliation": "Shimada Clan (formerly)Blackwatch (formerly)Overwatch (left, later rejoined)Shambali (temporary)",
-    "Relations": "Sojiro Shimada (father)\nRumiko Shimada (mother)\n Hanzo Shimada (older brother)",
-    "Voice": "Gaku Space  [2][3] (English)\nBernard Gabay (French)\nYusuke Yamasaki (German)\nPaolo De Santis (Italian)\nYoshihisa Kawahara (Japanese)\nKim Hye-seong (Korean)\nPeng Bo (Chinese Mandarin)\nHu Jhensi (Taiwanese Mandarin)\nGrzegorz Kwiecień (Polish)\nPaulo Vignolo (Brazilan Portuguese)\nAlexander Tsoi (Russian)\nFran Jiménez (European Spanish)\nÓscar Flores (Latin American Spanish)\nAbraham Vega (Latin American Spanish, temporarily)",
-    "Role": "Damage",
-    "Health": "250",
-    "Shields": "Both you and Wrecking Ball are mobile, so it can serve in both of your interests to travel together and dive on the same opponents.",
-    "Weapons": [
-      {
-        "name": "Shuriken",
-        "description": "Throw an accurate burst of 3 projectiles.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "27 (per shuriken)\n81 (per shot)",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "1.14 shots/s",
-          "Bullets per shot": "3",
-          "Ammo per shot": "3",
-          "Ammo": "30",
-          "Reload time": "1.5 seconds",
-          "Spread angle": "None",
-          "Projectile speed": "60 meters per second",
-          "Projectile radius": "0.175 meters"
-        }
-      },
-      {
-        "name": "Shuriken Alt Fire",
-        "description": "Throw a fan of 3 projectiles in an arc.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "27 (per shuriken)\n81 (per shot)",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "1.47 shots/s",
-          "Bullets per shot": "3",
-          "Ammo per shot": "3",
-          "Ammo": "24",
-          "Reload time": "1.5 seconds",
-          "Spread angle": "9 degrees",
-          "Projectile speed": "60 meters per second",
-          "Projectile radius": "0.175 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Cyber-Agility\nSPACE",
-        "description": "Climb on walls and double jump.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Swift Strike\nLSHIFT",
-        "description": "Rapidly dash forward and inflict damage on enemies. Eliminations reset the cooldown.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Deflect\nE",
-        "description": "Deflect incoming projectiles towards the direction you are aiming and block melee attacks.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Dragonblade\nQ",
-        "description": "Unsheathe a deadly melee weapon.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Hanzo": {
-    "RealName": "Hanzo Shimada (島田 半蔵)[1]",
-    "Birth": "November 3rd",
-    "Age": "40 (Overwatch 2)38 (Overwatch)",
-    "Nationality": "Japanese",
-    "Occupation": "AssassinMercenary (temporary)[2]",
-    "Base": "Hanamura, Japan (formerly)",
-    "Affiliation": "Shimada Clan (formerly)",
-    "Relations": "Rumiko Shimada (mother), Sojiro Shimada (father)\n Genji Shimada (younger brother)",
-    "Voice": "Paul Nakauchi[3] (English)\nLionel Tua (French)\nBernd Vollbrecht (German)\nLorenzo Scattorin (Italian)\nShūhei Sakaguchi (Japanese)\nHan Shin (Korean)\nLiu Beichen (Mainland Mandarin)\nKang Dian-hong (Taiwanese Mandarin)\nKrzysztof Cybiński (Polish)\nReginaldo Primo (Brazilian Portuguese, 1st voice)\nRodrigo Horta (Brazilian Portuguese, 2nd voice)\nIlya Isaev (Russian)\nMiguel Ángel Montero (European Spanish)\nDan Osorio (Latin American Spanish)",
-    "Role": "Damage",
-    "Health": "250",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Storm Bow",
-        "description": "Hold to charge then release to launch arrows further.",
-        "weaponType": "Arcing projectile",
-        "stats": {
-          "Damage": "125 (max charge)\n25 (min charge)",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "0.72 shots/s (max charge)\n2 shots/s (min charge)",
-          "Ammo": "∞",
-          "Spread angle": "None",
-          "M. speed penalty": "-30%",
-          "Projectile speed": "110 m/s (max charge)\n25 m/s (min charge)",
-          "Projectile radius": "0.1 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Wall Climb\nSPACE",
-        "description": "Jump at walls to climb up them.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Sonic Arrow\nLSHIFT",
-        "description": "Reveals enemies for a short time upon impact.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Storm Arrows\nE",
-        "description": "The next 5 arrows ricochet and fire instantly at reduced damage.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Lunge\nSPACE",
-        "description": "Double Jump.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Dragonstrike\nQ",
-        "description": "Launch a deadly Dragon Spirit that devastates enemies it passes through.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Junkrat": {
-    "RealName": "Jamison Fawkes",
-    "Birth": "February 29th",
-    "Age": "27",
-    "Nationality": "Australian",
-    "Occupation": "Anarchist, Thief, Demolitionist, Mercenary, Scavenger",
-    "Base": "Junkertown, Australia (formerly)",
-    "Affiliation": "Junkers (formerly)",
-    "Relations": null,
-    "Voice": "Chris Parson (English)\nStéphane Ronchewski (French)\nManuel Straube (German)\nMatteo Zanotti (Italian)\nHiroki Gotō (Japanese)\nJin Jeong-il (Korean)\nZhang Xin (Mainland Mandarin)\nNiu Kai-yang (Taiwanese Mandarin)\nKrzysztof Plewako-Szczerbiński (Polish)\nChristiano Torreão (Brazilian Portuguese)\nDanil Schelbanov (Russian)\nCésar Díaz Capilla (European Spanish)\nAlfonso Obregón (Latin American Spanish, 1st voice)\nGeezus González (Latin American Spanish, 2nd voice)",
-    "Role": "Damage",
-    "Health": "250",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Frag Launcher",
-        "description": "Bouncing explosive projectile weapon.",
-        "weaponType": "Arcing projectile",
-        "stats": {
-          "Damage": "45 (direct hit)\n80 - 10 (splash, enemy)",
-          "Headshot": "✕",
-          "Rate of fire": "1 shot per 0.667 seconds\nrecovery stops while using melee",
-          "Ammo": "5",
-          "Reload time": "1.5 seconds animation",
-          "Area of effect": "2 meters (splash radius)",
-          "Spread angle": "None",
-          "Knockback speed": "9.4 m/s (max, enemy)\n4.7 m/s (max, self)",
-          "Projectile speed": "25 m/s",
-          "Projectile radius": "0.35 meters (0.175 meters after second bounce)"
-        }
-      },
-      {
-        "name": "Concussion Mine\nLSHIFT",
-        "description": "Throw a knockback mine with LSHIFT then detonate it with .",
-        "weaponType": "7 seconds",
-        "stats": {
-          "Damage": "120 – 55",
-          "Headshot": "✕",
-          "Ammo": "2 charges",
-          "Health": "25",
-          "Cast time": "0.128 second for throw + 0.112 s. recovery for detonation",
-          "Duration": "Until detonated or replaced",
-          "Area of effect": "3 meters radius",
-          "Knockback speed": "21.2 m/s",
-          "Projectile speed": "25 m/s",
-          "Projectile radius": "0.2 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Concussion Mine\nLSHIFT",
-        "description": "Throw a knockback mine with LSHIFT then detonate it with .",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Steel Trap\nE",
-        "description": "Place an immobilizing trap.",
-        "hotkey": "E"
-      },
-      {
-        "name": "RIP-Tire\nQ",
-        "description": "Drive and detonate an exploding tire.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Mei": {
-    "RealName": "Mei-Ling Zhou (周美灵)",
-    "Birth": "September 5th",
-    "Age": "33 (biological)[1]approx. 42 (chronological)[2]",
-    "Nationality": "Chinese",
-    "Occupation": "Climatologist, Adventurer,",
-    "Base": "Xi’an, China (formerly)",
-    "Affiliation": "Overwatch Atlas News",
-    "Relations": null,
-    "Voice": "Elise Zhang (English and Chinese Mandarin)\nAdeline Chetail (French)\nRubina Nath (German)\nKatia Sorrentino (Italian)\nLynn (Japanese)\nJeon Suk-kyeong (Korean)\nAngel Lin (Taiwanese Mandarin)\nMarta Dobecka (Polish)\nErika Menezes (Brazilian Portuguese)\nDaria Frolova (Russian)\nLaura Barriga (European Spanish)\nJoana Ruvalcaba (Latin American Spanish)",
-    "Role": "Damage",
-    "Health": "300",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Endothermic Blaster",
-        "description": "Short-range spray weapon that slows enemies.",
-        "weaponType": "Beam",
-        "stats": {
-          "Damage": "5",
-          "Headshot": "✕",
-          "Rate of fire": "20 shots/s",
-          "Ammo": "140",
-          "Reload time": "1.5 seconds animation",
-          "Duration": "0.6 seconds (slow)",
-          "Max. range": "10 meters",
-          "Movement slow": "-30%",
-          "Projectile speed": "20 m/s",
-          "Projectile radius": "0.555 meters"
-        }
-      },
-      {
-        "name": "Endothermic Blaster Alt Fire",
-        "description": "Long-range icicle launcher.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "85",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "1 shot per 0.8 seconds",
-          "Ammo per shot": "10 per shot",
-          "Ammo": "120",
-          "Reload time": "1.5 seconds animation",
-          "Cast time": "0.4 seconds + 0.4 s. recovery for shoot",
-          "Spread angle": "None",
-          "Projectile speed": "115 meters per second",
-          "Projectile radius": "0.2 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Cryo-Freeze\nLSHIFT",
-        "description": "Become invulnerable and heal yourself.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Ice Wall\nE",
-        "description": "Create a wall in front of you.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Blizzard\nQ",
-        "description": "(initial cast)",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Pharah": {
-    "RealName": "Fareeha Amari (فريحة عماري)",
-    "Birth": "April 15th",
-    "Age": "34 (Overwatch 2)32 (Overwatch)",
-    "Nationality": "Canadian/[2] Egyptian",
-    "Occupation": "Security chief",
-    "Base": "Cairo, Egypt (formerly)Giza, Egypt (formerly)Watchpoint: Gibraltar",
-    "Affiliation": "Egyptian Army (formerly)Helix Security International (formerly)Overwatch",
-    "Relations": "Ana Amari (mother) Sam English (father)",
-    "Voice": "Jen Cohn (English)\nEthel Houbiers (French)Ghadah Al-Akel (German, first voice)Silvia Mißbach (German, second voice)Debora Magnaghi (Italian)Guiyue (Mandarin (China))Fong You-wei (Mandarin (Taiwan))Romi Park (Japanese)Cho Hyeon-jung (Korean)Elena Morozova (Russian)Marcela Duarte (Brazilan Portuguese)Irina Índigo (American Spanish)Diana Torres (European Spanish)",
-    "Role": "Damage",
-    "Health": "225",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Rocket Launcher",
-        "description": "Long-range explosive projectile weapon.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "40 (direct hit)\n80 – 24.6 (splash, enemy)\n20 – 6.15 (splash, self)",
-          "Headshot": "✕",
-          "Rate of fire": "1.25 shots/second",
-          "Ammo": "6",
-          "Reload time": "1.5 seconds animation",
-          "Area of effect": "2.5 meter radius (explosion)",
-          "Spread angle": "None",
-          "Knockback speed": "7 m/s (max, enemy)\n14.1 m/s (max, self)",
-          "Projectile speed": "40 m/s",
-          "Projectile radius": "0.35 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Hover Jets\nSPACE",
-        "description": "Hold to hover.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Jump Jet\nLSHIFT",
-        "description": "Fly rapidly upwards. Grants some fuel.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Concussive Blast\nE",
-        "description": "Launch an explosive blast to knock back enemies.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Barrage\nQ",
-        "description": "Launch a continuous volley of mini-rockets.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Reaper": {
-    "RealName": "Gabriel Reyes",
-    "Birth": "December 14th",
-    "Age": "60 (Overwatch 2)58 (Overwatch)",
-    "Nationality": "American",
-    "Occupation": "Police officer (formerly)Soldier (formerly)Strike commander (formerly)Blackwatch commander (formerly)Talon Field agent/council member",
-    "Base": "Los Angeles, United States (formerly)Rome, Italy",
-    "Affiliation": "Los Angeles Police Department (formerly)United States Army (formerly)Soldier Enhancement Program (formerly)Overwatch (formerly)Blackwatch (formerly)Talon",
-    "Relations": "Martina Reyes (wife)[2]Unnamed son[2]",
-    "Voice": "Keith Ferguson (English)\nJérémie Covillault (French)Torsten Michaelis (German)Oliviero Corbetta (Italian)Jia Qiu (Mandarin (China))Lin Gu-jhen(Mandarin (Taiwan))Ryōta Takeuchi (Japanese)Shin Yong-u (Korean)Maksim Dakhnenko (Russian)Duda Ribeiro (Brazilian Portuguese)José Luis Orozco (American Spanish)Iñaki Crespo (European Spanish)",
-    "Role": "Damage",
-    "Health": "300",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Hellfire Shotguns",
-        "description": "Short-range spread weapons.",
-        "weaponType": "Shotgun",
-        "stats": {
-          "Damage": "5.4 – 1.62 per pellet\n108 – 36 per shot",
-          "Falloff range": "10 – 20 meters",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "0.496 seconds recovery",
-          "Bullets per shot": "20",
-          "Ammo per shot": "1",
-          "Ammo": "8",
-          "Reload time": "1.5 seconds animation",
-          "Spread angle": "6",
-          "Projectile radius": "0.05 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Wraith Form\nLSHIFT",
-        "description": "Move faster and become invulnerable, but you cannot shoot.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Shadow Step\nE",
-        "description": "Teleport to a targeted location.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Death Blossom\nQ",
-        "description": "Damage all nearby enemies.",
-        "hotkey": "Q"
-      }
-    ]
-  },
   "Sojourn": {
     "RealName": "Vivian Chase[1]",
     "Birth": "January 12th",
@@ -1579,7 +2031,7 @@
     "Base": "Toronto, Canada",
     "Affiliation": "Primary Reserve (formerly)Canadian Army (formerly)Canadian Special Operations Regiment (formerly)Overwatch",
     "Relations": "Unnamed grandmother, grandfather[2]Unnamed father, mother[2]\nValentine Chase-Chapman (twin sister)[3]\nBonnie Chase-Chapman (niece)",
-    "Voice": "Cherise Boothe (English)\nArmelle Gallaud (French)\nCarin C. Tietze (German)\nCristiana Rossi (Italian)\nNaoko Nokubi (Japanese)\nSoyoung Lee (Korean)\nIwona Milerska (Polish, 1st voice)\nAgnieszka Matysiak (Polish, 2nd voice)\nVany Américo (Brazilian Portuguese)\nIrina Zubkova (Russian)\nAna Jiménez (European Spanish)\nRommy Mendoza (Latin American Spanish)",
+    "Voice": "Cherise Boothe (English)\nExpandArmelle Gallaud (French)\nCarin C. Tietze (German)\nCristiana Rossi (Italian)\nNaoko Nokubi (Japanese)\nSoyoung Lee (Korean)\nIwona Milerska (Polish, 1st voice)\nAgnieszka Matysiak (Polish, 2nd voice)\nVany Américo (Brazilian Portuguese)\nIrina Zubkova (Russian)\nAna Jiménez (European Spanish)\nRommy Mendoza (Latin American Spanish)",
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
@@ -1641,7 +2093,7 @@
     "Base": "Bloomington, Indiana, United States (birth place)[3] (formerly)\nOverwatch HQ (formerly)\nUnknown",
     "Affiliation": "United States Army (formerly)[4]Soldier Enhancement Program (formerly)Overwatch (formerly)",
     "Relations": "Various family members, including a great-aunt, grandfather, uncle, father, and mother[4]\n Vincent (ex-boyfriend)",
-    "Voice": "Fred Tatasciore (English)\nPatrick Borg (French)\nMartin Keßler (German)\nRoberto Draghetti † (Italian, 1st voice)\nStefano Alessandroni (Italian, 2nd voice)\nTōru Ōkawa (Japanese)\nKim Seung-jun (Korean)\nLiu Yao (Chinese Mandarin)\nYang Shao-wun (Taiwanese Mandarin)\nAndrzej Chudy (Polish)\nJosé Augusto Sendim​ (Brazilian Portuguese)\nMaksim Pinsker † (Russian, 1st voice)\nIlia Isaev (Russian, 2nd voice)\nRamón Langa (European Spanish)\nCarlos Segundo (Latin American Spanish)",
+    "Voice": "Fred Tatasciore (English)\nExpandPatrick Borg (French)\nMartin Keßler (German)\nRoberto Draghetti † (Italian, 1st voice)\nStefano Alessandroni (Italian, 2nd voice)\nTōru Ōkawa (Japanese)\nKim Seung-jun (Korean)\nLiu Yao (Chinese Mandarin)\nYang Shao-wun (Taiwanese Mandarin)\nAndrzej Chudy (Polish)\nJosé Augusto Sendim​ (Brazilian Portuguese)\nMaksim Pinsker † (Russian, 1st voice)\nIlia Isaev (Russian, 2nd voice)\nRamón Langa (European Spanish)\nCarlos Segundo (Latin American Spanish)",
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
@@ -1702,7 +2154,7 @@
     "Base": "Dorado, Mexico",
     "Affiliation": "Los Muertos (formerly)Talon (currently)",
     "Relations": null,
-    "Voice": "Carolina Ravassa (English)\nEmmanuelle Rivière (French)\nLara Trautmann (German)\nTiziana Martello (Italian)\nChiwa Saitō (Japanese)\nKim Yeon-u (Korean)\nShourei (Mainland Mandarin)\nLin Fang-syue (Taiwanese Mandarin)\nAnna Cieślak (Polish)\nCarol Crespo (Brazilian Portuguese)\nVeronika Sarkisova (Russian)\nAnahí de la Fuente (European Spanish)\nLourdes Arruti (Latin American Spanish)",
+    "Voice": "Carolina Ravassa (English)\nExpandEmmanuelle Rivière (French)\nLara Trautmann (German)\nTiziana Martello (Italian)\nChiwa Saitō (Japanese)\nKim Yeon-u (Korean)\nShourei (Mainland Mandarin)\nLin Fang-syue (Taiwanese Mandarin)\nAnna Cieślak (Polish)\nCarol Crespo (Brazilian Portuguese)\nVeronika Sarkisova (Russian)\nAnahí de la Fuente (European Spanish)\nLourdes Arruti (Latin American Spanish)",
     "Role": "Damage",
     "Health": "225",
     "Shields": null,
@@ -1839,7 +2291,7 @@
     "Base": "Gothenburg, Sweden",
     "Affiliation": "SST Laboratories (formerly)Ironclad GuildNational Chemical, Biological, Radiation, and Nuclear Defense Center (temporary)Overwatch (formerly)",
     "Relations": "Unnamed mother Ingrid Lindholm (wife) Various children[2] Brigitte Lindholm (youngest daughter)Various grandchildren,[2] including Astrid Lindholm, Alma Lindholm, and Marta",
-    "Voice": "Keith Silverstein (English)\nJosé Luccioni (French, Overwatch)Pascal Germain (French, Overwatch 2 lines)Stefan Gossler (German)Mario Scarabelli (Italian)Jia Qiu (Mandarin (China))Tong Shao-jhong(Mandarin (Taiwan))Binbin Takaoka (Japanese)Lee Jae-beom (Korean)Alexander Pozharov (Russian, 1st voice)Alexey Bagdasarov (Russian, 2nd voice)Mauricio Berger (Brazilian Portuguese)Arturo Mercado (American Spanish)Carlos Ysbert (European Spanish)",
+    "Voice": "Keith Silverstein (English)\nExpandJosé Luccioni (French, Overwatch)Pascal Germain (French, Overwatch 2 lines)Stefan Gossler (German)Mario Scarabelli (Italian)Jia Qiu (Mandarin (China))Tong Shao-jhong(Mandarin (Taiwan))Binbin Takaoka (Japanese)Lee Jae-beom (Korean)Alexander Pozharov (Russian, 1st voice)Alexey Bagdasarov (Russian, 2nd voice)Mauricio Berger (Brazilian Portuguese)Arturo Mercado (American Spanish)Carlos Ysbert (European Spanish)",
     "Role": "Damage",
     "Health": "225",
     "Shields": null,
@@ -1922,7 +2374,7 @@
     "Base": "London, England (formerly)Watchpoint: Gibraltar",
     "Affiliation": "Royal Air Force (formerly) Overwatch (formerly)Royal Air Force (temporarily rejoined)Overwatch (reformed)",
     "Relations": "Emily (girlfriend)",
-    "Voice": "Cara Theobold[2][3] (English)\nDorothée Pousséo (French)\nLuisa Wietzorek (German)\nGea Riva (Italian)\nEmiri Katō (Japanese)\nPark Shin-hui (Korean)\nHong Haitian (Mainland Mandarin)\nTao Min-sian (Taiwanese Mandarin)\nWeronika Łukaszewska (Polish)\nLuiza Palomanes (Brazilian Portuguese)\nNatalia Tereshkova (Russian, Overwatch Beta)\nLena Ivanova (Russian, Release)\nAna de Castro (European Spanish)\nAnaliz Sanchez (Latin American Spanish)",
+    "Voice": "Cara Theobold[2][3] (English)\nExpandDorothée Pousséo (French)\nLuisa Wietzorek (German)\nGea Riva (Italian)\nEmiri Katō (Japanese)\nPark Shin-hui (Korean)\nHong Haitian (Mainland Mandarin)\nTao Min-sian (Taiwanese Mandarin)\nWeronika Łukaszewska (Polish)\nLuiza Palomanes (Brazilian Portuguese)\nNatalia Tereshkova (Russian, Overwatch Beta)\nLena Ivanova (Russian, Release)\nAna de Castro (European Spanish)\nAnaliz Sanchez (Latin American Spanish)",
     "Role": "Damage",
     "Health": "175",
     "Shields": null,
@@ -1972,7 +2424,7 @@
     "Base": "Nova Scotia, Canada (formerly)Roaming",
     "Affiliation": "Wayfinder Society",
     "Relations": "Unnamed grandmother",
-    "Voice": "Valeria Rodriguez[4] (English)\nNadine Girard (French)\n Derya Akyol (German)\n Nanako Mori[5] (Japanese)\n Bang Si-u (Korean)\n Ma Zink (Brazilian Portuguese)\n Eva Finkelstein (Russian)\n Regina Tiscareño (Latin American Spanish)",
+    "Voice": "Valeria Rodriguez[4] (English)\nExpandNadine Girard (French)\n Derya Akyol (German)\n Nanako Mori[5] (Japanese)\n Bang Si-u (Korean)\n Ma Zink (Brazilian Portuguese)\n Eva Finkelstein (Russian)\n Regina Tiscareño (Latin American Spanish)",
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
@@ -2032,7 +2484,7 @@
     "Base": "Annecy, France",
     "Affiliation": "Talon",
     "Relations": "Gérard Lacroix (husband)",
-    "Voice": "Chloe Hollings (English and French)\nVera Teltz (German)Francesca Perilli (Italian)Yang Menglu (Mandarin (China))Wang Shih-wei(Mandarin (Taiwan))Shizuka Itō (Japanese)Lee Ji-hyeon (Korean)Tatiana Shitova (Russian)Flavia Saddy (Brazilian Portuguese)Erica Edwards (American Spanish)Conchi López (European Spanish)",
+    "Voice": "Chloe Hollings (English and French)\nExpandVera Teltz (German)Francesca Perilli (Italian)Yang Menglu (Mandarin (China))Wang Shih-wei(Mandarin (Taiwan))Shizuka Itō (Japanese)Lee Ji-hyeon (Korean)Tatiana Shitova (Russian)Flavia Saddy (Brazilian Portuguese)Erica Edwards (American Spanish)Conchi López (European Spanish)",
     "Role": "Damage",
     "Health": "200",
     "Shields": null,
@@ -2089,646 +2541,194 @@
       }
     ]
   },
-  "Ana": {
-    "RealName": "Ana Amari (أنا عماري)",
-    "Birth": "January 1st[1]",
-    "Age": "62 (Overwatch 2)[1]60 (Overwatch)[2]",
-    "Nationality": "Egyptian",
-    "Occupation": "Sharpshooter (formerly)Overwatch second-in-command, captain[3] (formerly)Bounty hunter",
-    "Base": "Cairo, Egypt (formerly)Zurich, Switzerland (formerly)[4]Mobile",
-    "Affiliation": "Egyptian Army (formerly)El-Sa'ka Forces (formerly)Overwatch (formerly)",
-    "Relations": "Unnamed mother[4] Sam (husband/partner)   Fareeha Amari (daughter)",
-    "Voice": "Aysha Selim (English)\nMarie Vincent (French, 1st voice)\nIsabelle Leprince (French, 2nd voice)\nMartina Treger (German)\nElisabetta Cesone (Italian)\nYoshiko Sakakibara (Japanese)\nLee Sun-ju (Korean, 1st voice)\nLee Yeong-ri (Korean, 2nd voice)\nWu Xiangtong (Mainland Mandarin)\nCuei Guo-fu (Taiwanese Mandarin)\nMiriam Aleksandrowicz † (Polish)\nÂngela Bonatti (Brazilian Portuguese, 1st voice)\nMarize Motta (Brazilian Portuguese, 2nd voice)\nLyudmila Gnilova (Russian)\nAna García Olivares (European Spanish)\nAndrea Coto (Latin American Spanish, main)\nYolanda Vidal (Latin American Spanish, temp.)",
-    "Role": "Support",
-    "Health": "250",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Biotic Rifle",
-        "description": "Long-range rifle that heals allies and damages enemies.\n Hold to zoom in.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "70 over 0.59 seconds",
-          "Headshot": "✕",
-          "Healing": "70 over 0.59 seconds",
-          "Rate of fire": "0.8 seconds recovery",
-          "Ammo": "15",
-          "Reload time": "1.5 seconds animation",
-          "Cast time": "0.24 seconds for scope in\n0.16 seconds for scope out",
-          "Duration": "0.59 seconds effect",
-          "Spread angle": "None",
-          "M. speed penalty": "-65% (scoped)",
-          "Projectile speed": "125 m/s (unscoped)",
-          "Projectile radius": "0.15 meters (hip fire)\n0.08 meters (enemies, ADS)\n0.3 meters (allies, ADS)"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Sleep Dart\nLSHIFT",
-        "description": "Fires a dart that puts an enemy to sleep.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Biotic Grenade\nE",
-        "description": "Throws a grenade that heals and increases healing on allies, while damaging and preventing healing on enemies.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Nano Boost\nQ",
-        "description": "Increases an ally's damage, while reducing damage taken.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Baptiste": {
-    "RealName": "Jean-Baptiste Augustin",
-    "Birth": "March 12th[1]",
-    "Age": "38 (Overwatch 2)[1]36 (Overwatch)[2]",
-    "Nationality": "Haitian",
-    "Occupation": "Combat medic",
-    "Base": "Tortuga, Haiti (formerly)Watchpoint: Gibraltar",
-    "Affiliation": "Caribbean Coalition (formerly), Talon (formerly)Overwatch",
-    "Relations": "Several cousins[3]",
-    "Voice": "Benz Antoine (English)\nExpandJean-Baptiste Anoumon (French)Sascha Rotermund (German)Maurizio Merluzzo (Italian)Shunsuke Sakuya (Japanese)Choi Seung-hoon (Korean)Ma Yang (Chinese Mandarin)Chen Yan-jyun (Taiwanese Mandarin)Łukasz Talik (Polish)Pierre Bittencourt (Brazilian Portuguese)Ivan Traore (Russian)Juan Antonio García Sainz de la Maza (European Spanish)Alfredo Gabriel Basurto (Latin American Spanish)",
-    "Role": "Support",
-    "Health": "250",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Biotic Launcher",
-        "description": "Three-round burst gun.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "25 - 7.2 (per round)\n75 - 21.6 (per shot)",
-          "Falloff range": "25 - 45 meters",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "1.7 shots/s",
-          "Bullets per shot": "3",
-          "Ammo per shot": "3",
-          "Ammo": "36",
-          "Reload time": "1.5 seconds animation",
-          "Projectile radius": "0.08 meters"
-        }
-      },
-      {
-        "name": "Biotic Launcher Alt Fire",
-        "description": "Lob a healing projectile that heals all allies near the impact.",
-        "weaponType": "Arcing projectile",
-        "stats": {
-          "Healing": "20 (direct hit)\n50 (splash, ally)",
-          "Rate of fire": "1.11 shots/s",
-          "Ammo": "13",
-          "Reload time": "1.5 seconds animation",
-          "Area of effect": "3 meter radius",
-          "Projectile speed": "60 m/s",
-          "Projectile radius": "None"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Exo Boots\nLCONTROL",
-        "description": "Hold crouch to jump higher.",
-        "hotkey": "LCONTROL"
-      },
-      {
-        "name": "Regenerative Burst\nLSHIFT",
-        "description": "Activate to heal yourself and nearby allies instantly, with additional healing over time. Instant heal is doubled for targets less than half health.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Immortality Field\nE",
-        "description": "Toss a device that prevents allies from dying. The device can be destroyed.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Amplification Matrix\nQ",
-        "description": "Project a matrix that doubles the damage and healing of allied projectiles.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Brigitte": {
-    "RealName": "Brigitte Lindholm",
-    "Birth": "September 22nd",
-    "Age": "25 (Overwatch 2)23 (Overwatch)",
-    "Nationality": "Swedish",
-    "Occupation": "Mechanical engineerAdventurerSquire",
-    "Base": "Gothenburg, Sweden (formerly)Watchpoint: Gibraltar",
-    "Affiliation": "Overwatch",
-    "Relations": "Torbjörn Lindholm (father) Ingrid Lindholm (mother) Reinhardt Wilhelm (godfather) Various elder siblings[1]Various nieces and nephews,[1] including Astrid Lindholm, Alma Lindholm, and Marta",
-    "Voice": "Matilda Smedius[2] (English)\nCaroline Mozzone (French)\nIngrid Donnadieu (French - formerly)\nRegina Beckhaus (German)\nMartina Tamburello (Italian)\nYuki Ōmori (Japanese)\nMun Yu-jeong (Korean)\nZhang Qi (Chinese Mandarin)\nYe Yu-jia (Taiwanese Mandarin)\nMarta Markowicz-Dziarkowska (Polish)\nEwa Prus (Polish - formerly)\nFlora Paulita (Brazilian Portuguese)\nLhays Macêdo (Brazilian Portuguese - Honor and Glory)\nIuliia Churakova (Russian)\nAna Valeiras (European Spanish)\nAnnie Rojas (Latin American Spanish)",
-    "Role": "Support",
-    "Health": "200",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Rocket Flail",
-        "description": "Melee weapon with extended range.",
-        "weaponType": "Melee",
-        "stats": {
-          "Damage": "45",
-          "Headshot": "✕",
-          "Rate of fire": "1 swing per 0.6 seconds",
-          "Duration": "0.240 seconds (hitbox active)",
-          "Max. range": "6 meters"
-        }
-      },
-      {
-        "name": "Barrier Shield",
-        "description": "Hold  to deploy a frontal energy barrier.",
-        "weaponType": "5 seconds (destroyed)",
-        "stats": {
-          "Barrier health": "250 (default)\n700 (during Rally)",
-          "Cast time": "None",
-          "M. speed penalty": "-30%"
-        }
-      },
-      {
-        "name": "Shield Bash",
-        "description": "Available when Barrier Shield is deployed. Dash forward to knock back an enemy.",
-        "weaponType": "5 seconds",
-        "stats": {
-          "Damage": "50",
-          "Headshot": "✕",
-          "Cast time": "0.02 + 0.43 seconds",
-          "Duration": "0.3 seconds",
-          "Max. range": "12 meters",
-          "Area of effect": "60° front cone angle radius",
-          "M. speed buff": "+400%"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Repair Pack\nE",
-        "description": "Heals an ally for a short duration.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Whip Shot\nLSHIFT",
-        "description": "Launch your flail forward to knock an enemy away from you.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Rally\nQ",
-        "description": "Gain armor, empower Barrier Shield and provide extra health to nearby allies.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Illari": {
-    "RealName": "Illari Quispe Ruiz[1]",
-    "Birth": "December 21st[1]",
-    "Age": "18[1]",
-    "Nationality": "Peruvian",
-    "Occupation": "Inti warriorVigilante[2]",
-    "Base": "Runasapi, Peru",
-    "Affiliation": "Inti Warriors",
+  "Winston": {
+    "RealName": "Winston",
+    "Birth": "June 6th",
+    "Age": "31",
+    "Nationality": null,
+    "Occupation": "Test subject (formerly)Scientist Adventurer",
+    "Base": "Horizon Lunar Colony (formerly) Watchpoint: Gibraltar",
+    "Affiliation": "Lucheng Interstellar (formerly) Overwatch",
     "Relations": null,
-    "Voice": "Andre Cisneros (English and Latin American Spanish)\nDaniela Traverso (French)\nKarolina Nägele (German)\nElisa Cavalli Carbone (Italian)\nAnju Shiranami (Japanese)\nYu Yeong (Korean)\nCarol Sodré (Brazilian Portuguese)\nAlicia Valadés (European Spanish)",
-    "Role": "Support",
-    "Health": "250",
+    "Voice": "Crispin Freeman[2]\nDee Bradley Baker (as a baby) (English)\n\nExpandFrantz Confiac (French) Matti Klemm (German)Dario Oppido (Italian)Atsushi Imaruoka (Japanese)Lim Chae-heon (Korean)Jorge Vasconcelos (Brazilian Portuguese)Sergey Chikachev (Russian)Meng Xianglong (Mandarin (China))Fu Shuang(Mandarin (Taiwan))Arturo Casanova(American Spanish)Francisco Javier Martínez (European Spanish)",
+    "Role": "Tank",
+    "Health": "225 (Open queue)375 (Role queue)",
     "Shields": null,
     "Weapons": [
       {
-        "name": "Solar Rifle",
-        "description": "Long-range auto charging rifle.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "70 - 21 (max charge)\n20 - 6 (min charge)",
-          "Falloff range": "30 - 50 meters",
-          "Headshot": "✓ (x1.5)",
-          "Rate of fire": "1.11 shot/s (max charge)\n2.00 shots/s (min charge)",
-          "Ammo": "14",
-          "Reload time": "1.8 seconds",
-          "Spread angle": "None",
-          "Projectile radius": "0.13 meters"
-        }
-      },
-      {
-        "name": "Solar Rifle Alt Fire",
-        "description": "Medium range healing beam that consumes solar energy.",
+        "name": "Tesla Cannon",
+        "description": "Electric frontal-cone weapon.",
         "weaponType": "Beam",
         "stats": {
+          "Damage": "70 per second",
           "Headshot": "✕",
-          "Healing": "115 per second",
-          "Reload time": "2.9 seconds (recharge to full)\n3.36 seconds (cooldown when fully depleted)",
-          "Max. range": "15.3 meters",
-          "Spread angle": "None",
-          "Projectile radius": "0.25 meters"
+          "Ammo per shot": "20 per second",
+          "Ammo": "100",
+          "Reload time": "1.7 seconds animation",
+          "Max. range": "8 meters",
+          "Spread angle": "45 degrees"
+        }
+      },
+      {
+        "name": "Tesla Cannon Alt Fire",
+        "description": "Hold to charge, release to fire focused electricity",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "15 (min charge)\n50 (max charge)",
+          "Headshot": "✕",
+          "Ammo per shot": "4 - 12",
+          "Cast time": "0.3 seconds (to min charge)\n0.85 second (to full charge)\n0.75 recovery",
+          "Max. range": "40 meters",
+          "Projectile radius": "0.33 meters"
         }
       }
     ],
     "Abilities": [
       {
-        "name": "Outburst\nLSHIFT",
-        "description": "Launches you in the direction you are moving. Knocking back enemies. Hold jump to go higher.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Healing Pylon\nE",
-        "description": "Deploy a pylon that heals allies.",
+        "name": "Barrier Projector\nE",
+        "description": "Deploy a protective energy dome.",
         "hotkey": "E"
       },
       {
-        "name": "Captive Sun\nQ",
-        "description": "Fire an explosive ball of solar energy. Enemies hit are slowed and explode after taking significant damage.",
+        "name": "Jump Pack\nLSHIFT",
+        "description": "Leap forward into the air. Landing on an enemy damages them.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Primal Rage\nQ",
+        "description": "Gain immense health, but you can only leap and punch enemies.",
         "hotkey": "Q"
       }
     ]
   },
-  "Juno": {
-    "RealName": "Juno Teo Minh",
-    "Birth": "March 22nd[1]",
-    "Age": "19[1]",
-    "Nationality": "Martian",
-    "Occupation": "Medic[2]Navigator[1]",
-    "Base": "Red Promise Colony, Mars (formerly)\nWatchpoint: Gibraltar",
-    "Affiliation": "Project Red Promise",
-    "Relations": "Jiayi Teo (mother), Khiem Van Minh (father)",
-    "Voice": "Xanthe Huynh (English)\nValérie Bachère (French)\n Özge Kayalar[3] (German)\n Rika Tachibana[4] (Japanese)\n Yoon Eun-seo (Korean)\n Michelle Giudice (Brazilian Portuguese)\n Vasilisa Eldarova (Russian)\n Desireé González (Latin American Spanish)",
-    "Role": "Support",
-    "Health": "75",
+  "Wrecking Ball": {
+    "RealName": "Hammond",
+    "Birth": "October 15th",
+    "Age": "16",
+    "Nationality": null,
+    "Occupation": "Test subject (formerly)Mech pilot, mechanicBodyguard",
+    "Base": "Horizon Lunar Colony (formerly)Junkertown",
+    "Affiliation": "Lucheng Interstellar (formerly)Junkers",
+    "Relations": null,
+    "Voice": "Dee Bradley Baker & Jonathan Lipow (English)\nExpandDaniel Njo Lobé (French)TuTeHaMeng (Mandarin (China))[1]Wellington Lima (Brazilian Portuguese)Walter Rivetti (Italian) Aleksey Voytyuk (Russian)",
+    "Role": "Tank",
+    "Health": "300 (Open queue)450 (Role queue)",
     "Shields": "150",
     "Weapons": [
       {
-        "name": "Mediblaster",
-        "description": "Burst fire weapon that heals allies and damages enemies.",
+        "name": "Quad Cannons",
+        "description": "Automatic assault weapons.",
         "weaponType": "Hitscan",
         "stats": {
-          "Damage": "7.5 - 2.25 (per round)\n90 - 27 (per burst)",
-          "Falloff range": "20 - 35 meters (damage and healing)",
-          "Headshot": "✕",
-          "Healing": "6 - 1.8 (per round)\n72 - 21.6 (per burst)",
-          "Rate of fire": "1.29 shots/s",
-          "Bullets per shot": "12",
-          "Ammo per shot": "12 per shot",
-          "Ammo": "180",
-          "Reload time": "1.8 seconds",
+          "Damage": "5 – 1.5 per shot",
+          "Falloff range": "15 – 25 meters",
+          "Headshot": "✓ (x2)",
+          "Rate of fire": "25 shots per second",
+          "Ammo": "80",
+          "Reload time": "1.6 seconds animation",
+          "Spread angle": "~2 degrees",
           "Projectile radius": "0.05 meters"
         }
       },
       {
-        "name": "Pulsar Torpedoes",
-        "description": "Press Secondary Fire to lock on, then Primary Fire to fire homing projectiles. Heals allies over time and damages enemies.",
-        "weaponType": "10 seconds",
+        "name": "Grappling Claw",
+        "description": "Launch a grappling claw to rapidly swing around the area. Enables high speed collisions to damage and knockback enemies.",
+        "weaponType": "5 seconds (after fireball)\n1 second (no fireball)",
         "stats": {
-          "Damage": "85",
+          "Damage": "60 (high speed)",
           "Headshot": "✕",
-          "Healing": "85 (direct)\n50 (over time)",
-          "Cast time": "0 + 0.3 seconds",
-          "Duration": "2.5 seconds (HoT)\n0.5 - 1 seconds (lock-on)\n0.38 - 4 seconds (targeting)",
-          "Max. range": "40 meters (targeting)"
+          "Duration": "6 seconds (max. grapple time)\n1.5 seconds (fireball)",
+          "Max. range": "23 meters (max)\n6 meters (retracted)",
+          "Movement speed": "9 m/s (retracting)",
+          "M. speed buff": "+100% (max, grappling)\n+80% (max, released)",
+          "Knockback speed": "22 m/s"
         }
       }
     ],
     "Abilities": [
       {
-        "name": "Martian Overboots\nSPACE",
-        "description": "While airborne, press Jump to double jump and hold Jump to hover.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Glide Boost\nLSHIFT",
-        "description": "Glide horizontally with increased movement speed.",
+        "name": "Roll\nLSHIFT",
+        "description": "Transform into a ball and increase maximum movement speed.",
         "hotkey": "LSHIFT"
       },
       {
-        "name": "Hyper Ring\nE",
-        "description": "Deploy a ring that increases movement speed of allies that pass through it.",
+        "name": "Adaptive Shield\nE",
+        "description": "Create temporary extra health that increase with more nearby enemies. Some of the health can be transferred to allies.",
         "hotkey": "E"
       },
       {
-        "name": "Orbital Ray\nQ",
-        "description": "Call down a ray that travels forward, healing allies and increasing their damage.",
+        "name": "Piledriver\nLCONTROL",
+        "description": "Slam into the ground below to damage and launch enemies upward.",
+        "hotkey": "LCONTROL"
+      },
+      {
+        "name": "Minefield\nQ",
+        "description": "Deploy a massive field of proximity mines.",
         "hotkey": "Q"
       }
     ]
   },
-  "Kiriko": {
-    "RealName": "Kiriko Kamori (家守 霧子)",
-    "Birth": "July 7th",
-    "Age": "21",
-    "Nationality": "Japanese",
-    "Occupation": "VigilanteShrine caretaker (Miko)[3]",
-    "Base": "Kanezaka, Japan",
-    "Affiliation": "Yamagami BladesYōkai",
-    "Relations": "Asa Yamagami (mother)  Toshiro Yamagami (father)  Unnamed grandmother[2]",
-    "Voice": "Sally Amaki[4] (English)\nAnna Lauzeray-Gishi (French) \n Anna Ewelina (German)\n Elisa Contestabile (Italian)\n Fairouz Ai[5] (Japanese)\n Kim Ha-ru (Korean)\n Sara Lityńska (Polish)\n Lia Mello[6] (Brazilian Portuguese)\n Iuliia Gorokhova (Russian)\n Pilar Puebla (European Spanish)\n Yetzary Olcort (Latin American Spanish)",
-    "Role": "Support",
-    "Health": "225",
-    "Shields": null,
+  "Zarya": {
+    "RealName": "Aleksandra Zaryanova (Александра Зарянова)",
+    "Birth": "December 4th",
+    "Age": "30 (Overwatch 2)28 (Overwatch)",
+    "Nationality": "Russian",
+    "Occupation": "Soldier",
+    "Base": "Krasnoyarsk Front, Russia (formerly)Novanskoye Forward Base, Siberia, Russia (formerly)Watchpoint: Gibraltar",
+    "Affiliation": "Russian Defense ForcesVolskaya Industries (temporarily)Overwatch",
+    "Relations": "Unnamed father[2]\n Ira Zaryanova,  Marisha Zaryanova (sisters)Extended family, including two other siblings or cousins[1]",
+    "Voice": "Dolya Gavanski (English)\nExpandAlexia Lunel (French, first voice)Katharina Spiering (German)Maddalena Vadacca (Italian)Mitsuki Saiga (Japanese)Yang Yu-jin (Korean)Fernanda Mammana (Brazilian Portuguese)Irina Kireeva (Russian)Hong Haitian (Mandarin (China))Jiang Wei-jin (Mandarin (Taiwan), first voice)Wei Jing-ci (Mandarin (Taiwan), second voice)Laura Torres (American Spanish)María Jesús Varona (European Spanish)",
+    "Role": "Tank",
+    "Health": "175 (Open queue)325 (Role queue)",
+    "Shields": "225",
     "Weapons": [
       {
-        "name": "Healing Ofuda",
-        "description": "Channel a burst of healing talismans that can seek targeted allies.",
-        "weaponType": "Projectile",
+        "name": "Particle Cannon",
+        "description": "Short-range linear beam weapon.",
+        "weaponType": "Beam",
         "stats": {
-          "Healing": "13 (per talisman)\n26 (per burst)",
-          "Rate of fire": "0.2 seconds (per burst)\n1.7 seconds (full clip)",
-          "Bullets per shot": "2",
-          "Ammo per shot": "1 per shot",
-          "Ammo": "5",
-          "Reload time": "0.9 seconds",
-          "Max. range": "35 meters (lock on)",
-          "Projectile speed": "24 m/s (homing)\n18 m/s (non-homing)",
-          "Projectile radius": "None"
-        }
-      },
-      {
-        "name": "Kunai",
-        "description": "Thrown projectile that deals increased critical damage.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "60",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "1 shot per 0.55 seconds",
-          "Ammo": "15",
-          "Reload time": "1 second",
-          "Spread angle": "None",
-          "Projectile speed": "90 m/s",
-          "Projectile radius": "0.225 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Wall Climb (Kiriko)\nSPACE",
-        "description": "Jump at walls to climb up them.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Swift Step\nLSHIFT",
-        "description": "Teleport directly to an ally.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Protection Suzu\nE",
-        "description": "Throw a protective charm to make allies become briefly invulnerable and cleansed of most negative effects.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Kitsune Rush\nQ",
-        "description": "Summon a fox spirit that rushes forward, accelerating the movement, attack speed, and cooldowns of allies that follow its path.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Lifeweaver": {
-    "RealName": "Niran Pruksamanee  (นิรันดร์ \"บัว\" พฤกษามณี [1])",
-    "Birth": "April 28th",
-    "Age": "31",
-    "Nationality": "Thai",
-    "Occupation": "Scientist[3]Artist[3]Activist[3]Adventurer[4]",
-    "Base": "Chiang Mai, Thailand (formerly)Architech Academy, India (formerly)Atlantic Arcology",
-    "Affiliation": "Vishkar Corporation (formerly)The Collective",
-    "Relations": "Unnamed parentsUnnamed older sister, unnamed younger brother[5]",
-    "Voice": "Phuwin Tangsakyuen (English)\nRémi Gutton (French)\n Sebastian Griegel (German)\n Luca Appetiti (Italian)\n Shūsaku Shirakawa (Japanese)\n Ryu Seung-gon (Korean)\n Qiao Zi-hao (Taiwanese Mandarin)\n Tomasz Olejnik (Polish)\n Vinícius Estefanuto (Brazilian Portuguese)\n Sergei Gabrielyan Jr. (Russian)\n Óscar Garibay (Latin American Spanish)",
-    "Role": "Support",
-    "Health": "225",
-    "Shields": "50",
-    "Weapons": [
-      {
-        "name": "Healing Blossom",
-        "description": "Hold to charge a healing burst. Release to heal a targeted ally. Passively charges at a reduced rate while not in use.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Healing": "80 over 0.3 seconds (max charge)\n10 (min charge)",
-          "Rate of fire": "0.69 shots/s (max charge)\n3.33 shots/s (min charge)",
-          "Ammo": "16",
-          "Reload time": "1.5 seconds",
-          "Max. range": "30 meters (targeting)",
-          "Projectile speed": "60 m/s",
-          "Projectile radius": "0.25 meters"
-        }
-      },
-      {
-        "name": "Thorn Volley",
-        "description": "Rapidly fire a spread of projectiles.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "6 (per thorn)\n12 (per shot)",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "11 shots/s",
-          "Bullets per shot": "2",
-          "Ammo per shot": "2",
+          "Damage": "95 per second (at 0%)\n190 per second (100% Energy)",
+          "Headshot": "✕",
+          "Rate of fire": "20 ticks per second",
           "Ammo": "100",
-          "Reload time": "1.5 seconds",
-          "Projectile speed": "80 m/s",
+          "Reload time": "1.5 seconds animation",
+          "Max. range": "15 meters",
           "Projectile radius": "0.2 meters"
         }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Petal Platform\nLSHIFT",
-        "description": "Throw a platform that springs upwards when stepped on. Resets when not in use.",
-        "hotkey": "LSHIFT"
       },
       {
-        "name": "Rejuvenating Dash\nSPACE",
-        "description": "Dash towards your traveling direction and lightly heal yourself.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Life Grip\nE",
-        "description": "Pull an ally to your location, protecting them as they travel.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Tree of Life\nQ",
-        "description": "Place a tree that instantly heals allies upon sprouting and continues healing periodically as it lives.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Lúcio": {
-    "RealName": "Lúcio Correia dos Santos",
-    "Birth": "March 20th",
-    "Age": "28",
-    "Nationality": "Brazilian",
-    "Occupation": "DJ Freedom fighter",
-    "Base": "Rio de Janeiro, Brazil",
-    "Affiliation": "Overwatch",
-    "Relations": "Benicio Correia dos Santos (father)",
-    "Voice": "Jonny Cruz[1] (English)\nDonald Reignoux (French) Leonhard Mahlich (German)Massimo Triggiani (Italian)Sun Ye (Mandarin (China))Jia Wun-an(Mandarin (Taiwan))Kazuyuki Okitsu (Japanese)Lee Ho-San (Korean)Vladimir Golitsyn (Russian)Daniel Müller (Brazilian Portuguese)Eduardo Garza (American Spanish)Ricardo Escobar (European Spanish)",
-    "Role": "Support",
-    "Health": "225",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Sonic Amplifier",
-        "description": "Sonic projectile launcher.",
-        "weaponType": "Projectile",
+        "name": "Particle Cannon Alt Fire",
+        "description": "Energy grenade launcher.",
+        "weaponType": "Arcing projectile",
         "stats": {
-          "Damage": "22 (per round)\n88 (per burst)",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "1.08 shots/s",
-          "Bullets per shot": "4",
-          "Ammo per shot": "4",
-          "Ammo": "20",
-          "Reload time": "1.5 seconds animation",
-          "Spread angle": "None",
-          "Projectile speed": "50 meters per second",
-          "Projectile radius": "0.25 meters"
-        }
-      },
-      {
-        "name": "Soundwave",
-        "description": "Create a short-range blast wave to knock enemies away from you.",
-        "weaponType": "4 seconds",
-        "stats": {
-          "Damage": "45",
+          "Damage": "55 – 11 (enemy, 0% Energy)\n110 – 22 (enemy, 100% Energy)\n27.5 – 5.5 (self, 0% Energy)\n55 – 11 (self, 100% Energy)",
           "Headshot": "✕",
-          "Duration": "0.56 s. recovery for primary",
-          "Max. range": "8 meters",
-          "Knockback speed": "17 m/s"
+          "Rate of fire": "1 shot/s",
+          "Ammo per shot": "25",
+          "Ammo": "100",
+          "Reload time": "1.5 seconds",
+          "Cast time": "0.01 seconds\n0.4 seconds recovery for primary",
+          "Area of effect": "2.5 meter radius",
+          "Knockback speed": "5 m/s",
+          "Projectile speed": "25 m/s",
+          "Projectile radius": "0.35 meters"
         }
       }
     ],
     "Abilities": [
       {
-        "name": "Crossfade\nLSHIFT",
-        "description": "Switches between two songs: Healing Boost heals nearby allies, and Speed Boost makes nearby allies move faster.",
+        "name": "Particle Barrier\nLSHIFT",
+        "description": "Create a damage barrier around you.",
         "hotkey": "LSHIFT"
       },
       {
-        "name": "Amp It Up\nE",
-        "description": "Increase the effectiveness of your current song.",
+        "name": "Projected Barrier\nE",
+        "description": "Create a damage barrier around an ally.",
         "hotkey": "E"
       },
       {
-        "name": "Sound Barrier\nQ",
-        "description": "Create temporary extra health for nearby allies.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Mercy": {
-    "RealName": "Angela Ziegler",
-    "Birth": "May 13th",
-    "Age": "39",
-    "Nationality": "Swiss",
-    "Occupation": "Field medic First responder",
-    "Base": "Zürich, Switzerland (formerly)Cairo, Egypt (formerly)Watchpoint: Gibraltar",
-    "Affiliation": "Overwatch",
-    "Relations": "Unnamed parents (deceased)",
-    "Voice": "Lucie Pohl (English)\nSybille Tureau (French)\nFarina Brock (German)\nChiara Francese (Italian)\nSayaka Ōhara (Japanese)\nLee Hyeon-jin (Korean)\nTao Dian (Chinese Mandarin)\nYe Zhiqiu (Chinese Mandarin, Storm Rising)\nLiou Xiao-yun & Chen Mei-zhen (Taiwanese Mandarin)\nKarolina Kalina-Bulcewicz (Polish)\nChristiane  Louise † (Brazilian Portuguese, 1st voice)\nTonia Mesquita (Brazilian Portuguese, 2nd voice)\nOlga Pletnyova (Russian)\nAdelaida López (European Spanish)\nCirce Luna (Latin American Spanish)",
-    "Role": "Support",
-    "Health": "225",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Caduceus Staff\n1",
-        "description": "Hold to heal an ally.  Hold to increase an ally's damage inflicted.",
-        "weaponType": "Targeted",
-        "stats": {
-          "Healing": "60 per second",
-          "Dmg. amplification": "+30% dealt",
-          "Max. range": "15 meters"
-        }
-      },
-      {
-        "name": "Caduceus Blaster\n2",
-        "description": "Automatic weapon.",
-        "weaponType": "Projectile",
-        "stats": {
-          "Damage": "20",
-          "Headshot": "✓ (x2)",
-          "Rate of fire": "5 shots/s",
-          "Ammo": "25",
-          "Reload time": "1.4 seconds",
-          "Spread angle": "None",
-          "Projectile speed": "50 m/s",
-          "Projectile radius": "0.275 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Angelic Descent\nSPACE",
-        "description": "Fall very slowly.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Guardian Angel\nLSHIFT",
-        "description": "Fly towards an ally. While in flight, Jump launches you forward, and and Crouch launches you upward.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Resurrect\nE",
-        "description": "Revive a dead teammate.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Valkyrie\nQ",
-        "description": "Gain the ability to fly. Abilities are enhanced.",
-        "hotkey": "Q"
-      },
-      {
-        "name": "Resurrect (old)\nQ",
-        "description": "Mercy radiates restorative power, bringing nearby dead allies back into the fight with full health.",
-        "hotkey": "Q"
-      }
-    ]
-  },
-  "Moira": {
-    "RealName": "Moira O'Deorain",
-    "Birth": "April 4th",
-    "Age": "50",
-    "Nationality": "Irish",
-    "Occupation": "GeneticistMinister of GeneticsTalon council member",
-    "Base": "Oasis, Iraq[1]",
-    "Affiliation": "Blackwatch (formerly)TalonThe Ministries",
-    "Relations": null,
-    "Voice": "Genevieve O'Reilly[2] (English)\nDéborah Perret (French)\n Alexandra Lange (German)\n Marcella Silvestri (Italian)\n Mie Sonozaki (Japanese)\n Lee Mi-na (Korean)\n Li Shirong (Chinese Mandarin)\n Fu Chi-huei (Taiwanese Mandarin)\n Magdalena Cielecka (Polish, 1st voice)\n Wiktoria Gorodeckaja (Polish, 2nd voice)\n Isis Koschdoski (Brazilian Portuguese)\n Natalia Kolodyazhnaya (Russian)\n Esther Solans (European Spanish)\n Sarah Souza (Latin American Spanish)",
-    "Role": "Support",
-    "Health": "225",
-    "Shields": null,
-    "Weapons": [
-      {
-        "name": "Biotic Grasp",
-        "description": "Hold to heal all allies in front of you. Consumes biotic energy.",
-        "weaponType": "Beam",
-        "stats": {
-          "Healing": "70 per second, then lingers to heal 51 over 3 seconds",
-          "Ammo per shot": "20 energy per second",
-          "Ammo": "156 biotic energy",
-          "Cast time": "0.08 seconds for heal",
-          "Duration": "3 seconds (remainder)",
-          "Max. range": "15 meters",
-          "Projectile radius": "None"
-        }
-      },
-      {
-        "name": "Biotic Grasp Alt Fire",
-        "description": "Long range beam weapon. Damage dealt heals you and replenishes your biotic energy.",
-        "weaponType": "Beam",
-        "stats": {
-          "Damage": "65 per second",
-          "Headshot": "✕",
-          "Healing": "24 per second (self)",
-          "Ammo": "∞",
-          "Max. range": "20 meters"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Biotic Orb\nE",
-        "description": "Launch a bouncing sphere that either heals nearby allies or damages nearby enemies.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Fade\nLSHIFT",
-        "description": "Disappear, move faster, and become invulnerable, but you cannot shoot.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Coalescence\nQ",
-        "description": "Fire a beam that heals allies and damages enemies.",
+        "name": "Graviton Surge\nQ",
+        "description": "Launch a gravity well that pulls enemies to it.",
         "hotkey": "Q"
       }
     ]
@@ -2742,7 +2742,7 @@
     "Base": "Shambali Monastery, Nepal (formerly)",
     "Affiliation": "Shambali",
     "Relations": null,
-    "Voice": "Feodor Chin[1] (English)\nMarc Perez (French)Frank Schaff (German)Gabriele Calindri (Italian)Mammoth Nishio (Japanese)An Hyo-min (Korean)Li Yuantao (Chinese Mandarin)Li Yong (Taiwanese Mandarin)Krzysztof Dracz (Polish)Ricardo Juarez (Brazilian Portuguese)Andrey Phinyagin (Russian)Abraham Aguilar (European Spanish)Arturo Mercado Jr. (Latin American Spanish)",
+    "Voice": "Feodor Chin[1] (English)\nExpandMarc Perez (French)Frank Schaff (German)Gabriele Calindri (Italian)Mammoth Nishio (Japanese)An Hyo-min (Korean)Li Yuantao (Chinese Mandarin)Li Yong (Taiwanese Mandarin)Krzysztof Dracz (Polish)Ricardo Juarez (Brazilian Portuguese)Andrey Phinyagin (Russian)Abraham Aguilar (European Spanish)Arturo Mercado Jr. (Latin American Spanish)",
     "Role": "Support",
     "Health": "75",
     "Shields": "175",

@@ -10,9 +10,9 @@ const path = require('path');
 
 (async () => {
 	// Load hero names from the JSON file
-	let heroNames;
+	let heroes;
 	try {
-		heroNames = JSON.parse(fs.readFileSync('src/lib/datas/heroNames.json', 'utf8'));
+		heroes = JSON.parse(fs.readFileSync('src/lib/datas/heroes.json', 'utf8'));
 	} catch (error) {
 		console.error('Failed to load hero names from JSON file. ' +
 			'Make sure to launch characters_scraper first.');
@@ -23,13 +23,10 @@ const path = require('path');
 	const charactersDatas = {};
 
 	// Launch the browser
-	const browser = await puppeteer.launch();
+	const browser = await puppeteer.launch({headless: "shell"});
 
-	for (const heroName of heroNames) {
-		// Skip characters other than "Mercy"
-		/* if (heroName !== "Mercy") {
-			continue;
-		} */
+	for (const hero of heroes) {
+		const heroName = hero.name;
 
 		// Format hero name by replacing spaces with underscores
 		const formattedHeroName = heroName.replace(/\s+/g, '_');
@@ -43,7 +40,7 @@ const path = require('path');
 			// Extract character information
 			// Add character data to the charactersDatas object
 			charactersDatas[heroName] = await page.evaluate(() => {
-				const rows = [...document.querySelectorAll('tbody tr')];  // Select all <tr> elements in <tbody>
+				const rows = [...document.querySelectorAll('.infoboxtable tbody tr')];  // Select all <tr> elements in <tbody>
 
 				/**
 				 * Extracts information based on the label.
