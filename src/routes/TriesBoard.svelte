@@ -1,8 +1,8 @@
 <script lang="ts">
-	// Importer les données des personnages
+	// Import scraped datas
 	import characterData from '$lib/datas/charactersDatas.json';
 
-	// Recevoir les essais en tant que prop
+	// Receive the list of tried heroes
 	export let heroes: { name: string; imageUrl: string; }[] = [];
 
 	function cutString(str: string) {
@@ -13,12 +13,22 @@
 		return index !== str.length ? str.substring(0, index).trim() : str;
 	}
 
+	function getHealth(str: string) {
+		const openQueueIndex = str.indexOf('(Open queue)');
+		const roleQueueIndex = str.indexOf('(Role queue)');
+		if (openQueueIndex !== -1 && roleQueueIndex !== -1) {
+			return str.substring(openQueueIndex + 12, roleQueueIndex).trim();
+		}
+		return str;
+	}
+
 	const headers = [
 		'Hero',
 		'Role',
 		'Nationality',
 		'Age',
-		'Health'
+		'Health',
+		'Shields'
 	];
 </script>
 
@@ -37,7 +47,6 @@
 			{#each heroes as hero}
 				<tr>
 					{#each headers as header}
-						<!--						todo: find a way to display health from open queue & role queue-->
 						{#if header === 'Hero'}
 							<td class="hero-image">
 								<div class="image-wrapper">
@@ -45,6 +54,8 @@
 									<span class="hero-name-tooltip">{hero.name}</span>
 								</div>
 							</td>
+						{:else if header === 'Health'}
+							<td>{getHealth(characterData[hero.name]?.['Health'])}</td>
 						{:else}
 							<td>{cutString(characterData[hero.name]?.[header] || '❌')}</td>
 						{/if}
