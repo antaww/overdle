@@ -294,7 +294,7 @@
           "Rate of fire": "18 shots/s",
           "Ammo": "300",
           "Reload time": "2.2 seconds",
-          "Duration": "3 seconds (damage over time)",
+          "Duration": "4 seconds (damage over time)",
           "Spread angle": "1 degree",
           "M. speed penalty": "15%",
           "Projectile radius": "0.05 meters"
@@ -482,7 +482,7 @@
         "description": "Punch, creating a wave of piercing energy with every swing.",
         "weaponType": "Melee",
         "stats": {
-          "Damage": "65",
+          "Damage": "65 (enemies)\n162.5 (barriers)",
           "Headshot": "✕",
           "Rate of fire": "1.67 shots/s",
           "Ammo": "∞",
@@ -542,7 +542,7 @@
         "description": "Hold  to deploy a frontal energy barrier.",
         "weaponType": "5 seconds if destroyed",
         "stats": {
-          "Barrier health": "1600",
+          "Barrier health": "1500",
           "Cast time": "0.1 + 0.29 seconds",
           "Area of effect": "Height: 4.250 meters\nWidth: 6.800 meters.",
           "M. speed penalty": "-30%"
@@ -1284,7 +1284,7 @@
     "Relations": "Rumiko Shimada (mother), Sojiro Shimada (father)\n Genji Shimada (younger brother)",
     "Voice": "Paul Nakauchi[3] (English)\nLionel Tua (French)\nBernd Vollbrecht (German)\nLorenzo Scattorin (Italian)\nShūhei Sakaguchi (Japanese)\nHan Shin (Korean)\nLiu Beichen (Mainland Mandarin)\nKang Dian-hong (Taiwanese Mandarin)\nKrzysztof Cybiński (Polish)\nReginaldo Primo (Brazilian Portuguese, 1st voice)\nRodrigo Horta (Brazilian Portuguese, 2nd voice)\nIlya Isaev (Russian)\nMiguel Ángel Montero (European Spanish)\nDan Osorio (Latin American Spanish)",
     "Role": "Damage",
-    "Health": "225",
+    "Health": "250",
     "Shields": null,
     "Weapons": [
       {
@@ -1728,7 +1728,7 @@
         "weaponType": "6 seconds (heroes)\n3 seconds (non-heroes)",
         "stats": {
           "Cast time": "0.65 + 0.4 seconds",
-          "Duration": "8 seconds (reveal, heroes)\n1.5 seconds (ability disable, heroes)\n45 seconds (health packs)\n10 seconds (disable, objects)",
+          "Duration": "8 seconds (reveal, heroes)\n1.0 seconds (ability disable, heroes)\n45 seconds (health packs)\n10 seconds (disable, objects)\n3 seconds (disable,  B.O.B.)",
           "Max. range": "15 meters"
         }
       }
@@ -1741,7 +1741,7 @@
       },
       {
         "name": "Translocator\nE",
-        "description": "Throw a beacon and teleport to it. Stealth cooldown is reduced after teleporting.",
+        "description": "Throw a beacon and teleport to it. Become stealthed for a short duration after teleporting.",
         "hotkey": "E"
       },
       {
@@ -2150,7 +2150,7 @@
     "Base": "Tortuga, Haiti (formerly)Watchpoint: Gibraltar",
     "Affiliation": "Caribbean Coalition (formerly), Talon (formerly)Overwatch",
     "Relations": "Several cousins[3]",
-    "Voice": "Benz Antoine (English)\nJean-Baptiste Anoumon (French)Sascha Rotermund (German)Maurizio Merluzzo (Italian)Shunsuke Sakuya (Japanese)Choi Seung-hoon (Korean)Ma Yang (Chinese Mandarin)Chen Yan-jyun (Taiwanese Mandarin)Łukasz Talik (Polish)Pierre Bittencourt (Brazilian Portuguese)Ivan Traore (Russian)Juan Antonio García Sainz de la Maza (European Spanish)Alfredo Gabriel Basurto (Latin American Spanish)",
+    "Voice": "Benz Antoine (English)\nExpandJean-Baptiste Anoumon (French)Sascha Rotermund (German)Maurizio Merluzzo (Italian)Shunsuke Sakuya (Japanese)Choi Seung-hoon (Korean)Ma Yang (Chinese Mandarin)Chen Yan-jyun (Taiwanese Mandarin)Łukasz Talik (Polish)Pierre Bittencourt (Brazilian Portuguese)Ivan Traore (Russian)Juan Antonio García Sainz de la Maza (European Spanish)Alfredo Gabriel Basurto (Latin American Spanish)",
     "Role": "Support",
     "Health": "250",
     "Shields": null,
@@ -2341,14 +2341,14 @@
   },
   "Juno": {
     "RealName": "Juno Teo Minh",
-    "Birth": "March 22nd",
-    "Age": "19",
+    "Birth": "March 22nd[1]",
+    "Age": "19[1]",
     "Nationality": "Martian",
-    "Occupation": null,
+    "Occupation": "Medic[2]Navigator[1]",
     "Base": "Red Promise Colony, Mars (formerly)\nWatchpoint: Gibraltar",
     "Affiliation": "Project Red Promise",
-    "Relations": "Jiayi Teo (Mother)\nKhiem Van Minh (Father)",
-    "Voice": "Xanthe Huynh (English)\nValérie Bachère (French)\n Özge Kayalar[1] (German)\n Rika Tachibana[2] (Japanese)\n Yoon Eun-seo (Korean)\n Michelle Giudice (Brazilian Portuguese)\n Vasilisa Eldarova (Russian)\n Desireé González (Latin American Spanish)",
+    "Relations": "Jiayi Teo (mother), Khiem Van Minh (father)",
+    "Voice": "Xanthe Huynh (English)\nValérie Bachère (French)\n Özge Kayalar[3] (German)\n Rika Tachibana[4] (Japanese)\n Yoon Eun-seo (Korean)\n Michelle Giudice (Brazilian Portuguese)\n Vasilisa Eldarova (Russian)\n Desireé González (Latin American Spanish)",
     "Role": "Support",
     "Health": "75",
     "Shields": "150",
@@ -2359,9 +2359,9 @@
         "weaponType": "Hitscan",
         "stats": {
           "Damage": "7.5 - 2.25 (per round)\n90 - 27 (per burst)",
-          "Falloff range": "30 - 50 meters (damage and healing)",
+          "Falloff range": "20 - 35 meters (damage and healing)",
           "Headshot": "✕",
-          "Healing": "6.5 - 1.95 (per round)\n78 - 23.4 (per burst)",
+          "Healing": "6 - 1.8 (per round)\n72 - 21.6 (per burst)",
           "Rate of fire": "1.29 shots/s",
           "Bullets per shot": "12",
           "Ammo per shot": "12 per shot",
@@ -2485,7 +2485,7 @@
     "Base": "Chiang Mai, Thailand (formerly)Architech Academy, India (formerly)Atlantic Arcology",
     "Affiliation": "Vishkar Corporation (formerly)The Collective",
     "Relations": "Unnamed parentsUnnamed older sister, unnamed younger brother[5]",
-    "Voice": "Phuwin Tangsakyuen (English)\nExpandRémi Gutton (French)\n Sebastian Griegel (German)\n Luca Appetiti (Italian)\n Shūsaku Shirakawa (Japanese)\n Ryu Seung-gon (Korean)\n Qiao Zi-hao (Taiwanese Mandarin)\n Tomasz Olejnik (Polish)\n Vinícius Estefanuto (Brazilian Portuguese)\n Sergei Gabrielyan Jr. (Russian)\n Óscar Garibay (Latin American Spanish)",
+    "Voice": "Phuwin Tangsakyuen (English)\nRémi Gutton (French)\n Sebastian Griegel (German)\n Luca Appetiti (Italian)\n Shūsaku Shirakawa (Japanese)\n Ryu Seung-gon (Korean)\n Qiao Zi-hao (Taiwanese Mandarin)\n Tomasz Olejnik (Polish)\n Vinícius Estefanuto (Brazilian Portuguese)\n Sergei Gabrielyan Jr. (Russian)\n Óscar Garibay (Latin American Spanish)",
     "Role": "Support",
     "Health": "225",
     "Shields": "50",

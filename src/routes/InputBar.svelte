@@ -1,38 +1,36 @@
 <script lang="ts">
-	import heroNames from '$lib/datas/heroNames.json';
+	import heroes from '$lib/datas/heroes.json';
 	import {tick} from 'svelte';
 
 	let query = '';
-	let suggestions: string[] = [];
+	let suggestions: any[] = [];
 	let tries: string[] = []; // Stock the list of tried heroes
 	let invalidInput = false; // State to trigger the shake animation
 
 	// Filter suggestions based on the query
 	const filterSuggestions = () => {
 		suggestions = query.length > 0
-			? heroNames.filter(hero => hero.toLowerCase().includes(query.toLowerCase())).sort()
+			? heroes.filter(hero => hero.name.toLowerCase().includes(query.toLowerCase())).sort()
 			: [];
 	};
 
 	// Send a POST request to the server
 	const sendTry = async (hero: string) => {
-		// Verify if the name is valid (in the list of heroes)
-		if (!heroNames.includes(hero)) {
+		// Vérifier si le nom est valide
+		if (!heroes.some(h => h.name === hero)) {
 			invalidInput = true;
-			await tick(); // Wait for the DOM to update
+			await tick();
 			setTimeout(() => {
-				invalidInput = false; // Reset the state
-			}, 500); // Reset the state after 500ms
+				invalidInput = false;
+			}, 500);
 			return;
 		}
 
-		// Add the hero to the list of tries
+		// Ajouter le héros à la liste des essais
 		tries = [...tries, hero];
-
-		// Stock the list of tries in a cookie
 		document.cookie = `tries=${JSON.stringify(tries)}; path=/`;
 
-		// Send the request to the server
+		// Envoyer la requête au serveur
 		try {
 			const response = await fetch('/try', {
 				method: 'POST',
@@ -53,16 +51,14 @@
 		}
 	};
 
-	// Handle the form submission
 	const handleSubmit = (event: Event) => {
 		event.preventDefault();
 		sendTry(query);
 	};
 
-	// Handle the click on a suggestion
-	const handleSuggestionClick = (suggestion: string) => {
-		query = suggestion; // Remplir l'input avec la suggestion
-		sendTry(suggestion); // Envoyer la requête
+	const handleSuggestionClick = (hero) => {
+		query = hero.name;
+		sendTry(hero.name);
 	};
 </script>
 
@@ -83,8 +79,10 @@
 	{#if suggestions.length > 0}
 		<div class="suggestions">
 			<ul>
-				{#each suggestions as suggestion}
-					<li on:click={() => handleSuggestionClick(suggestion)}>{suggestion}</li>
+				{#each suggestions as hero}
+					<li on:click={() => handleSuggestionClick(hero)}>
+						<img src={hero.imageUrl} alt={hero.name} width="30" height="30"/> {hero.name}
+					</li>
 				{/each}
 			</ul>
 		</div>
@@ -122,6 +120,9 @@
 	}
 
 	li {
+		display: flex;
+		gap: 10px;
+		align-items: center;
 		padding: 8px;
 		background-color: #0c0c0c;
 		margin-bottom: 5px;
