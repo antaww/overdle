@@ -64,7 +64,7 @@ const path = require('path');
 						if (weaponContainer) {
 							const weaponName = weaponContainer.querySelector('.abilityHeader')?.innerText.trim();
 							const weaponDescription = weaponContainer.querySelector('.summaryInfoAndImage i')?.innerText.trim();
-							const weaponType = weaponContainer.querySelector('.summaryInfoAndImage span')?.innerText.trim();
+							const weaponType = weaponContainer.querySelector('.summaryInfoAndImage span:last-of-type:not([title~="Ability"])')?.innerText.trim();
 
 							// Initialize stats object
 							const stats = {};

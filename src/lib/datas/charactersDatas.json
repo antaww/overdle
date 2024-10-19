@@ -33,7 +33,7 @@
       {
         "name": "Pulsar Torpedoes",
         "description": "Press Secondary Fire to lock on, then Primary Fire to fire homing projectiles. Heals allies over time and damages enemies.",
-        "weaponType": "10 seconds",
+        "weaponType": "Targeted",
         "stats": {
           "Damage": "85",
           "Headshot": "✕",
@@ -84,7 +84,7 @@
       {
         "name": "Biotic Rifle",
         "description": "Long-range rifle that heals allies and damages enemies.\n Hold to zoom in.",
-        "weaponType": "Projectile",
+        "weaponType": "Hitscan",
         "stats": {
           "Damage": "70 over 0.59 seconds",
           "Headshot": "✕",
@@ -217,7 +217,7 @@
       {
         "name": "Biotic Launcher Alt Fire",
         "description": "Lob a healing projectile that heals all allies near the impact.",
-        "weaponType": "Arcing projectile",
+        "weaponType": "Area of effect",
         "stats": {
           "Healing": "20 (direct hit)\n50 (splash, ally)",
           "Rate of fire": "1.11 shots/s",
@@ -299,7 +299,7 @@
       {
         "name": "A-36 Tactical Grenade",
         "description": "Fire a bomb that bounces off walls and explodes when it hits enemies or the ground.",
-        "weaponType": "8 seconds",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "15 (direct hit bonus)\n100 - 50 (splash, enemy)\n50 - 25 (splash, self)",
           "Headshot": "✕",
@@ -309,16 +309,6 @@
           "Knockback speed": "17.5 m/s (self)\n10.5 m/s (enemy)",
           "Projectile speed": "40 m/s",
           "Projectile radius": "0.4 meters"
-        }
-      },
-      {
-        "name": "Self-Repair",
-        "description": "Hold to heal yourself.",
-        "weaponType": "1 second",
-        "stats": {
-          "Healing": "90 per second",
-          "Cast time": "0.5 second delay",
-          "Duration": "Up to 3.33 seconds"
         }
       }
     ],
@@ -367,19 +357,9 @@
         }
       },
       {
-        "name": "Barrier Shield",
-        "description": "Hold  to deploy a frontal energy barrier.",
-        "weaponType": "5 seconds (destroyed)",
-        "stats": {
-          "Barrier health": "250 (default)\n700 (during Rally)",
-          "Cast time": "None",
-          "M. speed penalty": "-30%"
-        }
-      },
-      {
         "name": "Shield Bash",
         "description": "Available when Barrier Shield is deployed. Dash forward to knock back an enemy.",
-        "weaponType": "5 seconds",
+        "weaponType": "Movement",
         "stats": {
           "Damage": "50",
           "Headshot": "✕",
@@ -547,17 +527,6 @@
           "Projectile speed": "50 m/s",
           "Projectile radius": "0.275 meters"
         }
-      },
-      {
-        "name": "Defense Matrix",
-        "description": "Block projectiles in an area in front of you.",
-        "weaponType": "1 second",
-        "stats": {
-          "Cast time": "None",
-          "Duration": "0.5 seconds (min)\n3 seconds (max)",
-          "Max. range": "10 meters",
-          "Cooldown": "1 second"
-        }
       }
     ],
     "Abilities": [
@@ -618,7 +587,7 @@
       {
         "name": "Rocket Punch",
         "description": "Hold to charge then release to launch forward and knock an enemy back. Damage increases if the enemy hits a wall.",
-        "weaponType": "4 seconds",
+        "weaponType": "Movement",
         "stats": {
           "Damage": "25 - 75 (impact damage), 10 - 40 (wall slam)",
           "Headshot": "✕",
@@ -665,7 +634,7 @@
       {
         "name": "Rocket Punch (old)",
         "description": "After charging up, Doomfist lunges forward and knocks an enemy back, dealing additional damage if they impact a wall.",
-        "weaponType": "4 seconds",
+        "weaponType": "Melee",
         "stats": {
           "Damage": "50 - 100 (punch)\n50 - 150 (wall impact)",
           "Headshot": "✕",
@@ -742,7 +711,7 @@
       {
         "name": "Sticky Bombs",
         "description": "Fire a volley of sticky bombs that detonate after a delay.",
-        "weaponType": "6 seconds",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "5 (direct hit bonus)\n25 (explosion, enemy)\n12.5 (explosion, self)",
           "Headshot": "✕",
@@ -1003,7 +972,7 @@
       {
         "name": "Jagged Blade",
         "description": "Active: Throw the blade. Re-activate to pull it back with any impaled enemy.\nPassive: Wound enemies hit by Quick Melee or Throw, dealing damage over time.",
-        "weaponType": "6 seconds",
+        "weaponType": "Arcing projectile",
         "stats": {
           "Damage": "65 (thrown hit)\n30 over 3 seconds (wound, thrown hit)\n15 over 3 seconds (wound, return hit & melee)",
           "Headshot": "✕",
@@ -1051,7 +1020,7 @@
       {
         "name": "Frag Launcher",
         "description": "Bouncing explosive projectile weapon.",
-        "weaponType": "Arcing projectile",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "45 (direct hit)\n80 - 10 (splash, enemy)",
           "Headshot": "✕",
@@ -1272,7 +1241,7 @@
       {
         "name": "Soundwave",
         "description": "Create a short-range blast wave to knock enemies away from you.",
-        "weaponType": "4 seconds",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "45",
           "Headshot": "✕",
@@ -1591,7 +1560,7 @@
       {
         "name": "Energy Javelin",
         "description": "Launch your javelin at an enemy to stun and knock them back. More effective if the enemy hits a wall.",
-        "weaponType": "6 seconds",
+        "weaponType": "Arcing projectile",
         "stats": {
           "Damage": "80 (direct impact), 40 (wall collision)",
           "Headshot": "✕",
@@ -1619,7 +1588,7 @@
       {
         "name": "Halt!",
         "description": "Launch a graviton charge which can be detonated with the same action. The sphere slows and pulls nearby enemies to it.",
-        "weaponType": "6 seconds",
+        "weaponType": "Projectile",
         "stats": {
           "Cast time": "0.1 seconds (launch)\n0.45 seconds (activation)",
           "Duration": "0.65 seconds (snare)",
@@ -1679,7 +1648,7 @@
       {
         "name": "Rocket Launcher",
         "description": "Long-range explosive projectile weapon.",
-        "weaponType": "Projectile",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "40 (direct hit)\n80 – 24.6 (splash, enemy)\n20 – 6.15 (splash, self)",
           "Headshot": "✕",
@@ -1746,21 +1715,9 @@
         }
       },
       {
-        "name": "Void Barrier",
-        "description": "Create a barrier at the targeted location.",
-        "weaponType": "13 seconds",
-        "stats": {
-          "Barrier health": "1000",
-          "Cast time": "0.03 + 0.5 seconds",
-          "Duration": "4 seconds",
-          "Max. range": "35 meters",
-          "Cooldown": "13 seconds"
-        }
-      },
-      {
         "name": "Pummel\nLSHIFT",
         "description": "Punch, creating a wave of piercing energy with every swing.",
-        "weaponType": "Melee",
+        "weaponType": "Projectile",
         "stats": {
           "Damage": "65 (enemies)\n162.5 (barriers)",
           "Headshot": "✕",
@@ -1866,17 +1823,6 @@
           "Duration": "0.208 seconds (hitbox active)",
           "Max. range": "5 meters"
         }
-      },
-      {
-        "name": "Barrier Field",
-        "description": "Hold  to deploy a frontal energy barrier.",
-        "weaponType": "5 seconds if destroyed",
-        "stats": {
-          "Barrier health": "1500",
-          "Cast time": "0.1 + 0.29 seconds",
-          "Area of effect": "Height: 4.250 meters\nWidth: 6.800 meters.",
-          "M. speed penalty": "-30%"
-        }
       }
     ],
     "Abilities": [
@@ -1928,17 +1874,6 @@
           "Projectile speed": "80 m/s",
           "Projectile radius": "0.05 meters (pellets)\n0.15 meters (shrapnels)"
         }
-      },
-      {
-        "name": "Take a Breather",
-        "description": "Heal yourself and reduce damage taken.",
-        "weaponType": "1.25 seconds",
-        "stats": {
-          "Healing": "160 per second",
-          "Dmg. reduction": "-40% taken",
-          "Cast time": "0.21 + 0.54 seconds",
-          "Duration": "0.55 seconds (min)\n2.5 seconds (max)"
-        }
       }
     ],
     "Abilities": [
@@ -1976,7 +1911,7 @@
       {
         "name": "Hyperspheres",
         "description": "Launch two charges which implode after a short duration, dealing damage in an area.",
-        "weaponType": "Arcing projectile",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "15 (direct hit)\n40 – 12 (splash, enemy)",
           "Headshot": "✕",
@@ -1988,19 +1923,6 @@
           "Knockback speed": "1.1 m/s (enemy)\n0.7 m/s (self)",
           "Projectile speed": "48 m/s",
           "Projectile radius": "0.35 meters"
-        }
-      },
-      {
-        "name": "Experimental Barrier",
-        "description": "Hold to propel a floating barrier; release to stop. Press again to recall the barrier to you.",
-        "weaponType": "2 seconds (recalled)\n5 seconds (destroyed)",
-        "stats": {
-          "Barrier health": "700",
-          "Cast time": "0.03 + 0 seconds",
-          "Duration": "Until recalled or destroyed",
-          "Max. range": "∞",
-          "Area of effect": "4.5 meters height\n5 meters width at the poles\n6.5 meters width at the middle",
-          "Projectile speed": "20 m/s"
         }
       }
     ],
@@ -2055,7 +1977,7 @@
       {
         "name": "Railgun Alt Fire",
         "description": "High impact shot that consumes stored energy and pierces enemies.",
-        "weaponType": "None",
+        "weaponType": "Hitscan",
         "stats": {
           "Damage": "100 – 1",
           "Falloff range": "40 – 60 meters",
@@ -2115,7 +2037,7 @@
       {
         "name": "Helix Rockets",
         "description": "Launch a volley of explosive rockets.",
-        "weaponType": "6 seconds",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "40 (direct hit bonus)\n80 – 40 (splash, enemy)\n40 – 20 (splash, self)",
           "Headshot": "✕",
@@ -2177,7 +2099,7 @@
       {
         "name": "Hack",
         "description": "Hold to hack. Hacked enemies cannot use abilities and can be seen through walls. Hacked health packs spawn faster and can't be used by enemies. Taking damage interrupts the hack attempt.",
-        "weaponType": "6 seconds (heroes)\n3 seconds (non-heroes)",
+        "weaponType": "Targeted",
         "stats": {
           "Cast time": "0.65 + 0.4 seconds",
           "Duration": "8 seconds (reveal, heroes)\n1.0 seconds (ability disable, heroes)\n45 seconds (health packs)\n10 seconds (disable, objects)\n3 seconds (disable,  B.O.B.)",
@@ -2239,7 +2161,7 @@
       {
         "name": "Photon Projector Alt Fire",
         "description": "Hold to charge, release to fire explosive orb.",
-        "weaponType": "Projectile",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "5 - 50 (direct hit)\n5 - 50 (splash, enemy)",
           "Headshot": "✕",
@@ -2432,7 +2354,7 @@
       {
         "name": "Smart Excavator",
         "description": "Launch a seismic charge that bursts after a short distance.",
-        "weaponType": "Projectile",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "35 (direct hit bonus)\n40 - 12 (explosion)",
           "Falloff range": "1 - 2.75 meters (explosion)",
@@ -2450,7 +2372,7 @@
       {
         "name": "Drill Dash",
         "description": "Dash forward while above or underground, pushing enemies back. The cooldown is accelerated while underground.",
-        "weaponType": "8 seconds",
+        "weaponType": "Movement",
         "stats": {
           "Damage": "30 (first hit)\n60 over 0.4 seconds (subsequent hits)\n5 (during Burrow)",
           "Headshot": "✕",
@@ -2633,7 +2555,7 @@
       {
         "name": "Grappling Claw",
         "description": "Launch a grappling claw to rapidly swing around the area. Enables high speed collisions to damage and knockback enemies.",
-        "weaponType": "5 seconds (after fireball)\n1 second (no fireball)",
+        "weaponType": "Movement",
         "stats": {
           "Damage": "60 (high speed)",
           "Headshot": "✕",
@@ -2699,7 +2621,7 @@
       {
         "name": "Particle Cannon Alt Fire",
         "description": "Energy grenade launcher.",
-        "weaponType": "Arcing projectile",
+        "weaponType": "Area of effect",
         "stats": {
           "Damage": "55 – 11 (enemy, 0% Energy)\n110 – 22 (enemy, 100% Energy)\n27.5 – 5.5 (self, 0% Energy)\n55 – 11 (self, 100% Energy)",
           "Headshot": "✕",

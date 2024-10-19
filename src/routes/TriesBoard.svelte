@@ -80,7 +80,6 @@
 	}
 
 	.tries-board h3 {
-		margin-bottom: 10px;
 		text-align: center;
 	}
 
