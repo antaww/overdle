@@ -1,38 +1,27 @@
 <script lang="ts">
 	import heroes from '$lib/datas/heroes.json';
-	import {tick} from 'svelte';
-	import TriesBoard from "./TriesBoard.svelte";
+	import { onMount, tick } from 'svelte';
+	import TriesBoard from './TriesBoard.svelte';
+	import { getCookie, isClient } from '$lib/utils/utils';
 
 	let query = '';
 	let suggestions: any[] = [];
 	let tries: string[] = []; // Stock the list of tried heroes
 	let invalidInput = false; // State to trigger the shake animation
 
-	// Function to read a specific cookie by name
-	const getCookie = (name: string) => {
-		try {
-			const cookieValue = document.cookie
-				.split('; ')
-				.find(row => row.startsWith(name))
-				?.split('=')[1];
-			return cookieValue ? JSON.parse(cookieValue) : [];
-		} catch (error) {
-			console.error(error);
-			return [];
-		}
-	};
-
 	// Load tries from the cookie on page load
 	const loadTries = () => {
-		const savedTries = getCookie('tries');
-		if (savedTries.length > 0) {
-			tries = savedTries;
+		if (isClient) {
+			const savedTries = getCookie('tries');
+			if (savedTries.length > 0) {
+				tries = savedTries;
+			}
 		}
 	};
 
-	// Call loadTries on component mount
-	loadTries();
-	console.log(tries);
+	onMount(() => {
+		loadTries();
+	});
 
 	// Filter heroes based on the query and exclude already tried heroes
 	const filterSuggestions = () => {
@@ -43,6 +32,7 @@
 			).sort()
 			: [];
 	};
+
 	// Send a POST request to the server
 	const sendTry = async (hero: string) => {
 		// Vérifier si le nom est valide
@@ -81,14 +71,14 @@
 <div class="autocomplete">
 	<form on:submit={handleSubmit}>
 		<div class="error-message"
-			 style="visibility: {invalidInput ? 'visible' : 'hidden'}; opacity: {invalidInput ? 1 : 0};">
+		     style="visibility: {invalidInput ? 'visible' : 'hidden'}; opacity: {invalidInput ? 1 : 0};">
 			Invalid hero name
 		</div>
 		<input class="{invalidInput ? 'shake' : ''}"
-			   type="text"
-			   bind:value={query}
-			   on:input={filterSuggestions}
-			   placeholder="Type hero name..."
+		       type="text"
+		       bind:value={query}
+		       on:input={filterSuggestions}
+		       placeholder="Type hero name..."
 		/>
 	</form>
 
@@ -97,7 +87,7 @@
 			<ul>
 				{#each suggestions as hero}
 					<li on:click={() => handleSuggestionClick(hero)}>
-						<img src={hero.imageUrl} alt={hero.name} width="30" height="30"/> {hero.name}
+						<img src={hero.imageUrl} alt={hero.name} width="30" height="30" /> {hero.name}
 					</li>
 				{/each}
 			</ul>
@@ -105,7 +95,7 @@
 	{/if}
 
 </div>
-<TriesBoard bind:heroes={tries}/>
+<TriesBoard bind:heroes={tries} />
 
 <style>
 	.autocomplete {

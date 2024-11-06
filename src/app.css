@@ -23,6 +23,10 @@
 	--color-text: rgba(255, 255, 255, 1);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
+	--red: #d02d39;
+	--blue: #59ceee;
+	--green: #17b528;
+	--orange: #f98612;
 	font-family: var(--font-body);
 	color: var(--color-text);
 }
