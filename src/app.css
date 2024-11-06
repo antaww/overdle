@@ -11,32 +11,34 @@
 }
 
 :root {
-	--font-body: "overwatch", sans-serif;
-	--font-body-medium: "overwatch-medium", sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(0, 0%, 18%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #fec134;
-	--color-theme-1-gradient: linear-gradient(90deg, #fb9534 0%, #ffca35 50%, #fb9534 100%);
-	--color-theme-2: #4075a6;
-	--color-text: rgba(255, 255, 255, 1);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
-	--red: #d02d39;
 	--blue: #59ceee;
 	--green: #17b528;
 	--orange: #f98612;
-	font-family: var(--font-body);
+	--red: #d02d39;
+	--color-bg-0: rgb(202, 216, 228);
+	--color-bg-1: hsl(0, 0%, 18%);
+	--color-bg-2: hsl(224, 44%, 95%);
+	--font-body: "overwatch", sans-serif;
+	--font-body-medium: "overwatch-medium", sans-serif;
 	color: var(--color-text);
+	font-family: var(--font-body);
+	--column-margin-top: 4rem;
+	--font-mono: 'Fira Mono', monospace;
+	--color-text: rgba(255, 255, 255, 1);
+	--color-theme-1: #fec134;
+	--color-theme-1-gradient: linear-gradient(90deg, #fb9534 0%, #ffca35 50%, #fb9534 100%);
+	--color-theme-2: #4075a6;
+	--column-width: 42rem;
 }
 
 body {
-	min-height: 100vh;
-	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-1);
-	background-size: 100vw 100vh;
+	background-image: url('background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	min-height: 100vh;
 }
 
 h1,
@@ -68,29 +70,29 @@ h2 {
 }
 
 pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
 	background-color: rgba(255, 255, 255, 0.45);
 	border-radius: 3px;
 	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
 	color: var(--color-text);
+	font-family: var(--font-mono);
+	font-size: 16px;
+	overflow-x: auto;
+	padding: 0.5em;
 }
 
 .text-column {
 	display: flex;
-	max-width: 48rem;
 	flex: 0.6;
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
+	max-width: 48rem;
 }
 
 input,
 button {
-	font-size: inherit;
 	font-family: inherit;
+	font-size: inherit;
 	text-transform: uppercase;
 }
 
@@ -112,8 +114,8 @@ button:focus:not(:focus-visible) {
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
-	width: 1px;
 	white-space: nowrap;
+	width: 1px;
 }
 
 .gradient-text {
@@ -127,13 +129,13 @@ input:focus {
 }
 
 form {
-	display: flex;
 	align-items: center;
-	justify-content: center;
+	display: flex;
 	flex-flow: column;
+	justify-content: center;
 }
 
 th, td {
-	text-align: center;
 	font-weight: 100;
+	text-align: center;
 }
