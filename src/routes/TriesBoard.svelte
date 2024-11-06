@@ -28,7 +28,8 @@
 		'Nationality',
 		'Age',
 		'Health',
-		'Shields'
+		'Shields',
+		'Armor'
 	];
 </script>
 

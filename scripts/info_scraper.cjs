@@ -137,6 +137,7 @@ const path = require('path');
 					Role: getInfo('Role') || null,
 					Health: getInfo('Health') || null,
 					Shields: getInfo('Shields') || null,
+					Armor: getInfo('Armor') || null,
 					Weapons: getWeaponInfo() || null,
 					Abilities: getAbilityInfo() || null
 				};

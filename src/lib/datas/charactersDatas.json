@@ -1,72 +1,4 @@
 {
-  "Juno": {
-    "RealName": "Juno Teo Minh",
-    "Birth": "March 22nd[1]",
-    "Age": "19[1]",
-    "Nationality": "Martian",
-    "Occupation": "Medic[2]Navigator[1]",
-    "Base": "Red Promise Colony, Mars (formerly)\nWatchpoint: Gibraltar",
-    "Affiliation": "Project Red Promise",
-    "Relations": "Jiayi Teo (mother), Khiem Van Minh (father)",
-    "Voice": "Xanthe Huynh (English)\nExpandValérie Bachère (French)\n Özge Kayalar[3] (German)\n Rika Tachibana[4] (Japanese)\n Yoon Eun-seo (Korean)\n Michelle Giudice (Brazilian Portuguese)\n Vasilisa Eldarova (Russian)\n Desireé González (Latin American Spanish)",
-    "Role": "Support",
-    "Health": "75",
-    "Shields": "150",
-    "Weapons": [
-      {
-        "name": "Mediblaster",
-        "description": "Burst fire weapon that heals allies and damages enemies.",
-        "weaponType": "Hitscan",
-        "stats": {
-          "Damage": "7.5 - 2.25 (per round)\n90 - 27 (per burst)",
-          "Falloff range": "20 - 35 meters (damage and healing)",
-          "Headshot": "✕",
-          "Healing": "6 - 1.8 (per round)\n72 - 21.6 (per burst)",
-          "Rate of fire": "1.29 shots/s",
-          "Bullets per shot": "12",
-          "Ammo per shot": "12 per shot",
-          "Ammo": "180",
-          "Reload time": "1.8 seconds",
-          "Projectile radius": "0.05 meters"
-        }
-      },
-      {
-        "name": "Pulsar Torpedoes",
-        "description": "Press Secondary Fire to lock on, then Primary Fire to fire homing projectiles. Heals allies over time and damages enemies.",
-        "weaponType": "Targeted",
-        "stats": {
-          "Damage": "85",
-          "Headshot": "✕",
-          "Healing": "85 (direct)\n50 (over time)",
-          "Cast time": "0 + 0.3 seconds",
-          "Duration": "2.5 seconds (HoT)\n0.5 - 1 seconds (lock-on)\n0.38 - 4 seconds (targeting)",
-          "Max. range": "40 meters (targeting)"
-        }
-      }
-    ],
-    "Abilities": [
-      {
-        "name": "Martian Overboots\nSPACE",
-        "description": "While airborne, press Jump to double jump and hold Jump to hover.",
-        "hotkey": "SPACE"
-      },
-      {
-        "name": "Glide Boost\nLSHIFT",
-        "description": "Glide horizontally with increased movement speed.",
-        "hotkey": "LSHIFT"
-      },
-      {
-        "name": "Hyper Ring\nE",
-        "description": "Deploy a ring that increases movement speed of allies that pass through it.",
-        "hotkey": "E"
-      },
-      {
-        "name": "Orbital Ray\nQ",
-        "description": "Call down a ray that travels forward, healing allies and increasing their damage.",
-        "hotkey": "Q"
-      }
-    ]
-  },
   "Ana": {
     "RealName": "Ana Amari (أنا عماري)",
     "Birth": "January 1st[1]",
@@ -80,6 +12,7 @@
     "Role": "Support",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Biotic Rifle",
@@ -132,6 +65,7 @@
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "The Viper",
@@ -197,6 +131,7 @@
     "Role": "Support",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Biotic Launcher",
@@ -265,6 +200,7 @@
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
+    "Armor": "100",
     "Weapons": [
       {
         "name": "Configuration: Recon",
@@ -343,6 +279,7 @@
     "Role": "Support",
     "Health": "200",
     "Shields": null,
+    "Armor": "50",
     "Weapons": [
       {
         "name": "Rocket Flail",
@@ -402,6 +339,7 @@
     "Role": "Damage",
     "Health": "275",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Peacekeeper",
@@ -497,6 +435,7 @@
     "Role": "Tank",
     "Health": "225 (Open queue)375 (Role queue)175 (Pilot Form)",
     "Shields": null,
+    "Armor": "325",
     "Weapons": [
       {
         "name": "Fusion Cannons",
@@ -565,6 +504,7 @@
     "Role": "Tank",
     "Health": "375 (Open queue)525 (Role queue)",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Hand Cannon",
@@ -691,6 +631,7 @@
     "Role": "Damage",
     "Health": "225",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Tri-Shot",
@@ -752,7 +693,7 @@
     "Birth": "October 28th",
     "Age": "37 (Overwatch 2)35 (Overwatch)",
     "Nationality": "Japanese",
-    "Occupation": "Adventurer",
+    "Occupation": "AdventurerSamurai",
     "Base": "Hanamura, Japan (formerly)Shambali Monastery, Nepal (formerly)Watchpoint: Gibraltar",
     "Affiliation": "Shimada Clan (formerly)Blackwatch (formerly)Overwatch (left, later rejoined)Shambali (temporary)",
     "Relations": "Sojiro Shimada (father)\nRumiko Shimada (mother)\n Hanzo Shimada (older brother)",
@@ -760,6 +701,7 @@
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Shuriken",
@@ -832,6 +774,7 @@
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Storm Bow",
@@ -890,6 +833,7 @@
     "Role": "Support",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Solar Rifle",
@@ -951,6 +895,7 @@
     "Role": "Tank",
     "Health": "375 (Open queue)525 (Role queue)",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Scattergun",
@@ -1016,6 +961,7 @@
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Frag Launcher",
@@ -1070,6 +1016,75 @@
       }
     ]
   },
+  "Juno": {
+    "RealName": "Juno Teo Minh",
+    "Birth": "March 22nd[1]",
+    "Age": "19[1]",
+    "Nationality": "Martian",
+    "Occupation": "Medic[2]Navigator[1]",
+    "Base": "Red Promise Colony, Mars (formerly)\nWatchpoint: Gibraltar",
+    "Affiliation": "Project Red Promise",
+    "Relations": "Jiayi Teo (mother), Khiem Van Minh (father)",
+    "Voice": "Xanthe Huynh (English)\nExpandValérie Bachère (French)\n Özge Kayalar[3] (German)\n Rika Tachibana[4] (Japanese)\n Yoon Eun-seo (Korean)\n Michelle Giudice (Brazilian Portuguese)\n Vasilisa Eldarova (Russian)\n Desireé González (Latin American Spanish)",
+    "Role": "Support",
+    "Health": "75",
+    "Shields": "150",
+    "Armor": null,
+    "Weapons": [
+      {
+        "name": "Mediblaster",
+        "description": "Burst fire weapon that heals allies and damages enemies.",
+        "weaponType": "Hitscan",
+        "stats": {
+          "Damage": "7.5 - 2.25 (per round)\n90 - 27 (per burst)",
+          "Falloff range": "20 - 35 meters (damage and healing)",
+          "Headshot": "✕",
+          "Healing": "6 - 1.8 (per round)\n72 - 21.6 (per burst)",
+          "Rate of fire": "1.29 shots/s",
+          "Bullets per shot": "12",
+          "Ammo per shot": "12 per shot",
+          "Ammo": "180",
+          "Reload time": "1.8 seconds",
+          "Projectile radius": "0.05 meters"
+        }
+      },
+      {
+        "name": "Pulsar Torpedoes",
+        "description": "Press Secondary Fire to lock on, then Primary Fire to fire homing projectiles. Heals allies over time and damages enemies.",
+        "weaponType": "Targeted",
+        "stats": {
+          "Damage": "85",
+          "Headshot": "✕",
+          "Healing": "85 (direct)\n50 (over time)",
+          "Cast time": "0 + 0.3 seconds",
+          "Duration": "2.5 seconds (HoT)\n0.5 - 1 seconds (lock-on)\n0.38 - 4 seconds (targeting)",
+          "Max. range": "40 meters (targeting)"
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "name": "Martian Overboots\nSPACE",
+        "description": "While airborne, press Jump to double jump and hold Jump to hover.",
+        "hotkey": "SPACE"
+      },
+      {
+        "name": "Glide Boost\nLSHIFT",
+        "description": "Glide horizontally with increased movement speed.",
+        "hotkey": "LSHIFT"
+      },
+      {
+        "name": "Hyper Ring\nE",
+        "description": "Deploy a ring that increases movement speed of allies that pass through it.",
+        "hotkey": "E"
+      },
+      {
+        "name": "Orbital Ray\nQ",
+        "description": "Call down a ray that travels forward, healing allies and increasing their damage.",
+        "hotkey": "Q"
+      }
+    ]
+  },
   "Kiriko": {
     "RealName": "Kiriko Kamori (家守 霧子)",
     "Birth": "July 7th",
@@ -1083,6 +1098,7 @@
     "Role": "Support",
     "Health": "225",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Healing Ofuda",
@@ -1152,6 +1168,7 @@
     "Role": "Support",
     "Health": "225",
     "Shields": "50",
+    "Armor": null,
     "Weapons": [
       {
         "name": "Healing Blossom",
@@ -1220,6 +1237,7 @@
     "Role": "Support",
     "Health": "225",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Sonic Amplifier",
@@ -1282,6 +1300,7 @@
     "Role": "Tank",
     "Health": "375 (Open queue)525 (Role queue)",
     "Shields": null,
+    "Armor": "200",
     "Weapons": [
       {
         "name": "Incendiary Chaingun",
@@ -1348,6 +1367,7 @@
     "Role": "Damage",
     "Health": "300",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Endothermic Blaster",
@@ -1415,6 +1435,7 @@
     "Role": "Support",
     "Health": "225",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Caduceus Staff\n1",
@@ -1483,6 +1504,7 @@
     "Role": "Support",
     "Health": "225",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Biotic Grasp",
@@ -1540,8 +1562,9 @@
     "Relations": "Efi Oladele (creator)",
     "Voice": "Cherrelle Skeete[1] (English)\nExpandCorinne Wellong (French)Dela Dabulamanzi (German)Elisabetta Spinelli (Italian)Atsumi Tanezaki (Japanese)Kang Shi-hyeon (Korean)Sonia Bohosiewicz (Polish)Marisa Leal (Brazilian Portuguese)Anna Levina (Russian)Han Jiaojiao (Simplified Chinese)Long Sian-huei (Traditional Chinese)María Blanco (European Spanish)",
     "Role": "Tank",
-    "Health": "125 (Open queue)275 (Role queue)",
+    "Health": "175 (Open queue)325 (Role queue)",
     "Shields": null,
+    "Armor": "300",
     "Weapons": [
       {
         "name": "Augmented Fusion Driver",
@@ -1562,7 +1585,7 @@
         "description": "Launch your javelin at an enemy to stun and knock them back. More effective if the enemy hits a wall.",
         "weaponType": "Arcing projectile",
         "stats": {
-          "Damage": "80 (direct impact), 40 (wall collision)",
+          "Damage": "70 (direct impact), 40 (wall collision)",
           "Headshot": "✕",
           "Cast time": "0.3 + 0.4 seconds seconds",
           "Duration": "0.2 seconds (impact stun)\n0.3 seconds (wall stun)",
@@ -1601,7 +1624,7 @@
     "Abilities": [
       {
         "name": "Fortify\nLSHIFT",
-        "description": "Gain temporary health, reducing all damage taken and becoming unstoppable. While active, heat generated by your weapon is reduced.",
+        "description": "Gain temporary health, reducing all damage taken and becoming unstoppable.",
         "hotkey": "LSHIFT"
       },
       {
@@ -1644,6 +1667,7 @@
     "Role": "Damage",
     "Health": "225",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Rocket Launcher",
@@ -1699,6 +1723,7 @@
     "Role": "Tank",
     "Health": "250 (Open queue)400 (Role queue)",
     "Shields": null,
+    "Armor": "75",
     "Weapons": [
       {
         "name": "Void Accelerator",
@@ -1719,7 +1744,7 @@
         "description": "Punch, creating a wave of piercing energy with every swing.",
         "weaponType": "Projectile",
         "stats": {
-          "Damage": "65 (enemies)\n162.5 (barriers)",
+          "Damage": "65",
           "Headshot": "✕",
           "Rate of fire": "1.67 shots/s",
           "Ammo": "∞",
@@ -1760,6 +1785,7 @@
     "Role": "Damage",
     "Health": "300",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Hellfire Shotguns",
@@ -1810,6 +1836,7 @@
     "Role": "Tank",
     "Health": "250 (Open queue)400 (Role queue)",
     "Shields": null,
+    "Armor": "300",
     "Weapons": [
       {
         "name": "Rocket Hammer",
@@ -1856,6 +1883,7 @@
     "Role": "Tank",
     "Health": "600 (Open queue)750 (Role queue)",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Scrap Gun",
@@ -1907,6 +1935,7 @@
     "Role": "Tank",
     "Health": "200 (Open queue)350 (Role queue)",
     "Shields": "275",
+    "Armor": null,
     "Weapons": [
       {
         "name": "Hyperspheres",
@@ -1957,6 +1986,7 @@
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Railgun",
@@ -2015,10 +2045,11 @@
     "Base": "Bloomington, Indiana, United States (birth place)[3] (formerly)\nOverwatch HQ (formerly)\nUnknown",
     "Affiliation": "United States Army (formerly)[4]Soldier Enhancement Program (formerly)Overwatch (formerly)",
     "Relations": "Various family members, including a great-aunt, grandfather, uncle, father, and mother[4]\n Vincent (ex-boyfriend)",
-    "Voice": "Fred Tatasciore (English)\nExpandPatrick Borg (French)\nMartin Keßler (German)\nRoberto Draghetti † (Italian, 1st voice)\nStefano Alessandroni (Italian, 2nd voice)\nTōru Ōkawa (Japanese)\nKim Seung-jun (Korean)\nLiu Yao (Chinese Mandarin)\nYang Shao-wun (Taiwanese Mandarin)\nAndrzej Chudy (Polish)\nJosé Augusto Sendim​ (Brazilian Portuguese)\nMaksim Pinsker † (Russian, 1st voice)\nIlia Isaev (Russian, 2nd voice)\nRamón Langa (European Spanish)\nCarlos Segundo (Latin American Spanish)",
+    "Voice": "Fred Tatasciore (English)\nPatrick Borg (French)\nMartin Keßler (German)\nRoberto Draghetti † (Italian, 1st voice)\nStefano Alessandroni (Italian, 2nd voice)\nTōru Ōkawa (Japanese)\nKim Seung-jun (Korean)\nLiu Yao (Chinese Mandarin)\nYang Shao-wun (Taiwanese Mandarin)\nAndrzej Chudy (Polish)\nJosé Augusto Sendim​ (Brazilian Portuguese)\nMaksim Pinsker † (Russian, 1st voice)\nIlia Isaev (Russian, 2nd voice)\nRamón Langa (European Spanish)\nCarlos Segundo (Latin American Spanish)",
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Heavy Pulse Rifle",
@@ -2076,10 +2107,11 @@
     "Base": "Dorado, Mexico",
     "Affiliation": "Los Muertos (formerly)Talon (currently)",
     "Relations": null,
-    "Voice": "Carolina Ravassa (English)\nExpandEmmanuelle Rivière (French)\nLara Trautmann (German)\nTiziana Martello (Italian)\nChiwa Saitō (Japanese)\nKim Yeon-u (Korean)\nShourei (Mainland Mandarin)\nLin Fang-syue (Taiwanese Mandarin)\nAnna Cieślak (Polish)\nCarol Crespo (Brazilian Portuguese)\nVeronika Sarkisova (Russian)\nAnahí de la Fuente (European Spanish)\nLourdes Arruti (Latin American Spanish)",
+    "Voice": "Carolina Ravassa (English)\nEmmanuelle Rivière (French)\nLara Trautmann (German)\nTiziana Martello (Italian)\nChiwa Saitō (Japanese)\nKim Yeon-u (Korean)\nShourei (Mainland Mandarin)\nLin Fang-syue (Taiwanese Mandarin)\nAnna Cieślak (Polish)\nCarol Crespo (Brazilian Portuguese)\nVeronika Sarkisova (Russian)\nAnahí de la Fuente (European Spanish)\nLourdes Arruti (Latin American Spanish)",
     "Role": "Damage",
     "Health": "225",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Machine Pistol",
@@ -2143,6 +2175,7 @@
     "Role": "Damage",
     "Health": "125",
     "Shields": "150",
+    "Armor": null,
     "Weapons": [
       {
         "name": "Photon Projector",
@@ -2217,6 +2250,7 @@
     "Role": "Damage",
     "Health": "225",
     "Shields": null,
+    "Armor": "75",
     "Weapons": [
       {
         "name": "Rivet Gun\n1",
@@ -2300,6 +2334,7 @@
     "Role": "Damage",
     "Health": "175",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Pulse Pistols",
@@ -2350,6 +2385,7 @@
     "Role": "Damage",
     "Health": "250",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Smart Excavator",
@@ -2410,6 +2446,7 @@
     "Role": "Damage",
     "Health": "200",
     "Shields": null,
+    "Armor": null,
     "Weapons": [
       {
         "name": "Widow's Kiss",
@@ -2476,6 +2513,7 @@
     "Role": "Tank",
     "Health": "225 (Open queue)375 (Role queue)",
     "Shields": null,
+    "Armor": "250",
     "Weapons": [
       {
         "name": "Tesla Cannon",
@@ -2531,11 +2569,12 @@
     "Occupation": "Test subject (formerly)Mech pilot, mechanicBodyguard",
     "Base": "Horizon Lunar Colony (formerly)Junkertown",
     "Affiliation": "Lucheng Interstellar (formerly)Junkers",
-    "Relations": null,
-    "Voice": "Dee Bradley Baker & Jonathan Lipow (English)\nExpandDaniel Njo Lobé (French)TuTeHaMeng (Mandarin (China))[1]Wellington Lima (Brazilian Portuguese)Walter Rivetti (Italian) Aleksey Voytyuk (Russian)",
+    "Relations": "Unnamed motherNumerous siblings[1]",
+    "Voice": "Dee Bradley Baker & Jonathan Lipow (English)\nExpandDaniel Njo Lobé (French)TuTeHaMeng (Mandarin (China))[2]Wellington Lima (Brazilian Portuguese)Walter Rivetti (Italian) Aleksey Voytyuk (Russian)",
     "Role": "Tank",
     "Health": "300 (Open queue)450 (Role queue)",
     "Shields": "150",
+    "Armor": "175",
     "Weapons": [
       {
         "name": "Quad Cannons",
@@ -2546,7 +2585,7 @@
           "Falloff range": "15 – 25 meters",
           "Headshot": "✓ (x2)",
           "Rate of fire": "25 shots per second",
-          "Ammo": "80",
+          "Ammo": "100",
           "Reload time": "1.6 seconds animation",
           "Spread angle": "~2 degrees",
           "Projectile radius": "0.05 meters"
@@ -2559,7 +2598,7 @@
         "stats": {
           "Damage": "60 (high speed)",
           "Headshot": "✕",
-          "Duration": "6 seconds (max. grapple time)\n1.5 seconds (fireball)",
+          "Duration": "8 seconds (max. grapple time)\n1.5 seconds (fireball)",
           "Max. range": "23 meters (max)\n6 meters (retracted)",
           "Movement speed": "9 m/s (retracting)",
           "M. speed buff": "+100% (max, grappling)\n+80% (max, released)",
@@ -2599,10 +2638,11 @@
     "Base": "Krasnoyarsk Front, Russia (formerly)Novanskoye Forward Base, Siberia, Russia (formerly)Watchpoint: Gibraltar",
     "Affiliation": "Russian Defense ForcesVolskaya Industries (temporarily)Overwatch",
     "Relations": "Unnamed father[2]\n Ira Zaryanova,  Marisha Zaryanova (sisters)Extended family, including two other siblings or cousins[1]",
-    "Voice": "Dolya Gavanski (English)\nExpandAlexia Lunel (French, first voice)Katharina Spiering (German)Maddalena Vadacca (Italian)Mitsuki Saiga (Japanese)Yang Yu-jin (Korean)Fernanda Mammana (Brazilian Portuguese)Irina Kireeva (Russian)Hong Haitian (Mandarin (China))Jiang Wei-jin (Mandarin (Taiwan), first voice)Wei Jing-ci (Mandarin (Taiwan), second voice)Laura Torres (American Spanish)María Jesús Varona (European Spanish)",
+    "Voice": "Dolya Gavanski (English)\nAlexia Lunel (French, first voice)Katharina Spiering (German)Maddalena Vadacca (Italian)Mitsuki Saiga (Japanese)Yang Yu-jin (Korean)Fernanda Mammana (Brazilian Portuguese)Irina Kireeva (Russian)Hong Haitian (Mandarin (China))Jiang Wei-jin (Mandarin (Taiwan), first voice)Wei Jing-ci (Mandarin (Taiwan), second voice)Laura Torres (American Spanish)María Jesús Varona (European Spanish)",
     "Role": "Tank",
     "Health": "175 (Open queue)325 (Role queue)",
     "Shields": "225",
+    "Armor": null,
     "Weapons": [
       {
         "name": "Particle Cannon",
@@ -2668,6 +2708,7 @@
     "Role": "Support",
     "Health": "75",
     "Shields": "175",
+    "Armor": null,
     "Weapons": [
       {
         "name": "Orb of Destruction",

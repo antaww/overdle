@@ -63,25 +63,8 @@
 			suggestions = [];
 		}
 
-		// Send the hero to the server
-		try {
-			const response = await fetch('/try', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({hero})
-			});
+		query = '';
 
-			if (!response.ok) {
-				throw new Error('Error sending the request');
-			}
-
-			// todo: display tried hero in a list (create tries board)
-
-		} catch (error) {
-			console.error(error);
-		}
 	};
 
 	const handleSubmit = (event: Event) => {

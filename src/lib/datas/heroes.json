@@ -1,9 +1,5 @@
 [
   {
-    "name": "Juno",
-    "imageUrl": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/585b2d60cbd3c271b6ad5ad0922537af0c6836fab6c89cb9979077f7bb0832b5.png"
-  },
-  {
     "name": "Ana",
     "imageUrl": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png"
   },
@@ -58,6 +54,10 @@
   {
     "name": "Junkrat",
     "imageUrl": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/037e3df083624e5480f8996821287479a375f62b470572a22773da0eaf9441d0.png"
+  },
+  {
+    "name": "Juno",
+    "imageUrl": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/585b2d60cbd3c271b6ad5ad0922537af0c6836fab6c89cb9979077f7bb0832b5.png"
   },
   {
     "name": "Kiriko",
