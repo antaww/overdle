@@ -25,3 +25,39 @@ export const setCookie = (name: string, value: any, days: number) => {
 		document.cookie = `${name}=${JSON.stringify(value)}; expires=${date.toUTCString()}; path=/`;
 	}
 };
+
+
+export const animateOnHover = (
+	triggerClass: string,
+	animatedClass: string,
+	animationIn: string,
+	animationOut: string,
+	deleteAfter: number = 0
+) => {
+	const elements = document.querySelectorAll(triggerClass);
+	console.log(elements);
+
+	elements.forEach((element) => {
+		const animatedElement = element.querySelector(animatedClass);
+
+		// Handle the animation on mouse over
+		element.addEventListener('mouseover', () => {
+			animatedElement?.classList.add('visible', animationIn);
+			animatedElement?.classList.remove(animationOut);
+		});
+
+		// Handle the animation on mouse out
+		element.addEventListener('mouseout', () => {
+			setTimeout(() => {
+				animatedElement?.classList.remove(animationIn);
+				animatedElement?.classList.add('visible', animationOut);
+
+				// Wait for the animation to end before removing the element
+				animatedElement?.addEventListener('animationend', function handleAnimationEnd() {
+					animatedElement.classList.remove(animationOut, 'visible');
+					animatedElement.removeEventListener('animationend', handleAnimationEnd);
+				});
+			}, deleteAfter * 1000);
+		});
+	});
+};

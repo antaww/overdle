@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Import scraped datas
 	import characterData from '$lib/datas/charactersDatas.json';
-	import { getCookie, isClient, setCookie } from '$lib/utils/utils';
+	import { animateOnHover, getCookie, isClient, setCookie } from '$lib/utils/utils';
 	import { onMount } from 'svelte';
 
 	let dailyHero;
@@ -24,6 +24,7 @@
 				return savedHero.hero;
 			} else {
 				const randomHero = getRandomHero();
+				setCookie('tries', [], 1);
 				setCookie('dailyHero', { hero: randomHero, date: today }, 1);
 				return randomHero;
 			}
@@ -33,6 +34,9 @@
 
 	onMount(() => {
 		dailyHero = getDailyHero();
+		requestAnimationFrame(() => {
+			animateOnHover('.image-wrapper', '.hero-name-tooltip', 'animate__bounceIn', 'animate__bounceOut');
+		});
 	});
 
 	// Receive the list of tried heroes
@@ -182,18 +186,21 @@
 
 	.hero-name-tooltip {
 		visibility: hidden;
-		width: 100px;
-		background-color: #555;
+		background-color: var(--orange-button);
 		color: #fff;
 		text-align: center;
-		border-radius: 6px;
-		padding: 5px;
+		border-radius: 2px;
+		padding: 5px 17px;
 		position: absolute;
 		bottom: 120%;
 		left: 50%;
-		margin-left: -50px;
+		margin-left: -58px;
 		opacity: 0;
 		transition: opacity 0.3s;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		min-width: 100px;
+		max-width: 23rem;
+		text-wrap: nowrap;
 	}
 
 	.image-wrapper:hover .hero-name-tooltip {
@@ -211,6 +218,10 @@
 
 	.hero-table tr:hover {
 		background-color: #444;
+	}
+
+	.hero-table thead tr:hover {
+		background-color: transparent;
 	}
 
 	.invalid {
@@ -235,29 +246,37 @@
 
 	.lower::after {
 		position: absolute;
-		top: 1px;
-		left: 25%;
-		width: 50%;
 		clip-path: polygon(97% 60%, 80% 60%, 80% 5%, 20% 5%, 20% 60%, 3% 60%, 50% 95%);
 		-webkit-clip-path: polygon(97% 60%, 80% 60%, 80% 5%, 20% 5%, 20% 60%, 3% 60%, 50% 95%);
-		height: 100%;
 		background: rgba(0, 0, 0, 0.48);
 		content: "";
 		opacity: 0.5;
 		transition: background-color .3s ease;
+		top: calc(-9px + 1rem);
+		left: calc(18% + 1rem);
+		width: calc(50% - 1rem);
+		height: calc(100% - 1rem);
 	}
 
 	.greater::after {
 		position: absolute;
-		top: 1px;
-		left: 25%;
-		width: 50%;
 		clip-path: polygon(97% 40%, 80% 40%, 80% 95%, 20% 95%, 20% 40%, 3% 40%, 50% 5%);
 		-webkit-clip-path: polygon(97% 40%, 80% 40%, 80% 95%, 20% 95%, 20% 40%, 3% 40%, 50% 5%);
-		height: 100%;
 		background: rgba(0, 0, 0, 0.48);
 		content: "";
 		opacity: 0.5;
 		transition: background-color .3s ease;
+		top: calc(-9px + 1rem);
+		left: calc(18% + 1rem);
+		width: calc(50% - 1rem);
+		height: calc(100% - 1rem);
+	}
+
+	th:first-child {
+		border-top-left-radius: 15px;
+	}
+
+	th:last-child {
+		border-top-right-radius: 15px;
 	}
 </style>

@@ -1,19 +1,23 @@
 <script>
 	import overdle_logo from '$lib/images/overdle-logo.png';
-	import InputBar from "./InputBar.svelte";
+	import InputBar from './InputBar.svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app"/>
+	<meta name="description" content="Svelte demo app" />
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
 </svelte:head>
 
 <section>
 	<div class="header">
-		<img src={overdle_logo} alt="Overdle logo" width="30%"/>
+		<img src={overdle_logo} alt="Overdle logo" width="30%" />
 	</div>
 
-	<InputBar/>
+	<InputBar />
 </section>
 
 <style>

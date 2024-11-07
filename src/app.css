@@ -20,7 +20,10 @@
 	--color-bg-2: hsl(224, 44%, 95%);
 	--font-body: "overwatch", sans-serif;
 	--font-body-medium: "overwatch-medium", sans-serif;
+	--orange-button: #f95820;
 	color: var(--color-text);
+	--animate-delay: 0.1s;
+	--animate-duration: 500ms;
 	font-family: var(--font-body);
 	--column-margin-top: 4rem;
 	--font-mono: 'Fira Mono', monospace;
@@ -138,4 +141,9 @@ form {
 th, td {
 	font-weight: 100;
 	text-align: center;
+}
+
+.visible {
+	opacity: 1 !important;
+	visibility: visible !important;
 }
