@@ -35,8 +35,7 @@
 
 	// Send a POST request to the server
 	const sendTry = async (hero: string) => {
-		// Vérifier si le nom est valide
-		if (!heroes.some(h => h.name === hero)) {
+		async function displayInvalidInput() {
 			invalidInput = true;
 			await tick();
 			setTimeout(() => {
@@ -45,16 +44,23 @@
 			return;
 		}
 
-		// Add the hero to the list of tries
-		if (!tries.some(h => h.name === hero)) {
-			tries = [...tries, heroes.find(h => h.name === hero)];
-			document.cookie = `tries=${JSON.stringify(tries)}; path=/`;
-			// close the suggestions
-			suggestions = [];
+		// Check if the hero is already in the list of tries
+		if (tries.some(h => h.name.toLowerCase() === hero.toLowerCase())) {
+			await displayInvalidInput();
 		}
 
-		query = '';
+		// Check if the hero name is valid
+		if (!heroes.some(h => h.name.toLowerCase() === hero.toLowerCase())) {
+			await displayInvalidInput();
+		}
 
+		// Add the hero to the list of tries
+		tries = [...tries, heroes.find(h => h.name.toLowerCase() === hero.toLowerCase())];
+		document.cookie = `tries=${JSON.stringify(tries)}; path=/`;
+		// Close the suggestions
+		suggestions = [];
+
+		query = '';
 	};
 
 	const handleSubmit = (event: Event) => {
@@ -113,10 +119,11 @@
 		left: 0;
 		right: 0;
 		background-color: #0c0c0c;
-		border: 1px solid #ccc;
+		border: 2px solid #ccc;
 		max-height: 200px; /* Limit the height of the suggestion box */
 		overflow-y: auto; /* Enable scrolling if the list is too long */
 		z-index: 100; /* Ensure it appears above other content */
+		border-radius: .5rem;
 	}
 
 	ul {
@@ -155,10 +162,11 @@
 	}
 
 	input {
-		border: 1px solid #ccc;
+		border: 2px solid #ccc;
 		color: #ccc;
 		background: #0c0c0c;
 		transition: all 0.4s ease;
+		border-radius: .5rem;
 	}
 
 	.shake {
