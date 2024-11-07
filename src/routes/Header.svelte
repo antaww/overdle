@@ -1,41 +1,45 @@
 <script>
-	import {page} from '$app/stores';
+	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
 
 	const navItems = [
-		{label: 'Home', href: '/'},
-		{label: 'Sverdle', href: '/sverdle'},
-		{label: 'About', href: '/about'}
+		{
+			label: 'Home',
+			href: '/'
+		},
+		{
+			label: 'About',
+			href: '/about'
+		}
 	];
 </script>
 
 <header>
 	<div class="corner">
 		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit"/>
+			<img src={logo} alt="SvelteKit" />
 		</a>
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z"/>
-		</svg>
 		<ul>
-			{#each navItems as {label, href}}
-				<li aria-current={$page.url.pathname === href ? 'page' : undefined}>
-					<a href={href}>{label}</a>
-				</li>
+			{#each navItems as {
+				label,
+				href
+			}}
+				<a href={href}>
+					<li aria-current={$page.url.pathname === href ? 'page' : undefined}>
+						{label}
+					</li>
+				</a>
 			{/each}
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z"/>
-		</svg>
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub"/>
+		<a href="https://github.com/antaww/overdle" target="_blank">
+			<img src={github} alt="GitHub" />
 		</a>
 	</div>
 </header>
@@ -44,6 +48,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		margin-top: .4rem;
 	}
 
 	.corner {
@@ -90,13 +95,18 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
-		background-size: contain;
+		gap: 1rem;
 	}
 
 	li {
 		position: relative;
 		height: 100%;
+		background: var(--orange-button);
+		border-radius: .2rem;
+		min-width: 6.2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	li[aria-current='page']::before {
@@ -109,6 +119,14 @@
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
 		border-top: var(--size) solid var(--color-theme-1);
+	}
+
+	li[aria-current='page'] {
+		border: 2px solid var(--color-theme-1);
+	}
+
+	li {
+		border: 2px solid transparent;
 	}
 
 	nav a {

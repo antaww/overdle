@@ -15,6 +15,7 @@
 	--green: #17b528;
 	--orange: #f98612;
 	--red: #d02d39;
+	--yellow: #fec134;
 	--color-bg-0: rgb(202, 216, 228);
 	--color-bg-1: hsl(0, 0%, 18%);
 	--color-bg-2: hsl(224, 44%, 95%);
@@ -22,13 +23,11 @@
 	--font-body-medium: "overwatch-medium", sans-serif;
 	--orange-button: #f95820;
 	color: var(--color-text);
-	--animate-delay: 0.1s;
-	--animate-duration: 500ms;
 	font-family: var(--font-body);
 	--column-margin-top: 4rem;
 	--font-mono: 'Fira Mono', monospace;
 	--color-text: rgba(255, 255, 255, 1);
-	--color-theme-1: #fec134;
+	--color-theme-1: #ffffff;
 	--color-theme-1-gradient: linear-gradient(90deg, #fb9534 0%, #ffca35 50%, #fb9534 100%);
 	--color-theme-2: #4075a6;
 	--column-width: 42rem;
