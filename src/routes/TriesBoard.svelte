@@ -3,6 +3,7 @@
 	import characterData from '$lib/datas/charactersDatas.json';
 	import { animateOnHover, getCookie, isClient, setCookie } from '$lib/utils/utils';
 	import { onMount } from 'svelte';
+	import { fly } from 'svelte/transition';
 
 	let dailyHero;
 
@@ -33,6 +34,8 @@
 	}
 
 	onMount(() => {
+		document.documentElement.style.setProperty('--animate-delay', '0.1s');
+		document.documentElement.style.setProperty('--animate-duration', '500ms');
 		dailyHero = getDailyHero();
 		requestAnimationFrame(() => {
 			animateOnHover('.image-wrapper', '.hero-name-tooltip', 'animate__bounceIn', 'animate__bounceOut');
@@ -94,6 +97,8 @@
 		// if both values are strings, compare them as strings (valid, invalid)
 		return value === dailyValue ? 'valid' : 'invalid';
 	}
+
+	$: console.log(heroes);
 </script>
 
 <div class="tries-board">
@@ -108,8 +113,8 @@
 			</tr>
 			</thead>
 			<tbody>
-			{#each heroes.slice().reverse() as hero}
-				<tr class="row">
+			{#each heroes.slice().reverse() as hero (hero.name)}
+				<tr class="row" transition:fly={{ y: 20, duration: 300 }}>
 					{#each headers as header}
 						{#if header === 'Hero'}
 							<td class="hero-image">
@@ -120,10 +125,14 @@
 							</td>
 						{:else if header === 'Health'}
 							<td data-type="{header}"
-							    class="{getValidity(getHealth(characterData[hero.name]?.['Health']), header)}">{getHealth(characterData[hero.name]?.['Health'])}</td>
+							    class="{getValidity(getHealth(characterData[hero.name]?.['Health']), header)}">
+								{getHealth(characterData[hero.name]?.['Health'])}
+							</td>
 						{:else}
 							<td data-type="{header}"
-							    class="{getValidity(cutString(characterData[hero.name]?.[header] || '❌'), header)}">{cutString(characterData[hero.name]?.[header] || '❌')}</td>
+							    class="{getValidity(cutString(characterData[hero.name]?.[header] || '❌'), header)}">
+								{cutString(characterData[hero.name]?.[header] || '❌')}
+							</td>
 						{/if}
 					{/each}
 				</tr>
@@ -136,6 +145,11 @@
 </div>
 
 <style>
+	.hidden {
+		visibility: hidden;
+		opacity: 0;
+	}
+
 	.tries-board {
 		margin-top: 20px;
 		background-color: #222;
@@ -143,7 +157,7 @@
 		border-radius: 5px;
 		color: #fff;
 		text-transform: uppercase;
-		border: var(--color-theme-1) solid 1px;
+		border: var(--yellow) solid 2px;
 	}
 
 	.tries-board h3 {
@@ -156,7 +170,7 @@
 	}
 
 	.row:not(:last-child) {
-		border-bottom: 1px solid var(--color-theme-1);
+		border-bottom: 1px solid var(--yellow);
 	}
 
 	.hero-table th,
